@@ -1,0 +1,6302 @@
+{
+	"info": {
+		"_postman_id": "01eea749-3685-43c9-93df-90c9eaca7f46",
+		"name": "wingmencusstomer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "admin signUp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"jk@yopmail.com\",\n\t\"name\": \"JK\",\n\t\"password\": \"146Carmans\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/admin/signUp",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signIn",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"jason1@mywngmn.com\",\n\t\"password\": \"11111111\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admin/signIn",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addVehicleType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImE0OTM0MjQ0NmFlODY4ZjIxZmRiYTllZWE2YjQ4MjQyNDllYmFlMzZhYzgwZGQxYzY4MjBkMzMxODA4ZGYzZWQ4ZmFlMDlhYjdiZDI5OTFmMDA1MDZjMjZiZGQ4YWEwZTU3NTdmMTVhZWI4NzQ1YTU4ODMyNjg4Y2JjYTExMDg1YzBiNzQ5ZWZhYzc0ZGMyNDNjYTc0YTU2NjA5MDA1NTc2YTFmYzEzMWVlYjJhNzNhMTU2ODU3OThiY2Q4MTU1NjVmODcyY2IzY2MwMWIwNTVmOWJkYmIyNzRlY2NlMDMyZWYyMTJlMmE3NzdmZWU5MyJ9LCJpYXQiOjE1ODYzMzc4NTQsImV4cCI6MTU4NjQyNDI1NH0.kt9EStJ1BF8U9u-4Nw4PjOKpmH7sqzAaz8Zzahq_Yvk"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleTypeName\":\"demo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/addVehicleType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"addVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE4MTM3ZGIwZGQ3OGMzZWY3NDYyYTVmYmMxNzczYzE4MjJjZjZmZjA3M2M2NTk3YzY1MDE1MGY5ZWVmM2E1ODc1YzU5YWYxNmM1MzkyYzc4ZWM4NWMzOTBlMmFhMzMxZDYzNjQ4YTkyNjAwYWFiNzhiYTM2ZGMzMWEzZDgxY2UyYWVhNWVlMzM0NjczM2IwOGUyY2E4MjdjNzJjMjAxYWY5N2NhOTg5NWFmNDQ4YzhlMjlmNzhmY2U3OTk3MmUxNTIxM2VjMTZkNmU5YzZkYmVlMjllMGFjYjI0MjE2OTVjOTg3NzU0MjUzMmRiMDdlMCJ9LCJpYXQiOjE1ODcxMTgyNDJ9.8stAhZv-zXxVDOjf6cfx_XY01kxtqa0zVSLN_yNXgj0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleTypeName\":\"demo2\",\n\t\"_id\":\"5e8d9c13fe64dd28f84e8f9b\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editVehicleType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addServiceType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVkYjY3NWU3ZjUxNjc2OGRiMzczNjZkYzRiNzcxNzZmOTNkMzcxZTFmODFlMjA2ZTc3NjM3M2EwYTRiZTc5ZmNjYzg5YmI4NmIyYWZjNDcyN2VjZGRhYWEwMzVlMjE3MTUwYWY4YjIxNTRjMmFlNzcwYmM0MDk1NGNmYjU5MTY1ZDYxODUyN2U0ZDM4Y2M2YjUwMjY2ODU3ZTA2ODYyYzNkYThiYjAyODg2NjU1ZjhkYmMzYWM0NjcyZTc1NTc2NWU0NzBmM2JjZTE0ODcxMjg1MTQ5NzBhNTAyOTBmOTg0YzEyNTAwNDU5MDg2MjdkNSJ9LCJpYXQiOjE1ODc3MTU3NzR9.eiHgtV-UJ1Cx8XvxVMl9UkJ1UFqMmzouyjA4-8TmPo8"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "serviceName",
+									"value": "fffq",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "default-avatar.jpg"
+								},
+								{
+									"key": "note",
+									"value": "fda",
+									"type": "text"
+								},
+								{
+									"key": "isNoteShow",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "isEventService",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "isSingleTrip",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "isRoundTrip",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/addServiceType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"addServiceType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editServiceType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVkYjY3NWU3ZjUxNjc2OGRiMzczNjZkYzRiNzcxNzZmOTNkMzcxZTFmODFlMjA2ZTc3NjM3M2EwYTRiZTc5ZmNjYzg5YmI4NmIyYWZjNDcyN2VjZGRhYWEwMzVlMjE3MTUwYWY4YjIxNTRjMmFlNzcwYmM0MDk1NGNmYjU5MTY1ZDYxODUyN2U0ZDM4Y2M2YjUwMjY2ODU3ZTA2ODYyYzNkYThiYjAyODg2NjU1ZjhkYmMzYWM0NjcyZTc1NTc2NWU0NzBmM2JjZTE0ODcxMjg1MTQ5NzBhNTAyOTBmOTg0YzEyNTAwNDU5MDg2MjdkNSJ9LCJpYXQiOjE1ODc3MTU3NzR9.eiHgtV-UJ1Cx8XvxVMl9UkJ1UFqMmzouyjA4-8TmPo8"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "serviceName",
+									"value": "sssw",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "file"
+								},
+								{
+									"key": "_id",
+									"value": "5ea29f2ade039b2364c4dbe3",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "sdsdsd",
+									"type": "text"
+								},
+								{
+									"key": "isNoteShow",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "isEventService",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "isSingleTrip",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "isRoundTrip",
+									"value": "false",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editServiceType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editServiceType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicleType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE4MTM3ZGIwZGQ3OGMzZWY3NDYyYTVmYmMxNzczYzE4MjJjZjZmZjA3M2M2NTk3YzY1MDE1MGY5ZWVmM2E1ODc1YzU5YWYxNmM1MzkyYzc4ZWM4NWMzOTBlMmFhMzMxZDYzNjQ4YTkyNjAwYWFiNzhiYTM2ZGMzMWEzZDgxY2UyYWVhNWVlMzM0NjczM2IwOGUyY2E4MjdjNzJjMjAxYWY5N2NhOTg5NWFmNDQ4YzhlMjlmNzhmY2U3OTk3MmUxNTIxM2VjMTZkNmU5YzZkYmVlMjllMGFjYjI0MjE2OTVjOTg3NzU0MjUzMmRiMDdlMCJ9LCJpYXQiOjE1ODcxMTgyNDJ9.8stAhZv-zXxVDOjf6cfx_XY01kxtqa0zVSLN_yNXgj0"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getVehicleType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e95684538379f2c6805e1f6\",\n\t\"vehicleTypeName\":\"den1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editVehicleType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"\",\n\t\"vehicleTypeName\":\"den\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editVehicleType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e95684538379f2c6805e1f6\",\n\t\"vehicleTypeName\":\"den1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editVehicleType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e95684538379f2c6805e1f6\",\n\t\"vehicleTypeName\":\"den1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editVehicleType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e95684538379f2c6805e1f6\",\n\t\"vehicleTypeName\":\"den1\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editVehicleType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getServiceType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE4MTM3ZGIwZGQ3OGMzZWY3NDYyYTVmYmMxNzczYzE4MjJjZjZmZjA3M2M2NTk3YzY1MDE1MGY5ZWVmM2E1ODc1YzU5YWYxNmM1MzkyYzc4ZWM4NWMzOTBlMmFhMzMxZDYzNjQ4YTkyNjAwYWFiNzhiYTM2ZGMzMWEzZDgxY2UyYWVhNWVlMzM0NjczM2IwOGUyY2E4MjdjNzJjMjAxYWY5N2NhOTg5NWFmNDQ4YzhlMjlmNzhmY2U3OTk3MmUxNTIxM2VjMTZkNmU5YzZkYmVlMjllMGFjYjI0MjE2OTVjOTg3NzU0MjUzMmRiMDdlMCJ9LCJpYXQiOjE1ODcxMTgyNDJ9.8stAhZv-zXxVDOjf6cfx_XY01kxtqa0zVSLN_yNXgj0"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getServiceType?_id=5e9980cfa60b98170ce17bb1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getServiceType"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5e9980cfa60b98170ce17bb1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicleType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getVehicleType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllVehicleUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\":\"5e8ed81c21a38921e8b9e33a\",\n\t\"skip\":1,\n\t\"limit\":2\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getAllVehicleUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getAllVehicleUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllVehicleDriver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImE2ODA3YWJjZmQ2MzdhZjM4YWFkNjhlZTQ1YzE0NzM4Y2Y4ZGUxODAwM2Q4NGEzNWU2MDFkMDgwNzMwNDAyOTkyNGIzMjA5Y2Q1MWMyMWY4YTJlZmY4NzllNWZmZjQ5ZDI2NDQyNWY1MzUyOGQ3ZmNmZDliMDEyZmNhNDI3MDQ1MzVjZDIyNmI5OTYyYThiNTk2MDYzMmM2YTE5MDk1NTBiYTk3MmI0YjQ4Nzk0N2UxNzBjZTcyMzFhMGU2YTk4MDA3M2RhZjJhMjRjZjI0MWZmYzNlNDIyMmZmZTRhYjUzMTk4N2E3ZTA2Nzg1M2ZiZSJ9LCJpYXQiOjE1ODcwOTQyODN9.XjR8h0SH_ct9FsV3zAZKPRtWdTl5MinHSSAQnKs_H5g"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"driverId\":\"5e9445799f56c61ef015c86a\",\n\t\"skip\":1,\n\t\"limit\":10\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getAllVehicleDriver",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getAllVehicleDriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyBlockUnBlockDeltedDriver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImE1ZmNiMDdlNDMzNWU3MjFlYTFlYWE0ZTk2ZjNkZmI0NzYzMzFlMGI3ZjAwNzY5NzdiYTRhM2QxNTMwMWIwOGNmODk5MDhiODU3MjA2ZDkzMzdhNzgwNTU0NDcxODQ2ZjIxYjhmNzEwYzJlNGFmYjMwNjNmZTRlNTk0ZmUyM2Q1NTRjN2JmNDdmMzc1ODFiN2Y1MDQyZTU4NmIzMTliNmFjZGY3M2NkMTJjMmY0MDNjNjY1MjNkMzMzOTI0NjAxNDYwZTRlNmQwYTRlOGZjYzNkMzc4NzE1MmFiYTcyODQ4NTRmNWY0YTBmZDc2ZDRjZiJ9LCJpYXQiOjE1ODY5MzU3NDd9.vU4mGmP97b14h6qY1h6LPrvqsMGD8FOR8eIP6luF4xE"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9445799f56c61ef015c86a\",\n\"isApproved\":true,\n\"isBlocked\":false,\n\"isDeleted\":false\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/verifyBlockUnBlockDeltedDriver",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"verifyBlockUnBlockDeltedDriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTransmissionType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImI3MzIyZDUzODQ4NWM4OTJkYTY2ODNkMjc5YWIzNTg1ZjM2YzYxYjUzYzFkZDU2Nzk0NGQyMTQwMjFhNTYzYmI3ZjUzMTBhZDc2YjhhNGUxMTU2NTMyNGE5ZjZhYTQ4ZGVlNGI3Yjk5MzllOGMwZGM0YjAwZDQ2Njk5NjEzNzQzNjA3NzFlNmJiNTY2ZGYzOTA2OGM1YjUwMTg5ZDZhOGJmMzU2OGM4MGU0MzExYmI1MjNkYzI5Mzg1YzllZDA1MTZhMzY4YjdhYjcxMTkxM2I5OTIxZmFmNDNiODg2ZWRmNWRkNWY2OTc0MGU3MWM0NyJ9LCJpYXQiOjE1ODY5NDg1MDZ9.awVRrNpfAoVHnLgixm2Bsr6C6Og97EoiCRG_5Ol_zJQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"transmissionTypeName\":\"demo3\"\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/admin/addTransmissionType",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"addTransmissionType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editTransmissionType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImMzYTZiZWQ5MDFjNjYxYzA0OTliZmVmZDAzMTZjNTIyYjhiMzU1ZWFiMTMwMDgyZTdiZGZjOGE1MGMyYzgyYjExYmE2YzliOWY3ZDRmNzhhZDYwYTJhODI1YjY4YmYyMDcxNDI0ZmU4YTQxZDhjZWIxMjIwMTk4MDQ3ODc3YmJhMWM3ZWJhYTg4NWRjYTVmN2Q1MTdmZDNiNDYwOGRmODUwZDNjZTRkMTY3NGM4NTNjNzliNTcyN2U2ZWU4NDBjZTMzMDA3M2RlNWMzYjk4NjhlZTE1NzE1ZmY3Y2RkY2Q3YTFhNGQ0ZDU1MmQyZDg0NyJ9LCJpYXQiOjE1ODY5NDU1Nzd9.7WL3LPZANKDplOWGEpItKIxcdZ71JfP4s43ohecbSYU"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e96de4526083729c0ae6c94\",\n\t\"transmissionTypeName\":\"den1s\"\n\t}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editTransmissionType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editTransmissionType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTransmissionType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImMzYTZiZWQ5MDFjNjYxYzA0OTliZmVmZDAzMTZjNTIyYjhiMzU1ZWFiMTMwMDgyZTdiZGZjOGE1MGMyYzgyYjExYmE2YzliOWY3ZDRmNzhhZDYwYTJhODI1YjY4YmYyMDcxNDI0ZmU4YTQxZDhjZWIxMjIwMTk4MDQ3ODc3YmJhMWM3ZWJhYTg4NWRjYTVmN2Q1MTdmZDNiNDYwOGRmODUwZDNjZTRkMTY3NGM4NTNjNzliNTcyN2U2ZWU4NDBjZTMzMDA3M2RlNWMzYjk4NjhlZTE1NzE1ZmY3Y2RkY2Q3YTFhNGQ0ZDU1MmQyZDg0NyJ9LCJpYXQiOjE1ODY5NDU1Nzd9.7WL3LPZANKDplOWGEpItKIxcdZ71JfP4s43ohecbSYU"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getTransmissionType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getTransmissionType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteTransmissionType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImMzYTZiZWQ5MDFjNjYxYzA0OTliZmVmZDAzMTZjNTIyYjhiMzU1ZWFiMTMwMDgyZTdiZGZjOGE1MGMyYzgyYjExYmE2YzliOWY3ZDRmNzhhZDYwYTJhODI1YjY4YmYyMDcxNDI0ZmU4YTQxZDhjZWIxMjIwMTk4MDQ3ODc3YmJhMWM3ZWJhYTg4NWRjYTVmN2Q1MTdmZDNiNDYwOGRmODUwZDNjZTRkMTY3NGM4NTNjNzliNTcyN2U2ZWU4NDBjZTMzMDA3M2RlNWMzYjk4NjhlZTE1NzE1ZmY3Y2RkY2Q3YTFhNGQ0ZDU1MmQyZDg0NyJ9LCJpYXQiOjE1ODY5NDU1Nzd9.7WL3LPZANKDplOWGEpItKIxcdZ71JfP4s43ohecbSYU"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isBlocked\": true,\n            \"isDeleted\": false,\n            \"_id\": \"5e96de4526083729c0ae6c94\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/blockUnblockDeleteTransmissionType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"blockUnblockDeleteTransmissionType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllVehicle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjA3OWVkYTRhZmNmZDkyMzQ4NjM2Y2RhNDUzZGY0MzFhZGI1MmQ5ZjdmNmEwZTBiMWE4NmZkOGI1NmEzN2M2ZWRkNjgwYTVjMzg3NmJkZmQyZTk2YmRiNTYzNzBkYzUyZTI4ZTFkZWM5ODYxZjVjZWM3YzU3YmU2YjEwMTQ0OGJhYjg3YjkzNDA2OTNjMWEwNTA0YzFlNDg2N2YwNmY5ZWQyODYxNWY5MmZiYTJhYmJjNTQ4YzJkZjI0MzlkN2I2NGIyOTY1NjZlOGRlZmVmMTJhZTcyNTU5OGFlZWExZDJmZTdjYzkxZThhNjUxMjg2YSJ9LCJpYXQiOjE1ODY5NTQ3MzB9.7kVz3upII3W_uph1x-ORnPFlvuNCS7uKgFJ9RBf19L8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":1,\n\t\"limit\":10\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getAllVehicle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getAllVehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUsers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImE2ODA3YWJjZmQ2MzdhZjM4YWFkNjhlZTQ1YzE0NzM4Y2Y4ZGUxODAwM2Q4NGEzNWU2MDFkMDgwNzMwNDAyOTkyNGIzMjA5Y2Q1MWMyMWY4YTJlZmY4NzllNWZmZjQ5ZDI2NDQyNWY1MzUyOGQ3ZmNmZDliMDEyZmNhNDI3MDQ1MzVjZDIyNmI5OTYyYThiNTk2MDYzMmM2YTE5MDk1NTBiYTk3MmI0YjQ4Nzk0N2UxNzBjZTcyMzFhMGU2YTk4MDA3M2RhZjJhMjRjZjI0MWZmYzNlNDIyMmZmZTRhYjUzMTk4N2E3ZTA2Nzg1M2ZiZSJ9LCJpYXQiOjE1ODcwOTQyODN9.XjR8h0SH_ct9FsV3zAZKPRtWdTl5MinHSSAQnKs_H5g"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":0,\n\t\"limit\":10,\n\t\"_id\":\"5ea075c27f5afe33a82cc2d7\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getAllUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getAllUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllDrivers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImZkYTgwZDQxMzhmMjYwM2UxYTRhNDg0ZDcxYWNkYjQ4OWRkOWRmY2IyODIwNmJlNmQzZGQ3NzdjNzBhMmM3MmUzZWNhNzI4OTJkZTJlODcwZTQ3OWUxZGE2MGM5ZTViNDgxZjY2ZjA5MjZjNmQ5M2RmZjZmNDRlOGQ3ZDkwOGZhYzhhMzEwODQxZTg0MGYzZDMwNzdlZTY3Y2I3YWRiZjIwZGFmMTM0NWY1ZTlmZGJjNjU0NzcxYjliZjI1Y2EwMjIzYTkyMjBkOWVlODBiZTliZjQxNTUyZmY1OTNjNjlmYTRmMDA3NGM1ZjU0ZWQwZSIsImVuY3J5cHRLZXkiOiJpTkxvZCJ9LCJpYXQiOjE1OTA0OTY4MjV9.4vikJrGj_jeLzmByRjUrBwSMIAlMiqaBrTwy8OTC_bs"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":0,\n\t\"limit\":10,\n\t\"isPilot\":true\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/admin/getAllDrivers",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getAllDrivers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteServiceType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9445799f56c61ef015c86a\",\n\"isApproved\":true,\n\"isBlocked\":false,\n\"isDeleted\":false\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/blockUnblockDeleteServiceType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"blockUnblockDeleteServiceType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setAppVersion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFlMTlkZjg4OWEwMjFlYmFkNjVmYWMwZGZjY2MzZDA2YTg4NTk4MmZkOTEyYTNkZWJiMGUxNTFkZmRkNWQyNjZlMGE1Y2ZhN2Y4NmNjMmZkMzc0MWQ3OGMwODQ1MTBjZmY1ZDM2MGY3YmZjNzc1ZGE3ZDA1ZWRjOTlmODEzZDJkNjk4MWE0YTdjN2U1MGYzN2Y4ZWIxMjg3ODk2YTkzYjk3MmMwOGFhZjM2YjZkZDY0MDlkMWUwZTk3Mjc5YTJjMDcxMDJmNjIyYzkzY2JmNzc3Mjk0ZTQ5NGZlODA5OGMzOTEzNWIyMjIzMWU4NWFkMCJ9LCJpYXQiOjE1ODcxMzAwNTV9.jpNAZJ9yDrUUY1xQb9hQE41wTbzt99t7fu6j1xAkzPc"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"latestIOSVersion\": 3,\n  \"latestAndroidVersion\": 3,\n  \"criticalAndroidVersion\":2,\n  \"criticalIOSVersion\": 2,\n  \"latestWebID\": 2,\n  \"criticalWebID\": 1,\n  \"updateMessageAtPopup\": \"dsds\",\n  \"updateTitleAtPopup\": \"sdsdsd\",\n  \"latestDriverIOSVersion\":3,\n  \"latestDriverAndroidVersion\":3,\n  \"criticalDriverAndroidVersion\":3,\n  \"criticalDriverIOSVersion\":3,\n  \"driverUpdateMessageAtPopup\":\"dsds\",\n  \"driverUpdateTitleAtPopup\":\"dsds\",\n  \"aboutUs\":\"https://www.google.com\",\n  \"contactUs\":\"https://www.google.com\",\n  \"termsAndCondition\":\"https://www.google.com\",\n  \"driverAboutUs\":\"https://www.google.com\",\n  \"driverContactUs\":\"https://www.google.com\",\n  \"driverTermsAndCondition\":\"https://www.google.com\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/setAppVersion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"setAppVersion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAppVersion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://mywngmn.com:3080/api/v1/admin/getAppVersion",
+							"protocol": "https",
+							"host": [
+								"mywngmn",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getAppVersion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteVehicleType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFlMTlkZjg4OWEwMjFlYmFkNjVmYWMwZGZjY2MzZDA2YTg4NTk4MmZkOTEyYTNkZWJiMGUxNTFkZmRkNWQyNjZlMGE1Y2ZhN2Y4NmNjMmZkMzc0MWQ3OGMwODQ1MTBjZmY1ZDM2MGY3YmZjNzc1ZGE3ZDA1ZWRjOTlmODEzZDJkNjk4MWE0YTdjN2U1MGYzN2Y4ZWIxMjg3ODk2YTkzYjk3MmMwOGFhZjM2YjZkZDY0MDlkMWUwZTk3Mjc5YTJjMDcxMDJmNjIyYzkzY2JmNzc3Mjk0ZTQ5NGZlODA5OGMzOTEzNWIyMjIzMWU4NWFkMCJ9LCJpYXQiOjE1ODcxMzAwNTV9.jpNAZJ9yDrUUY1xQb9hQE41wTbzt99t7fu6j1xAkzPc"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9568b338379f2c6805e1f7\",\n\"isBlocked\":false,\n\"isDeleted\":true\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/blockUnblockDeleteVehicleType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"blockUnblockDeleteVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyBlockUnBlockDeltedUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9445799f56c61ef015c86a\",\n\"isBlocked\":false,\n\"isDeleted\":false,\n\"isApproved\":false\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/verifyBlockUnBlockDeltedUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"verifyBlockUnBlockDeltedUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addTeam",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"teamName\":\"demo\",\n\t\"teamMembers\":0\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/addTeam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"addTeam"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editTeam",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e9d55f1423f2326709a939d\",\n\t\"teamName\":\"demo2\",\n\t\"teamMembers\":2\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editTeam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editTeam"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteTeam",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9d55f1423f2326709a939d\",\n\"isBlocked\":false,\n\"isDeleted\":true\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/blockUnblockDeleteTeam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"blockUnblockDeleteTeam"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTeam",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getTeam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getTeam"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addEventType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"eventName\":\"demo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/addEventType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"addEventType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editEventType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e9d701a6b6c3c17ec11c6cf\",\n\t\"eventName\":\"demo2\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editEventType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editEventType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteEventType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9d701a6b6c3c17ec11c6cf\",\n\"isBlocked\":false,\n\"isDeleted\":true\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/blockUnblockDeleteEventType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"blockUnblockDeleteEventType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEventType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getEventType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getEventType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"admin@mail.com\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/admin/forgotPassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"forgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotChangePassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"password\":\"12345678\",\n\"passwordResetToken\":\"TkWBJ3gJZX\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/admin/forgotChangePassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"forgotChangePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBlockPromoCode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQwYTVlMmI0ZDAwNTIyMzBlOTgxMzUxY2RkZmIxMTdlOGNmNzE2YTJmNDgzNTZjOTg2MDI4NmFiOGZkNGQ2M2UwN2Y1MTYyZTAyZTkxMWFjN2U4MWI5M2M2NjY1NDZkNTIyMmZkZTIyYzIxOTQzNDUwYzUxY2UxYzhmYjIxODYwZjkwY2JkM2E1YWYzYWZkMjU1ZmVlZjAzNWU5NWRmOTlmYzBmOWE3ODk2ODAzNGZiMmEwM2I0YWUzYjIxY2RkODA1MDc1MDdhYTYzYWQ0ZDI3ZGZlYTNkOTdmYTA3MzQyOTc4NGQyNWUzYWU3Y2MyMiJ9LCJpYXQiOjE1ODc1NDkwMjR9.uL9XzWJdFhCeyjiP1Fnaq9K1xVLieUh5CqYK95mcAZc"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5ea029ed2f2f571f08d8ae35\",\n\t\"isBlocked\":true,\n\t\"isDeleted\":true\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/deleteBlockPromoCode",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"deleteBlockPromoCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPromoCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQwYTVlMmI0ZDAwNTIyMzBlOTgxMzUxY2RkZmIxMTdlOGNmNzE2YTJmNDgzNTZjOTg2MDI4NmFiOGZkNGQ2M2UwN2Y1MTYyZTAyZTkxMWFjN2U4MWI5M2M2NjY1NDZkNTIyMmZkZTIyYzIxOTQzNDUwYzUxY2UxYzhmYjIxODYwZjkwY2JkM2E1YWYzYWZkMjU1ZmVlZjAzNWU5NWRmOTlmYzBmOWE3ODk2ODAzNGZiMmEwM2I0YWUzYjIxY2RkODA1MDc1MDdhYTYzYWQ0ZDI3ZGZlYTNkOTdmYTA3MzQyOTc4NGQyNWUzYWU3Y2MyMiJ9LCJpYXQiOjE1ODc1NDkwMjR9.uL9XzWJdFhCeyjiP1Fnaq9K1xVLieUh5CqYK95mcAZc"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getAllPromoCode?_id=5ea029ed2f2f571f08d8ae35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getAllPromoCode"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5ea029ed2f2f571f08d8ae35"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addPromoCode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQwYTVlMmI0ZDAwNTIyMzBlOTgxMzUxY2RkZmIxMTdlOGNmNzE2YTJmNDgzNTZjOTg2MDI4NmFiOGZkNGQ2M2UwN2Y1MTYyZTAyZTkxMWFjN2U4MWI5M2M2NjY1NDZkNTIyMmZkZTIyYzIxOTQzNDUwYzUxY2UxYzhmYjIxODYwZjkwY2JkM2E1YWYzYWZkMjU1ZmVlZjAzNWU5NWRmOTlmYzBmOWE3ODk2ODAzNGZiMmEwM2I0YWUzYjIxY2RkODA1MDc1MDdhYTYzYWQ0ZDI3ZGZlYTNkOTdmYTA3MzQyOTc4NGQyNWUzYWU3Y2MyMiJ9LCJpYXQiOjE1ODc1NDkwMjR9.uL9XzWJdFhCeyjiP1Fnaq9K1xVLieUh5CqYK95mcAZc"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"cashback\":0,\n\t\"percentage\":1,\n\t\"promoCode\":\"demo\",\n\t\"individualUserPromoAttempt\":1,\n\t\"noOfPromoUsers\":1,\n\t\"isExpireDateAdded\":true,\n\t\"expireDate\":\"2020-04-22T19:49:14\",\n\t\"isCash\":true\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/addPromoCode",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"addPromoCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editPromoCode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQwYTVlMmI0ZDAwNTIyMzBlOTgxMzUxY2RkZmIxMTdlOGNmNzE2YTJmNDgzNTZjOTg2MDI4NmFiOGZkNGQ2M2UwN2Y1MTYyZTAyZTkxMWFjN2U4MWI5M2M2NjY1NDZkNTIyMmZkZTIyYzIxOTQzNDUwYzUxY2UxYzhmYjIxODYwZjkwY2JkM2E1YWYzYWZkMjU1ZmVlZjAzNWU5NWRmOTlmYzBmOWE3ODk2ODAzNGZiMmEwM2I0YWUzYjIxY2RkODA1MDc1MDdhYTYzYWQ0ZDI3ZGZlYTNkOTdmYTA3MzQyOTc4NGQyNWUzYWU3Y2MyMiJ9LCJpYXQiOjE1ODc1NDkwMjR9.uL9XzWJdFhCeyjiP1Fnaq9K1xVLieUh5CqYK95mcAZc"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5ea029ed2f2f571f08d8ae35\",\n\t\"cashback\":0,\n\t\"percentage\":1,\n\t\"promoCode\":\"dem22o\",\n\t\"individualUserPromoAttempt\":1,\n\t\"noOfPromoUsers\":1,\n\t\"isExpireDateAdded\":true,\n\t\"expireDate\":\"2020-05-20T09:49:14\",\n\t\"isCash\":true\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editPromoCode",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editPromoCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllBooking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjIxMGNhMGM2OTBmMjkxYmZiOTVlMjY0Y2ViMThjNjA5Y2QwM2RhMGRmMzQ5M2YxZDM0YTNlMTJmOWM3YTZiYTFiYmIwYmY1M2Y1Y2Y0NmEyYzI0ZDI0NWVlYzcwNDZjZDY0YWQ5NGExZGFkMjNlYTAyZmE1NDA4NDMyNjk1NWQ0ZWU4NDE3M2YxZGFhZjJiNjQ3YWY2YjY1NzI0NGNkYWE4MmQyOTFlM2NhZTA4NjJjOTBkNjNiMmJjMTdiN2I1ZmM5Y2ViNTNhYWJmNGQwNzY1MGNhMWIxZTJmNjAwMDU2OTQ1YzhkOTU2NjJmODVkMiIsImVuY3J5cHRLZXkiOiIwVVAyTSJ9LCJpYXQiOjE1OTA0MTQ0NDB9.XUlyvyotME06ExTUdZU2uCINBCCPaHd2v7uiJQrTDzE"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isUpcommingbookings\":false,\n\"isPastbookings\":false,\n\"userId\":\"dasdsadasdasdasdas\",\n\"driverId\":\"sdasdasdasdasdasdasdas\",\n\"skip\":0,\n\"limit\":10,\n\"isEventBooking\":false\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/admin/getAllBooking",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getAllBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBookingDetails",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImZlZGNmN2Q5MTM1YjMzNjEzY2ZmYzYzMDBjNDBhZTViNTczM2VjYzQ4ODBlNTJkODRiZTY2YWU3NWQ2MzM2OGIxNjg5NWU4NzcxZTNlYmYwZjE2MDVkMzYzYjVjNTMwOGM4ODYzNTIwZjczZDc5OTRiNGQzYTgxY2ZlN2ZkMWE0OTIzZDQ4YjgyNjU1OTEyMWJiM2RmZGU2N2U1NDE2NTdjNDhlMDFiOTM3ZTkwMDMxZjQ5OGM3NmI2MGYwN2E4MzQ0Mjg3Nzc1MGYwNDk5ODZlNTU3N2Y4OGNkNDAwZWEwMGYxNmEyNzhmOWNkOTIyZCJ9LCJpYXQiOjE1ODc1NTU2NDh9.8_HwEM9hrvnSqtaBmgdLQF95yNNZV-DGTv62S-ofC-c"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e9d710fad930b6cd1a7259f\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/getBookingDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getBookingDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImNmNjM3ZDE0N2Y2MDA2Y2UyZmFlNTk2OTIxYzk5MDdiOGY5YmNlMzc0YWMzNGI3NmY3NTc0OTIzMDBlODliZGU3MDk0NTIyNDcxMTE4YjRkYTRjZWIxM2FmZmY4ZGM4MWY3YTgwNDJhYzA1NWUwYzQ5NzhiYzcyZjg1Yjg2OTdlZGRjNzJmMWI3Mjc5OTNhMTI4ZTcwYTQ0MzBlNmVlOWM4ZDI0NzUyMjAwNjllYTdkYTQ2ODFlM2JjODcwZGFlNWUyNjBhZjE1ODE4OTAwNmI4MjVmMTNiMWEwYjQyZjYwMjlmZjZjMTUwMWIxNmRlNCJ9LCJpYXQiOjE1ODc1NzQwMzV9.UhUJSXAaa9S-yyWM0iXU987qV5sxvuLhNbRMxC2hkvY"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "mukesh",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "thakur",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "bilal2@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12345647882",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "+91",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "test stest c",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "50.23",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "24.23",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/registerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"registerUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImNmNjM3ZDE0N2Y2MDA2Y2UyZmFlNTk2OTIxYzk5MDdiOGY5YmNlMzc0YWMzNGI3NmY3NTc0OTIzMDBlODliZGU3MDk0NTIyNDcxMTE4YjRkYTRjZWIxM2FmZmY4ZGM4MWY3YTgwNDJhYzA1NWUwYzQ5NzhiYzcyZjg1Yjg2OTdlZGRjNzJmMWI3Mjc5OTNhMTI4ZTcwYTQ0MzBlNmVlOWM4ZDI0NzUyMjAwNjllYTdkYTQ2ODFlM2JjODcwZGFlNWUyNjBhZjE1ODE4OTAwNmI4MjVmMTNiMWEwYjQyZjYwMjlmZjZjMTUwMWIxNmRlNCJ9LCJpYXQiOjE1ODc1NzQwMzV9.UhUJSXAaa9S-yyWM0iXU987qV5sxvuLhNbRMxC2hkvY"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "12345678901",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "gagan",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "kumar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "qwejgkfdsdaasdasgklfrty@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "countruyCode",
+									"value": "+91",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "testg",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567890",
+									"type": "text"
+								},
+								{
+									"key": "_id",
+									"value": "5ea075c27f5afe33a82cc2d7",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "30.1234",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "23.567",
+									"type": "text"
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "driverRegister",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImNmNjM3ZDE0N2Y2MDA2Y2UyZmFlNTk2OTIxYzk5MDdiOGY5YmNlMzc0YWMzNGI3NmY3NTc0OTIzMDBlODliZGU3MDk0NTIyNDcxMTE4YjRkYTRjZWIxM2FmZmY4ZGM4MWY3YTgwNDJhYzA1NWUwYzQ5NzhiYzcyZjg1Yjg2OTdlZGRjNzJmMWI3Mjc5OTNhMTI4ZTcwYTQ0MzBlNmVlOWM4ZDI0NzUyMjAwNjllYTdkYTQ2ODFlM2JjODcwZGFlNWUyNjBhZjE1ODE4OTAwNmI4MjVmMTNiMWEwYjQyZjYwMjlmZjZjMTUwMWIxNmRlNCJ9LCJpYXQiOjE1ODc1NzQwMzV9.UhUJSXAaa9S-yyWM0iXU987qV5sxvuLhNbRMxC2hkvY"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "demo",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "lastName",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "bilal12@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "+1",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "1212122121",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "gendfafadfaddd",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "30.722701",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "76.794654",
+									"type": "text"
+								},
+								{
+									"key": "carStatus",
+									"value": "True",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "driverLisence",
+									"value": "gfgdf",
+									"type": "text"
+								},
+								{
+									"key": "isTransmissionType",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "ssn",
+									"value": "demo",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/admin/driverRegister",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"driverRegister"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDriverProfile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6Ijk3NDM4N2EyYTY0OTE4YjQxMDk4ODQ5YjQ3ZWUzZjhlNDQ0ZjZkY2FkY2RhYjFjMTU5Nzc0M2RiYTk5MDRlM2JjYTdmZTkxMTdiYTRhODQzYWE1NTA2MGI3YzA1OTBlNWZjMmM3OTNiMTVlOGEyOTE2MDYzYjFjZjIwNjNjNzhlY2U1OGZkYTUxNThhYTAyNTlhZDk4ZWQ1ZTBjM2VlZGVjOGU0YzhhNDFkYzczM2U1Y2Y5Zjk3NjYzNmU4ZGVkNzVjZGM0MDZmY2MxMWRlYTYzN2E1Y2U3MWU0MWY4NjZjZjJmZTYyMTUyODA2MjI0OCIsImVuY3J5cHRLZXkiOiJvd2VlZyJ9LCJpYXQiOjE1OTAxMjU1MzF9.UKDnLt89QmxkSpAYxORLxMeICRZAV6YO8qq6AnK6Hj4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "demo253",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "lastName",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "bilal13s@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "+1",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12121221222",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "gendfafadfaddd",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "-99.133208",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "19.4326077",
+									"type": "text"
+								},
+								{
+									"key": "carStatus",
+									"value": "True",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "driverLisence",
+									"value": "gfgdf",
+									"type": "text"
+								},
+								{
+									"key": "isTransmissionType",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "ssn",
+									"value": "demo",
+									"type": "text"
+								},
+								{
+									"key": "_id",
+									"value": "5ea662e4a11704209c5284a2",
+									"type": "text"
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/admin/updateDriverProfile",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"updateDriverProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllNotification",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getAllNotification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getAllNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clearAllNotification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/clearAllNotification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"clearAllNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clearNotification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"ssddsddsdsdasdqw33\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/clearNotification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"clearNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addState",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjI2MjQ0NTliMWMwZWFlYTFmNjI5OWZjOWI5ZDcyYTI0ODQyYWFjZWNlMDE4YWZjYTc5ZGNkMjg1MGExYzQwNzhmODE5YzY1MzgxNjNhNzM0OTQ5MzFiMTRlOTRjY2FjZjE4Y2U0YmFjNDUxMGE4Nzk1Y2YzOTIzMDExOWE0ZjdlNzM2YzI5YWEzYmU3NWRjM2M0NmNkODBjZWUyY2NiNjUzZjE3YWNiMGEzNzE2NmFjNjc0MDYwNjkxNGExMjkxZjdkMzZiNGEwOGEwOGYxY2ZhNzNhNzgyY2QxZjFhOGJlNGVmMDRmNzlhNzNhNmNiYiJ9LCJpYXQiOjE1ODc3MDI5MjR9.ioeU2G-ttSiQEjUqxbpqeVDmkRZGDO74s3JSPIKCW04"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"stateName\":\"chandigarh\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admin/addState",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"addState"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editState",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e9d701a6b6c3c17ec11c6cf\",\n\t\"stateName\":\"demo2\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/editState",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"editState"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteState",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9d701a6b6c3c17ec11c6cf\",\n\"isBlocked\":false,\n\"isDeleted\":true\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/blockUnblockDeleteState",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"blockUnblockDeleteState"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getState",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getState?_id=fafdfdfdfjdjfdkjlkjldk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getState"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "fafdfdfdfjdjfdkjlkjldk"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAdminProfile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImU1OWY0M2JlOWM5NGQ5ZTc3NTI4N2JkMDY0YTlhNGVjODFiZWRkYjIzOThmNzMyZmQyMTY0ZDg0NzQyMDkyMmZhZmM3MjIyMzU5MWNlNGVjY2I0NGYwZGYzYmE3N2YwNDMxYjgzZmRlYzEyODA1OWFmMmIxOTI3YTA2Njc2ZTAyZTJjMmFiY2VhYzE0MGZkZTNmZmNkMjA4YjM4NWQ4ODhhNjU4OGY4NDY1ODlhYzJkMjkyNWExMjIyMTk0MTk4ZjU1MzhkMDhhZTNlZjVhNTVhOGRhNTE3ZWNmYjdiYmIwMjAwZTYzNDNiZDFmYjYwYiJ9LCJpYXQiOjE1ODc5NjEyMDF9.S6NcXc0oMXF5dQFr_sbBmIGvwsqyGuC0BFQzXSSpDPY"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"driverPerKmCharge\":1,\n\"timeToScheduled\":30,\n\"sharePercentage\":40,\n\"coDriverPerKmCharge\":1,\n\"driverSharePercentage\":2,\n\"coDriverSharePercentage\":3,\n\"baseFare\":1,\n\"area\":1000,\n\"name\":\"demmm\",\n\"cancelAmountInPercentage\":0,\n\"taxInPercentage\":2\n}\n\n//timeToScheduled in second"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/updateAdminProfile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"updateAdminProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "acceptedBookingStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImY0MDkzYjYyYmQ5NTA0NjA3OTQzY2I3YzczYTk4NDg5ZGMzZmZhMjNlMTMxNmE3MjJhMmVhZjBiNjA0OGY1NDdlZTJiZDYyYmZkYjlmYzg0MGQ2OWY4MjdiZjVkOTc5OTE3NDFjM2JkMDEzZmU4NWMxMTExYWU4MjRkY2I1ZjE0YzJmYWU1MDhmOTMyZjI1ODFjMjg5YzE1NzA1Y2RmY2YwNDgwYTczOTYzNGMwZGEyYTE4Nzg0Yjc4ZmQyMjVmM2U3Y2U0NGE3Nzg1ZDkyNzJlMDYwNWRhYmY4YzMwM2Q0NTNiOTQ5NmJlNjY4MzM1MSJ9LCJpYXQiOjE1ODgzMDcwMzJ9.w4f21vzQqINglXQZTOglH_0Ui7wmOmvv2uYq_jhuXXk"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5eabaa3b61c2e805782d6415\",\n\t\"driverId\":\"5ea9151cf530cc24f1d3764c\"\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/admin/acceptedBookingStatus",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"acceptedBookingStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllAvailableDriver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImY0MDkzYjYyYmQ5NTA0NjA3OTQzY2I3YzczYTk4NDg5ZGMzZmZhMjNlMTMxNmE3MjJhMmVhZjBiNjA0OGY1NDdlZTJiZDYyYmZkYjlmYzg0MGQ2OWY4MjdiZjVkOTc5OTE3NDFjM2JkMDEzZmU4NWMxMTExYWU4MjRkY2I1ZjE0YzJmYWU1MDhmOTMyZjI1ODFjMjg5YzE1NzA1Y2RmY2YwNDgwYTczOTYzNGMwZGEyYTE4Nzg0Yjc4ZmQyMjVmM2U3Y2U0NGE3Nzg1ZDkyNzJlMDYwNWRhYmY4YzMwM2Q0NTNiOTQ5NmJlNjY4MzM1MSJ9LCJpYXQiOjE1ODgzMDcwMzJ9.w4f21vzQqINglXQZTOglH_0Ui7wmOmvv2uYq_jhuXXk"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5eaba4ba341e137c00601047\"\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/admin/getAllAvailableDriver",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getAllAvailableDriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "acceptedCancelCompleteEventBookingStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImY0MDkzYjYyYmQ5NTA0NjA3OTQzY2I3YzczYTk4NDg5ZGMzZmZhMjNlMTMxNmE3MjJhMmVhZjBiNjA0OGY1NDdlZTJiZDYyYmZkYjlmYzg0MGQ2OWY4MjdiZjVkOTc5OTE3NDFjM2JkMDEzZmU4NWMxMTExYWU4MjRkY2I1ZjE0YzJmYWU1MDhmOTMyZjI1ODFjMjg5YzE1NzA1Y2RmY2YwNDgwYTczOTYzNGMwZGEyYTE4Nzg0Yjc4ZmQyMjVmM2U3Y2U0NGE3Nzg1ZDkyNzJlMDYwNWRhYmY4YzMwM2Q0NTNiOTQ5NmJlNjY4MzM1MSJ9LCJpYXQiOjE1ODgzMDcwMzJ9.w4f21vzQqINglXQZTOglH_0Ui7wmOmvv2uYq_jhuXXk"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5eaba4ba341e137c00601047\",\n\t\"bookingStatus\":\"ACCEPTED\"\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/admin/acceptedCancelCompleteEventBookingStatus",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"acceptedCancelCompleteEventBookingStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProfile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVkYjY3NWU3ZjUxNjc2OGRiMzczNjZkYzRiNzcxNzZmOTNkMzcxZTFmODFlMjA2ZTc3NjM3M2EwYTRiZTc5ZmNjYzg5YmI4NmIyYWZjNDcyN2VjZGRhYWEwMzVlMjE3MTUwYWY4YjIxNTRjMmFlNzcwYmM0MDk1NGNmYjU5MTY1ZDYxODUyN2U0ZDM4Y2M2YjUwMjY2ODU3ZTA2ODYyYzNkYThiYjAyODg2NjU1ZjhkYmMzYWM0NjcyZTc1NTc2NWU0NzBmM2JjZTE0ODcxMjg1MTQ5NzBhNTAyOTBmOTg0YzEyNTAwNDU5MDg2MjdkNSJ9LCJpYXQiOjE1ODc3MTU3NzR9.eiHgtV-UJ1Cx8XvxVMl9UkJ1UFqMmzouyjA4-8TmPo8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getProfile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uploadFile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQ3MzVhNDliN2Y3MzNiMWFhODNjZTdiNTQ5NzMzZDhiMDJlMjM2ZmVlYzQ3ODE0NGI4N2Y3YjFmY2MyOWMxODc3NGRhYzQyM2MxMTFlOWRiZDAxMGY5YjE0MGU5NDQ3Yjk0ZDYzNzhmNGE5OGYzYzU2MjJlMjI4ZTAzYWE3ZGM5ZDVhMDliNjZjNjFhZDE0Mzc1MjQxYjFmNzhlNTBlNmY2NzcwMDJhYWUxNDFjZjc2MTFmZGMxMDkwMjIyODRjYmQ4OTRhZjYxMmEzZTYyODlmY2I4NTI0ODI1MDFmMzgzNmY4MDI2MWIwYjgwN2EzZCJ9LCJpYXQiOjE1ODc5NzQ1Njh9.xZJzYd_aocemF-zLWXYZhVKOq7pie-lAANroDxIUa9g"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/admin/uploadFile",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"uploadFile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uploadFile copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQ3MzVhNDliN2Y3MzNiMWFhODNjZTdiNTQ5NzMzZDhiMDJlMjM2ZmVlYzQ3ODE0NGI4N2Y3YjFmY2MyOWMxODc3NGRhYzQyM2MxMTFlOWRiZDAxMGY5YjE0MGU5NDQ3Yjk0ZDYzNzhmNGE5OGYzYzU2MjJlMjI4ZTAzYWE3ZGM5ZDVhMDliNjZjNjFhZDE0Mzc1MjQxYjFmNzhlNTBlNmY2NzcwMDJhYWUxNDFjZjc2MTFmZGMxMDkwMjIyODRjYmQ4OTRhZjYxMmEzZTYyODlmY2I4NTI0ODI1MDFmMzgzNmY4MDI2MWIwYjgwN2EzZCJ9LCJpYXQiOjE1ODc5NzQ1Njh9.xZJzYd_aocemF-zLWXYZhVKOq7pie-lAANroDxIUa9g"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "kub.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/admin/uploadFile",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"uploadFile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDashboardCount",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE2ZjBiYjFhYzJhNTY5YjgyZjM3MTdiNWIzNjIwNTQyZTg5MzY1MTIzMzY4NzBhZmU3MmM4NjViMGRlYzY4ZWY4NGNkMjhiYzVkNzUwODFjNThkMTA3ODMxNzk3ZTI0ZDJlZmFmZGJmYjJkNDc1ODNkMmYzYjVjMzY1NGFkM2Q2OTc5ZDc1ZGFhYTAwNmRkY2IxYjk3ZmUzMjRiMDk5ZGVjZWU4YmJiYWM4YmQ0NzdjYTYwNjM0NDRjMjQ2YjI3M2QxMTFlZWMxMWI2ZWM2Y2E2MzlkYWY5NTkzYmViY2QxMDc1MDgyMWNlNGQ4MzdjNSIsImVuY3J5cHRLZXkiOiJNbkpObyJ9LCJpYXQiOjE1ODgzMjk0NTR9.iU6dQb6-Cq2P3DeXiUTZsYvN5ne9MKK2YWgHAcJe4pw"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getDashboardCount",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getDashboardCount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRevenue",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImU2ZmYyMDJiMmIyYzYwNDM2ODg5MGZiZDA4NGJiNWIyNTFlNmVkNDVmMTNkMTFiZDEyMGFmOTA3OTkxNTlmMzMxYWVkZDFiY2FkZmFjY2RkYTk0YjViYTA4MWJkZmY5MjFiNTBiN2Y4MjkyOGQyNjhkZWZlMmFkNmE5YmY2OTAxMjRiYjViNTNjMTEwMmU1MWY5NWExZjg3ZGE5YjNlNjE2NDJlZjQxMDYwYmE2MjBmNjM3YzA5NTMwYzA2NjQxYTdiYjU0MDc0OTg4OThmMzY2MzFkZGY0ZDI1YWU0NzQ3ZmUzZGFlOTRjNzUyOWRlMyIsImVuY3J5cHRLZXkiOiJGSHkwUiJ9LCJpYXQiOjE1ODg4MzgyMDZ9.AMecozYjNQyF_52mFPL9cymQKKMY5b-IlQj_NzW_uUM"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"startDate\":\"2020-01-01\",\n\t\"endDate\":\"2020-12-30\"\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/admin/getRevenue",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getRevenue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDocuments",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImE0OTM0MjQ0NmFlODY4ZjIxZmRiYTllZWE2YjQ4MjQyNDllYmFlMzZhYzgwZGQxYzY4MjBkMzMxODA4ZGYzZWQ4ZmFlMDlhYjdiZDI5OTFmMDA1MDZjMjZiZGQ4YWEwZTU3NTdmMTVhZWI4NzQ1YTU4ODMyNjg4Y2JjYTExMDg1YzBiNzQ5ZWZhYzc0ZGMyNDNjYTc0YTU2NjA5MDA1NTc2YTFmYzEzMWVlYjJhNzNhMTU2ODU3OThiY2Q4MTU1NjVmODcyY2IzY2MwMWIwNTVmOWJkYmIyNzRlY2NlMDMyZWYyMTJlMmE3NzdmZWU5MyJ9LCJpYXQiOjE1ODYzMzc4NTQsImV4cCI6MTU4NjQyNDI1NH0.kt9EStJ1BF8U9u-4Nw4PjOKpmH7sqzAaz8Zzahq_Yvk"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleId\":\"5e96cc520ac5e12a2cf39e6c\",\n\t\"drivingCertificate\":\"ssffsss\",\n\t\"license\":\"ddd\",\n     \"numberPlate\":\"sss\",\n     \"carLicense\":\"ddd\",\n     \"vehicalRegistration\":\"dsdsd\",\n     \"insuranceDocuments\":\"dsdsds\",\n     \"taxiPermit\":\"dsdsdsdsd\",\n     \"carFrontImage\":\"carFrontImage\",\n     \"carBackImage\":\"carBackImage\",\n     \"carLeftImage\":\"carLeftImage\",\n     \"carRightImage\":\"carRightImage\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/updateDocuments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"updateDocuments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getContactUs",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjM2YTlhMzdlNGRlZTg4OWU1YmZhMzJlYjUzODgxMWFiNGYxYWU5ZGM0NTM5MGU4MjFiZjQyMTg1NWZlZDZlNjBjY2RjNjBhN2RkOGNmYWQyMDMyNDUzMjZiNTNjODA4NWQ2MWE2MzE2N2NjYzc3MTJhZTFkODRhMTNhYWM1OWFhMzQ1NWQ0Y2U3OTVhZDgxNDI4MGJjOWNkNjMwNDU0NjI2ZTMwMTM2YWNlOTIxNmM5ZGU0ZTdhYTZjYTc1MTlkZjRhYjMwM2RhYTUzNzE3OTg3ZjFmODYwODk3NTRjZWI0Y2JiYjlhNjg4OGY0YWRjYiIsImVuY3J5cHRLZXkiOiJNTTFRRiJ9LCJpYXQiOjE1OTI0NTY4MDR9.FNBN6_iop-sIS9iy64Y9L4fy-iSCb_2NAM1Duutl9cQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"limit\":10,\n\t\"skip\":0,\n\t\"search\":\"kk\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/admin/getContactUs",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getContactUs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendBulkNotification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjBkNmE3Yzc2MzBkMGVjYmVkMWQ1NTRhNmUyMGM5NzZjZTIyMmEzN2JiMGI5YmNlMDQ1NTdjODY2YzNiZjlmMGY5NmZkYzMwNTdkN2Y5NTk1MWEzYTE2NWYxN2UxZTQzYWRiMzQwNTU1ZmUyZjlhZDc3NWQ4M2E1NWYwZTk2NzUyYzUyZGJmZGZiZmYzZjA2NGEwMjVjYWRmYmJlMzdjZmVlODc0MjU3ZGQ1Njc3MDc5OWI5NDllN2MwNThkYzUzOTc3MTdjNjk1M2ViNWFjZDZkZGQ2OTRmYzY0ZTBlZDZlOWJjYThjZjM1OWZiZDZkNyIsImVuY3J5cHRLZXkiOiJnczRTeCJ9LCJpYXQiOjE1OTM0MzUwOTh9._x5v-TpEVUDlL5BMt5nKDbfA7LH8_GKCU82zSI5oB0c"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"message\":\"hhh\",\n\t\"title\":\"ggg\",\n\t\"messageType\":\"PUSH\",\n\t\"userIds\":[\"5ea65e78a11704209c52849c\"]\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/sendBulkNotification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"sendBulkNotification"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"countryCode\": \"+91\",\n\t\"phone\": \"8866447433\",\n\t\"type\": \"mobile\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/user/signUp",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImRhNjQ2MzQ4MmU3NTFmZDA5MDI5MTE0OGI5ZTdhOWRjZTAyMTI5MzFiNGEzZjhmOGQ2ODRhZGExMmM2YjI1MGE5NTA0OGNlNTJmZTkzNzFkOTZlM2NhMTQzZTJiY2Q0MDdjMmQwN2E2NDk3NDc5Y2M2YjViNDgzOTA1ZjU3YmQxYjgzYzQ3MGI3N2Y0YTk1N2M5YTY3OWZmOTI2NTMzYmU0MWQ0MWQ3OWNhOGZkZDBkYjU3YjdmODU3MDMxZDllNzBlYWRiM2NkYzBjOTNmN2VlNzg5NzUzNjQzNDA1OTdlZDZkMGZkYmI3Mzg5ZjNmOSIsImVuY3J5cHRLZXkiOiJHRWZ1QyJ9LCJpYXQiOjE1ODg5MTczNDR9.SkUASq69UzqHFV-1RXTmr_a-b_OhiFuoJ9P95PdXe4I"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/getUserProfile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getUserProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyOtp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otpId\": \"60b35669d27d5a6a5b9cf139\",\n\t\"otp\": \"200591\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/user/verifyOtp",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"verifyOtp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "complete signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Jayraj",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Kapadia",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "jk1@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "8866447433",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "+91",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "test stest c",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "21.23",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "72.23",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "file"
+								},
+								{
+									"key": "deviceToken",
+									"value": "sdf46sd5f65sd4f45d5g5f4dgdf4g65df6589",
+									"type": "text"
+								},
+								{
+									"key": "deviceType",
+									"value": "ios",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"type": "text"
+								},
+								{
+									"key": "isPhoneVerified",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "singUpType",
+									"value": "MOBILE",
+									"type": "text"
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/user/complete",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"complete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signIn",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phone\": \"8866447433\",\n\t\"password\": \"12345678\",\n\t\"countryCode\":\"+91\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/user/signIn",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "socialLogin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicXdlamdrZmRzZGFhc2Rhc2drbGZydHlAZ21haWwuY29tIiwiaWF0IjoxNTg1NTY5NDk1LCJleHAiOjE1ODU2NTU4OTV9.09Tm3x87MXodwmVmz7bqzKR-B7CS2Ta63lcy5xfUmSw",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "7854653211",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "firstName",
+									"value": "gagan",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "kumar",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "avnindersidhu1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "+91",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "testg",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "1234567890",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "deviceToken",
+									"value": "sdf46sd5f65sd4f45d5g5f4dgdf4g65df65g4",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "deviceType",
+									"value": "ios",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "30.1234",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "longitude",
+									"value": "23.567",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "file",
+									"disabled": true
+								},
+								{
+									"key": "providerId",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmY2Y0MTMyMjQ3NjUxNTZiNDg3NjhhNDJmYWMwNjQ5NmEzMGZmNWEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI4MzUzMjU5NDIwNzMtaHAwaTM4aGp2b29rcDc3bDBiZjMxM2xoaGVtbm5rMW0uYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI4MzUzMjU5NDIwNzMtaHAwaTM4aGp2b29rcDc3bDBiZjMxM2xoaGVtbm5rMW0uYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDk2OTgxMzIxMDA1NTQzNTYwNzciLCJlbWFpbCI6ImF2bmluZGVyc2lkaHUxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiWVcxODNBUmgyRUxMV01SVHZYYW1rQSIsIm5vbmNlIjoid1RXY2toN1VGNEM5M01iSGJ1Ykx0bUdIUndibUVLZFVkSVd0RHlIdV9OMCIsIm5hbWUiOiJBdm5pbmRlciBTaW5naCIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaS1WWDJxd2I0dkpZcHV4bEpqeXE5QmNoYnpZQmtWU3N0RW9aMzQ9czk2LWMiLCJnaXZlbl9uYW1lIjoiQXZuaW5kZXIiLCJmYW1pbHlfbmFtZSI6IlNpbmdoIiwibG9jYWxlIjoiZW4iLCJpYXQiOjE1ODY3NTgzMjEsImV4cCI6MTU4Njc2MTkyMX0.xBL3lQ0U7guG_SnFdiJvXa3jjoJa8T0-lLznensJQBt-DFgWmpdaqbGMlyN15KBvJdLOd_syeYYMVgmjA45Pg9CUD7RFD17ChOcRN-6-xfsN-7oZyu5hNKwTn3C5qd-r-z2MhfuS2vHptzInN_vPKWVPcnBUnnXV_5l4ZWJ6w4k4hllG7dlGNkfvPchWfoXOEbyWfdHeoQ441KRAjq9Nb2Zbs35FiQl6LeXfBZ5piFeBT6VXeO7VN8DNNlQ2Ev46fl71LuQThemACByjz-7saayvo_VWMrkM2tAcCNxRHciek8Zn4wS50TkwjY-siZ4wC1SJppwh2zOtsCOqZclVSg",
+									"type": "text"
+								},
+								{
+									"key": "provider",
+									"value": "google",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "file",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/socialLogin",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"socialLogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjA4N2NiYWFhZDdhZDYwNzRkNDUzZDVjNTk0OWM5OTI1MzAxYTUwODk1M2NhZjQ0MzgyZWU1NDM1OTJkZWVkNTU5MzVlZGVmMjBjZjAzMjQxMjQxYzhlZjg3NmM3MmUyMTg0MGRjMWQyYjdlMzRhMzE3OTk3ZmNiM2YwNTgwNTMyZDM2MzE1ZTg3NmQ1NTU3ZjEwY2Q4ZDUwNzEzNWVlYmMwZTYxNjUxMzk2NmQ5MWU4YThhM2Y1MzU3NjNjYTY2ZjUxNDdkOGU4NjUyZGFhMDQ0ODczNzBkNWFjYzQ1MzUxMjRlZDA2OGVlMjg4ZWJkMSJ9LCJpYXQiOjE1ODY5MjYxOTd9.fJ212575HBwiXlXy1P2WkrhCsAaJZ19Mx6MGQB_k8e8"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "12345678901",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "number",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "firstName",
+									"value": "gagan",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "kumar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "qwejgkfdsdaasdasgklfrty@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "+91",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "testg",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567890",
+									"type": "text"
+								},
+								{
+									"key": "deviceToken",
+									"value": "sdf46sd5f65sd4f45d5g5f4dgdf4g65df65g4",
+									"type": "text"
+								},
+								{
+									"key": "deviceType",
+									"value": "ios",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "5e81b72b906a742e23a11f47",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "30.1234",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "23.567",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "file"
+								},
+								{
+									"key": "single",
+									"value": "",
+									"type": "file",
+									"disabled": true
+								},
+								{
+									"key": "newPassword",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uploadFile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjlmODE0YjM2YjFmZDNmMzZiZWJmYmI3OGE3Y2FiYTdjZjlkODU4NmYyZjUxMzczNmI0ODcxMTJlMWI5NmQ3NmYwMzc1OWJhYmNlNjY0ODJlNTI1OGQyYzI0OGZhNjE5YzlmZTkzZTYyYzU0NTUzMzgwYzJlMGFjMmM2YjBhNmYxMjc4NzAyZTg2MGRlZWZlNTk2YWJmMTRjN2YyNjQ0NzU0MzRjNWY3OTBiZjMxZjc5NjE5ODgzNzJhNzNjOGE4ODEyYzEwZjYxMDFiNDg2NmIyN2JlNjFiYWFhNDA4MjhjZTg3ZDVhODhkODRlNDAxMyIsImVuY3J5cHRLZXkiOiJsWEZqTiJ9LCJpYXQiOjE1ODk1MjQyMDF9.i_rTsa8zmQQLMHxTddrAqrcy4_Bl0H_4WCeAThawt8c"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "Screenshot (6).png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/uploadFile",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"uploadFile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addVehicle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjIxOTQ4NDg0ODQyMjMyZjhkMDBmMjYzNzliOWIyZWJiNWUxNWJhYjM4YWQzNTAyMTI0MGRlNWM2YzZmNWJjNDUxODQxOTcwNzkxYmUyZmRhZmY5OGFmZGZjZmY4OGNlZDZkOTQ2MDEyZTA0MDIyNmM4NzBkNGJlMWE0NmQxNjUxMTAxYWUxMWExMWY1MTQ0ODdlMzI3YzMwMGIzNDZhZTA4NjZkNmI5NzgyNDg4ZTVkYzlhNTk4YWQ4MGM5MWJjM2I1ZDVmYzU0YTJjMWQ4YTU2MGNmMzk5NDJjYzQ4Zjc2NTU4NDE5NDVkYTg1ZjYyNiJ9LCJpYXQiOjE1ODY4NjQyMDN9.W-AJXFMzKm36Oy8WDFeM3D3fqqD9cfwfTvB6Oxp0axU"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleName\":\"demo\",\n\t\"vehicleMake\":\"demo\",\n\t\"vehicleModel\":\"demo\",\n\t\"vehicleTypeId\":\"5e8d9a8dbe642b1fb07bd077\",\n\t\"vehicleImage\":\"demo\",\n\t\"vehicleInsuranceDocument\":\"demo3\",\n\t\"transmissionTypeId\":\"\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/addVehicle",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"addVehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createBooking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjQwZDIyYzFhMmVmYmE4YmE5NjYzOTYzYWE1YjRjNTU3NzRlMGNkM2ZjM2QzYjVjYjUzMWM0MDE3YjFjYjRkNjVhYTczZDk3Y2JiMDI1ZWEzOWUzMWUyYzAyZWJlMTM4ZmI0NzcxM2Q0ODI4MjBjODZlNGE5YzYzYjYwZWQ3NjFmOGFmMGNjYzBiNGUxMGY5ZGFhOGZkMzQ0MDg5NWM1ZjdjYWU1NDlmNDgyZDM0OTVjOTc2MjYzMGY1ODc4NGFhNTA1NmY5ZGU5MjE1OGQzODg1NmJmMTcyMGExMDI4YzJmYTNlODU1NDdkODFhY2NhZSIsImVuY3J5cHRLZXkiOiIzZ2VMWCJ9LCJpYXQiOjE2Mjc3MDc0MDR9.24YaJTC72HQYj3WCnwHwWEbHMaCiNu1Mj37hizZfucc"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"vehicleId\": \"6104d8f512b88d1700112d20\",\n\"seviceTypeId\": \"6007e533163d265e3c6632ab\",\n\"genderType\":\"MALE\",\n\"passengerNo\":0,\n\"pickUplatitude\":10, \n\"pickUplongitude\":10,\n\"dropUplatitude\":10,\n\"dropUplongitude\":10,\n\"pickUpAddress\":\"hgh\", \n\"dropUpAddress\":\"ghh\",\n\"bookingDate\":\"2021-08-01T18:03:11.667Z\",\n\"tripType\":\"ROUNDTRIP\", \n\"timezone\":330, \n\"eta\":2,\n\"totalDistance\":3,\n\"paymentMode\":\"CASH\",\n\"dropUplatitudeFirst\":10,\n\"dropUplongitudeFirst\":10,\n\"dropUpAddressFirst\":\"dassd\",\n\"dropUplatitudeSecond\":10,\n\"dropUplongitudeSecond\":10,\n\"dropUpAddressSecond\":\"sdsdsdsd\",\n\"dropUplatitudeThird\":10,\n\"dropUplongitudeThird\":10,\n\"dropUpAddressThird\":\"ssds\",\n\"dropUplatitudeFour\":10,\n\"dropUplongitudeFour\":10,\n\"dropUpAddressFour\":\"sdsd\",\n\"isTripAllocated\":false,\n\"isSheduledBooking\":true,\n\"cardId\":\"use if payment mode CARD \"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/user/createBooking",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"createBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signIn",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phone\": \"fxx@gmail.com\",\n\t\"password\": \"123456789\",\n\t\"deviceToken\": \"sdsdsfdsfergrefd897df1g56fd456g4fdg231fdg65df\",\n\t\"deviceType\": \"IOS\"\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/signIn",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicleType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFlMTlkZjg4OWEwMjFlYmFkNjVmYWMwZGZjY2MzZDA2YTg4NTk4MmZkOTEyYTNkZWJiMGUxNTFkZmRkNWQyNjZlMGE1Y2ZhN2Y4NmNjMmZkMzc0MWQ3OGMwODQ1MTBjZmY1ZDM2MGY3YmZjNzc1ZGE3ZDA1ZWRjOTlmODEzZDJkNjk4MWE0YTdjN2U1MGYzN2Y4ZWIxMjg3ODk2YTkzYjk3MmMwOGFhZjM2YjZkZDY0MDlkMWUwZTk3Mjc5YTJjMDcxMDJmNjIyYzkzY2JmNzc3Mjk0ZTQ5NGZlODA5OGMzOTEzNWIyMjIzMWU4NWFkMCJ9LCJpYXQiOjE1ODcxMzAwNTV9.jpNAZJ9yDrUUY1xQb9hQE41wTbzt99t7fu6j1xAkzPc"
+							}
+						],
+						"url": {
+							"raw": "localhost:3080/api/v1/admin/getVehicleType",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjgyZDUzNGQ3OWIxZTg3YjA5MmI4MGFhNjBjOGI2YTE1ZjA0Mzc5ZDM1YzJiMGMyY2Q1Yzc3YWUzZDkzZjlkNGU2NjMzMjE2ZjVjNjFkNDY4YzU1ZDliMDdkNzk2ZjE0Y2I1NjI4ODQ0ZWFkZGM0ODQzZWY3OWJlOWI3MGM5ZWU5YTk2MjkwNzkwYmUwOTBlYjAxYWU4MzU1NTNmODY4ZDc0YTE4YTRkYTQ5YjdjZTQxNWI4YWUwN2MyOWI5NGM2Zjk5NTk0N2RmNjlkNjU1MzViZGQ4NzMyYjVhZjQ3YzYzNGQxZjI1YzAxM2Q4NzVlYSJ9LCJpYXQiOjE1ODczNzc1ODd9.-5hkJaFLLptZ4bONAg_A6PQvZGW_NzNsyu_44QfcBTU"
+							}
+						],
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/getVehicles?_id=5e9d6016ad930b6cd1a72599",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getVehicles"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5e9d6016ad930b6cd1a72599"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addVehicle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjQwZDIyYzFhMmVmYmE4YmE5NjYzOTYzYWE1YjRjNTU3NzRlMGNkM2ZjM2QzYjVjYjUzMWM0MDE3YjFjYjRkNjVhYTczZDk3Y2JiMDI1ZWEzOWUzMWUyYzAyZWJlMTM4ZmI0NzcxM2Q0ODI4MjBjODZlNGE5YzYzYjYwZWQ3NjFmOGFmMGNjYzBiNGUxMGY5ZGFhOGZkMzQ0MDg5NWM1ZjdjYWU1NDlmNDgyZDM0OTVjOTc2MjYzMGY1ODc4NGFhNTA1NmY5ZGU5MjE1OGQzODg1NmJmMTcyMGExMDI4YzJmYTNlODU1NDdkODFhY2NhZSIsImVuY3J5cHRLZXkiOiIzZ2VMWCJ9LCJpYXQiOjE2Mjc3MDc0MDR9.24YaJTC72HQYj3WCnwHwWEbHMaCiNu1Mj37hizZfucc"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleName\":\"demo\",\n\t\"vehicleMake\":\"demo\",\n\t\"vehicleModel\":\"demo\",\n\t\"vehicleTypeId\":\"5f2b89811b566f71b58dead0\",\n\t\"vehicleImage\":\"demo\",\n\t\"insuranceDocuments\":\"demo\",\n\t\"transmissionTypeId\":\"5e96de4526083729c0ae6c94\",\n\t\"color\":\"dddd\",\n\t\"plateNumber\":\"sdsd\",\n\t\"state\":\"dsds\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/addVehicle",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"addVehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjNjMjRlOTVkNmIyYjAwYzYwNGI3ODQ3OGQ5NTYzMmI3MTg3ZDY0MTI1MTM4MTE4NjNmN2ZlNDg0MjYzZjVjMmI5MjA3Y2QzM2YwNTM4ODU4MDJkY2FmNDdmNGQwYWRlOTYwYTkzYWZjNjViMWFjOTJjNWNhNGJjNDc1M2U0ZTM1NDU1NDI1NmIxMDMxOWI5ODZiZjYzNDJjNzA5Y2UzZmEzY2RhZmY1MzhiYmI5MzU4ZmUzZjc1MTg2Njg4NWM5Yjc4OTNhNjRmYzMzNjY2ZjA2YzgwMjI0MTg5OGY0ODVhOTRlNGFlMDZjMzMwNTIwMSJ9LCJpYXQiOjE1ODY4NDA3NDB9.ej7bO_Rzhlir7rVg_4kW0Q0Gd151ZeaAeaYVh9Ch_I8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e955e9f69b34523dcddf815\",\n\t\"vehicleName\":\"demwwwwo\",\n\t\"vehicleMake\":\"demo\",\n\t\"vehicleModel\":\"demo\",\n\t\"vehicleTypeId\":\"5e8d9c13fe64dd28f84e8f9b\",\n\t\"vehicleImage\":\"demo\",\n\t\"insuranceDocuments\":\"demo\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/editVehicle",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"editVehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteVehicle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjNjMjRlOTVkNmIyYjAwYzYwNGI3ODQ3OGQ5NTYzMmI3MTg3ZDY0MTI1MTM4MTE4NjNmN2ZlNDg0MjYzZjVjMmI5MjA3Y2QzM2YwNTM4ODU4MDJkY2FmNDdmNGQwYWRlOTYwYTkzYWZjNjViMWFjOTJjNWNhNGJjNDc1M2U0ZTM1NDU1NDI1NmIxMDMxOWI5ODZiZjYzNDJjNzA5Y2UzZmEzY2RhZmY1MzhiYmI5MzU4ZmUzZjc1MTg2Njg4NWM5Yjc4OTNhNjRmYzMzNjY2ZjA2YzgwMjI0MTg5OGY0ODVhOTRlNGFlMDZjMzMwNTIwMSJ9LCJpYXQiOjE1ODY4NDA3NDB9.ej7bO_Rzhlir7rVg_4kW0Q0Gd151ZeaAeaYVh9Ch_I8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e955e9f69b34523dcddf815\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/deleteVehicle",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"deleteVehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changePassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjNjMjRlOTVkNmIyYjAwYzYwNGI3ODQ3OGQ5NTYzMmI3MTg3ZDY0MTI1MTM4MTE4NjNmN2ZlNDg0MjYzZjVjMmI5MjA3Y2QzM2YwNTM4ODU4MDJkY2FmNDdmNGQwYWRlOTYwYTkzYWZjNjViMWFjOTJjNWNhNGJjNDc1M2U0ZTM1NDU1NDI1NmIxMDMxOWI5ODZiZjYzNDJjNzA5Y2UzZmEzY2RhZmY1MzhiYmI5MzU4ZmUzZjc1MTg2Njg4NWM5Yjc4OTNhNjRmYzMzNjY2ZjA2YzgwMjI0MTg5OGY0ODVhOTRlNGFlMDZjMzMwNTIwMSJ9LCJpYXQiOjE1ODY4NDA3NDB9.ej7bO_Rzhlir7rVg_4kW0Q0Gd151ZeaAeaYVh9Ch_I8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"oldPassword\":\"123456789\",\n\t\"newPassword\":\"12345678\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/changePassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyOtpForgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otpId\": \"5e969f6283b1011d98b1387c\",\n\t\"otp\": \"587082\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/verifyOtpForgotPassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"verifyOtpForgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otpId\": \"5e969f6283b1011d98b1387c\",\n\t\"otp\": \"587082\",\n\t\"newPassword\":\"123456\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/forgotPassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"forgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signUpForgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"countryCode\": \"+91\",\n\t\"phone\": \"test@gmail.com\",\n\t\"type\": \"email\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/signUpForgotPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"signUpForgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAppVersion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/getAppVersion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getAppVersion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicleType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/getVehicleType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTeam",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/getTeam?limit=10&skip=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getTeam"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "skip",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEventType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/getEventType",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getEventType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotPasswordWeb",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"a@yopmail.com\"\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/forgotPasswordWeb",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"forgotPasswordWeb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotChangePasswordWeb",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"password\":\"12345678\",\n\"passwordResetToken\":\"TkWBJ3gJZX\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/forgotChangePasswordWeb",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"forgotChangePasswordWeb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getServiceType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQ5ZGE0ZmFkOTk1ZDE3NDFjMWU0MTQyZGMxMTJlZmJjMzE3YWRhN2EwNGM1MjVlNDY5M2NjMjIyZTllNmIxN2NmMTI5ZGIxNTZjMGI3ZTYzM2FlZDlmMzNiOTc2ODYzNGZiMzk2ZDliMjNjYjRjNjNiNWFiYjc1YzdmYzBhMTk5NGVlZjQzZWE4NzAxMGM4OWM4NmExZjUxZjgwYWMwMTkxNzI4YjlmZjcxNThmMTFlNTk3ZmMwZDQwZTI4NTg3MWRjYjg5ZThmMGJhNTE2MDU1N2Q1Y2Q0NzU5NGVjZGI4YWFlOTAzYTljMjFiZjQyZCJ9LCJpYXQiOjE1ODc0NzIxOTZ9.9kiP4xGf9ZOcWR9q2RTM4ViH95n-8FNOyJr74p8EtT8"
+							}
+						],
+						"url": {
+							"raw": "localhost:3080/api/v1/user/getServiceType",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getServiceType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createEventBooking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjVlYWMzYzMwY2U5ZGU0NDAxZmU4OTFkMjZjNDBlODkwZTY4NjNlZTdhODYxNTcwYjQ3YWUxM2FiYmVlMzc2MDI3ZWJkN2VmMzQ2MzlhMmNlNzZiNWE5NTkwYjk4OTdmNDUxMzFmYzVmNjRjMmQ0MzdjOWM3MTVlNTlhMzljM2E1MjI5NmFiNWU4Nzk4YzdmYmEyYzk3NDZiYTMyMmU1Nzc5MzZkOWUxNTQ2NmZiMzg0OWEyOWQ1MjdlMWQ0MzUwMTg5ZjI3Zjg3ODkwMzdlNTlmZmI3ZjdjYWNkM2UxNTczYmYyZjI3YTA2YTcwODRhNiIsImVuY3J5cHRLZXkiOiI5akZudiJ9LCJpYXQiOjE1ODgzMjcxMDF9.mKPIgE9Qiitloj6SQsPTquiPjznifhCN1MTBnUIlERY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"eventName\":\"demo\",\n\"eventTypeId\":\"5e9d701a6b6c3c17ec11c6cf\",\n\"eventDescription\":\"sdsd\",\n\"block\":\"sdsd\",\n\"bookingDate\":\"2020-04-20T09:49:14\",\n\"eventLocaltionLatitude\":1,\n\"eventLocaltionLongitude\":10,\n\"eventAddress\":\"chandigarh\",\n\"teamId\":\"5e9d55f1423f2326709a939d\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/createEventBooking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"createEventBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBookingDetails",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjQwZDIyYzFhMmVmYmE4YmE5NjYzOTYzYWE1YjRjNTU3NzRlMGNkM2ZjM2QzYjVjYjUzMWM0MDE3YjFjYjRkNjVhYTczZDk3Y2JiMDI1ZWEzOWUzMWUyYzAyZWJlMTM4ZmI0NzcxM2Q0ODI4MjBjODZlNGE5YzYzYjYwZWQ3NjFmOGFmMGNjYzBiNGUxMGY5ZGFhOGZkMzQ0MDg5NWM1ZjdjYWU1NDlmNDgyZDM0OTVjOTc2MjYzMGY1ODc4NGFhNTA1NmY5ZGU5MjE1OGQzODg1NmJmMTcyMGExMDI4YzJmYTNlODU1NDdkODFhY2NhZSIsImVuY3J5cHRLZXkiOiIzZ2VMWCJ9LCJpYXQiOjE2Mjc3MDc0MDR9.24YaJTC72HQYj3WCnwHwWEbHMaCiNu1Mj37hizZfucc"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"6104d93a12b88d1700112d21\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/user/getBookingDetails",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getBookingDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllBooking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjQwZDIyYzFhMmVmYmE4YmE5NjYzOTYzYWE1YjRjNTU3NzRlMGNkM2ZjM2QzYjVjYjUzMWM0MDE3YjFjYjRkNjVhYTczZDk3Y2JiMDI1ZWEzOWUzMWUyYzAyZWJlMTM4ZmI0NzcxM2Q0ODI4MjBjODZlNGE5YzYzYjYwZWQ3NjFmOGFmMGNjYzBiNGUxMGY5ZGFhOGZkMzQ0MDg5NWM1ZjdjYWU1NDlmNDgyZDM0OTVjOTc2MjYzMGY1ODc4NGFhNTA1NmY5ZGU5MjE1OGQzODg1NmJmMTcyMGExMDI4YzJmYTNlODU1NDdkODFhY2NhZSIsImVuY3J5cHRLZXkiOiIzZ2VMWCJ9LCJpYXQiOjE2Mjc3MDc0MDR9.24YaJTC72HQYj3WCnwHwWEbHMaCiNu1Mj37hizZfucc"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"isUpcommingbookings\":false,\r\n\t\"isPastbookings\":false,\r\n\t\"isEventBooking\":false,\r\n\t\"skip\":0,\r\n\t\"limti\":10\r\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/user/getAllBooking",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getAllBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllNotification",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/getAllNotification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getAllNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clearAllNotification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/clearAllNotification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"clearAllNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clearNotification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"ssddsddsdsdasdqw33\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/clearNotification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"clearNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ratingAndReviewToDriver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjI0NWE1MWIxZmI3MWMyYThlZDlkM2JjZGM1Y2Y2MGUxY2IzNjlmODRkMTg0YjQ4NmUzMjEyZWQ2N2IwNjg0ZDM4NWFmNjgzY2E0ZGFmMDg4NGMxNmFkYTdkMGVmNTUyOTlkNDExZjBjZTdkZjE4YmM3NjRmMDA0MjVmZGI5NmI5OWVhYWIzN2EyMjU2ZGI3NjE1M2JhNWYzODQ1OTRmZmQ3YjBiYTAyYjQ1MDI5NDA5ZDJkNzhiODViOGIwN2M4MGNlZjM5YTVlNjMyZWRkNDMzNTU1ZDBjOTFjYjI5MDE0MjI2MWVjNzYwYTMwOTk1YSIsImVuY3J5cHRLZXkiOiIzSmJoYiJ9LCJpYXQiOjE1ODg1OTg5NTF9.LRztFh8YIQXbs2iA7V26KIllf4tD2x3EWST9VXkgTcY"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5eb018194ff88a166041d46f\",\n\t\"driverReview\":\"sdsds\",\n\t\"driverRating\":3\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/ratingAndReviewToDriver",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"ratingAndReviewToDriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createBookingPaymentCheck",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjhkNjhjYzc0NzdmYzJlNjZkZDU4YzBmYjFkYzEzYTYxOTJhYjMzZjQ0ZmE1ZTQxZTlhMTM1NGIyYmUzMzY0ZmNmZDBiY2JmNzkwOTI5ODhhZDYyNWQ3MzljMGM3M2Y3MzM0MWQyMjc5ZGY5ZTNhYWNiNTVjZjViY2EzNmZiODlhNDllNjM3OTZmN2YzZmM0ZDU4N2FhNDI4M2Q2NjQ4YmMzOWExMTM2ZWM5OWQ5MWYyMTFlNDJmZWUwOTgxMzRkOTFmYTE4MDk5NjZjNWM0MzUzNzNmZDJhMWRhMTk0NGQyYWU1MzNlODYwZDA4MTZjYiJ9LCJpYXQiOjE1ODc3MTA5ODB9.6UXtA4k_Fb-_yW4FyzriRap2lgyaVS6XqRnyIFN0fEI"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"vehicleId\":\"5ea02033ac9a547279d6b3a2\",\n\"seviceTypeId\":\"5e8d9dbb8c1e351adc298c40\",\n\"genderType\":\"MALE\",\n\"passengerNo\":0,\n\"pickUplatitude\":10, \n\"pickUplongitude\":10,\n\"dropUplatitude\":10,\n\"dropUplongitude\":10,\n\"pickUpAddress\":\"hgh\", \n\"dropUpAddress\":\"ghh\",\n\"bookingDate\":\"2020-05-15T05:51:39.654Z\",\n\"tripType\":\"ROUNDTRIP\", \n\"timezone\":330, \n\"eta\":2,\n\"totalDistance\":3,\n\"dropUplatitudeFirst\":10,\n\"dropUplongitudeFirst\":10,\n\"dropUpAddressFirst\":\"dassd\",\n\"dropUplatitudeSecond\":10,\n\"dropUplongitudeSecond\":10,\n\"dropUpAddressSecond\":\"sdsdsdsd\",\n\"dropUplatitudeThird\":10,\n\"dropUplongitudeThird\":10,\n\"dropUpAddressThird\":\"ssds\",\n\"dropUplatitudeFour\":10,\n\"dropUplongitudeFour\":10,\n\"dropUpAddressFour\":\"sdsd\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/createBookingPaymentCheck",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"createBookingPaymentCheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancelBooking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"dsdsd\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/cancelBooking",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"cancelBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createBookingdemoserver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjhhNTY4MmIwMzUyNTEyMTI0NzRiZmRjYTVmYjliOTMzNzRhZDEwNDg5ZDI4MGE5M2VjODEwNmI0YmExNmIzZTk5Nzg4Njg4YWFkMGM3M2YwNTdkMDlkMGU5NTcxY2ZmNWZkZDA1MGEzNzIyNDIzZmU1ZGM0YTcxMzc2MzQxOTgxNjU2ZDdiMmExMzVkNjZkYTMyNzU5N2VjMWM3M2MzYTg5MjVjZGFhYjczYmU2ZDZmYTczMWEwZWFjYWNhZTcxMGYyYTlkMjFkNTZkNGZkMjFmMWRkMThmMDAxOTkwOWZmZTdlNDZjMWI1MWQzMTI3MiIsImVuY3J5cHRLZXkiOiJtRmVNdCJ9LCJpYXQiOjE1OTM3NTYzNTJ9.hWg6kcgIyQqX_s2j3zxS2IlVKZ18GVz9EOOBy7cisEc"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vehicleId\": \"5efc13d3fa40555882ff570b\",\r\n  \"seviceTypeId\": \"5e99b778dfc55246710740cf\",\r\n  \"genderType\": \"NO_PREFRENCE\",\r\n  \"passengerNo\": 0,\r\n  \"pickUplatitude\":  12.782018,\r\n  \"pickUplongitude\":101.6472326,\r\n  \"dropUplatitude\": 12.782018,\r\n  \"dropUplongitude\": 101.6472326,\r\n  \"pickUpAddress\": \"Sukhumvit Rd, Thailand\",\r\n  \"dropUpAddress\": \"Sukhumvit Rd, Thailand\",\r\n  \"bookingDate\": \"2020-07-03T06:06:20.796Z\",\r\n  \"tripType\": \"SINGLETRIP\",\r\n  \"timezone\": 330,\r\n  \"eta\": 0,\r\n  \"totalDistance\": 0,\r\n  \"paymentMode\": \"WALLET\",\r\n  \"dropUplatitudeFirst\": 0,\r\n  \"dropUplongitudeFirst\": 0,\r\n  \"dropUplatitudeSecond\": 0,\r\n  \"dropUplongitudeSecond\": 0,\r\n  \"dropUplatitudeThird\": 0,\r\n  \"dropUplongitudeThird\": 0,\r\n  \"dropUplatitudeFour\": 0,\r\n  \"dropUplongitudeFour\": 0,\r\n  \"isTripAllocated\": true,\r\n  \"isSheduledBooking\": false,\r\n  \"note\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/createBooking",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"createBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCurrentBookingStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/getCurrentBookingStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getCurrentBookingStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ratingAndReviewToDriver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"bookingid\",//bookingid\n\"driverReview\":\"sddasd\",//optional\n\"driverRating\":4//optional\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/ratingAndReviewToDriver",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"ratingAndReviewToDriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editEventBooking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE2MWVhYzM4YTE1NzUyNGYzZGY1ZjkxZTNiZTI4OTg0ZGY4ODAwNzUxNmE1NWI1YWQ2MDg3YjU1NDE3OGVkMGE4ZDU5YTg3OWVhOGM0ZTg4YzlkYzg2OTU3NDRhMDk3Zjg4Y2M3YmFlNmQ4ZjM2Y2RjNTFhZTNjMzg1ZTY2M2NhYmVlZTJkYTIwOWRiZTFjYmQwN2U0NDk1ZTNjZDBkYzM4ZGE2YzY2NDQxOWZmYzdmNDFiY2VmNTYwZGZiMmZmMDUxOTIzZjgzYTU1ZDQ4ZWQ1YzJmNzQyZjdmOTkwZTgyOGQ2MWM1ZTU2ZjdiMDQyZSIsImVuY3J5cHRLZXkiOiJqeTMxViJ9LCJpYXQiOjE1ODgzMjcyNzd9.WoGwP4EonmTO9aQVkWsfQIzchH-kmcRSC027zNWWd28"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"bookingId\":\"5eabf352d7bb4717dc534182\",\n\"eventName\":\"demo22222\",\n\"eventTypeId\":\"5e9d701a6b6c3c17ec11c6cf\",\n\"eventDescription\":\"sdsd\",\n\"block\":\"sdsd\",\n\"bookingDate\":\"2020-04-20T09:49:14\",\n\"eventLocaltionLatitude\":1,\n\"eventLocaltionLongitude\":10,\n\"eventAddress\":\"chandigarh\",\n\"teamId\":\"5e9d55f1423f2326709a939d\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/editEventBooking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"editEventBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancelEventBooking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjQ3Y2IzNWY5MmY0Y2VmZDNhNWVhNGE3NjBkZjk3YWZlYTA0MTQ4ZjgwZTExZWM1ZWE4ZWU3MDgwYTQ5MTg3N2EzMDk0ZTNmNzkxYzgxODhlZmZiOGY3N2UyM2QyZjY4ZDc5ZmQ2NmFhYWVlYTFhMTdjZDE1NTU2ZTE4YTliNmNmYjg4YzgxNDlmNzFiMGIyNzQ5OGFiMTUwMGM4ODJkOWRlMDNiOTI3YWI5MGE2MjAyZjA5NzRjN2E1NTdlODkxOWRlOWFhZGYyYTBjZWExYmU0MzBlY2E2NGJkNDRlNzVmYjhjYjc1OGZmYzEzMzFiMiJ9LCJpYXQiOjE1ODgzMjQ4ODV9.mq8xdkKBgCnemVat8EpSuxTrAOILXJNnHnzfm_ZHq-w"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"bookingId\":\"5eabea94926e2720945e8fe0\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/cancelEventBooking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"cancelEventBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getChatMessages ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5eafe686c278ad0243a19ecb\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/getChatMessages ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getChatMessages "
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "enableDisableNotification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isNotification\":true\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/enableDisableNotification",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"enableDisableNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCard",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjVkNzg3NTA1OGIyNDVhNWM5ZDdiNWJjMWRiMjVlOGMxZDQxNjYzMWFhMGNhNWU3MjE2NzYwNGM5YWFkYjMwYjQ5M2YwZDI5MDVlMmJlMGEyZmQ2NDYxOGRmNDU3NmI3N2E0MmJlMmRjOGFmNDNiOThhZTEwMGVjNjA5Y2QxYzVhMjA2ZTA0OWU0NmY5MGZlZGEzZDcxMGM0OWQwZTU0OWE4MDFjOGJjYWE3ZjgyOWY5YTBmODYyMDJlMjJkYzRlZjc2NjZlYTc5M2E3ZGQ1MmRkMTFiZjhmZDI2NzczMTkwYWQ2NDU5NmQ0ZDE0ZDJhMyIsImVuY3J5cHRLZXkiOiIyNWl2RiJ9LCJpYXQiOjE1OTIzMDE3MTV9.9gwiOgJLk6qdArSLjFPN7CzkkK2HvjAeaCd35CoKqyU"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":0,\n\t\"limit\":10\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/getAllCard",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getAllCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDefaultCard",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImRhNjQ2MzQ4MmU3NTFmZDA5MDI5MTE0OGI5ZTdhOWRjZTAyMTI5MzFiNGEzZjhmOGQ2ODRhZGExMmM2YjI1MGE5NTA0OGNlNTJmZTkzNzFkOTZlM2NhMTQzZTJiY2Q0MDdjMmQwN2E2NDk3NDc5Y2M2YjViNDgzOTA1ZjU3YmQxYjgzYzQ3MGI3N2Y0YTk1N2M5YTY3OWZmOTI2NTMzYmU0MWQ0MWQ3OWNhOGZkZDBkYjU3YjdmODU3MDMxZDllNzBlYWRiM2NkYzBjOTNmN2VlNzg5NzUzNjQzNDA1OTdlZDZkMGZkYmI3Mzg5ZjNmOSIsImVuY3J5cHRLZXkiOiJHRWZ1QyJ9LCJpYXQiOjE1ODg5MTczNDR9.SkUASq69UzqHFV-1RXTmr_a-b_OhiFuoJ9P95PdXe4I"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"cardId\":\"5eb4f56716d630f67941f391\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/updateDefaultCard",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"updateDefaultCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCard",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImRhNjQ2MzQ4MmU3NTFmZDA5MDI5MTE0OGI5ZTdhOWRjZTAyMTI5MzFiNGEzZjhmOGQ2ODRhZGExMmM2YjI1MGE5NTA0OGNlNTJmZTkzNzFkOTZlM2NhMTQzZTJiY2Q0MDdjMmQwN2E2NDk3NDc5Y2M2YjViNDgzOTA1ZjU3YmQxYjgzYzQ3MGI3N2Y0YTk1N2M5YTY3OWZmOTI2NTMzYmU0MWQ0MWQ3OWNhOGZkZDBkYjU3YjdmODU3MDMxZDllNzBlYWRiM2NkYzBjOTNmN2VlNzg5NzUzNjQzNDA1OTdlZDZkMGZkYmI3Mzg5ZjNmOSIsImVuY3J5cHRLZXkiOiJHRWZ1QyJ9LCJpYXQiOjE1ODg5MTczNDR9.SkUASq69UzqHFV-1RXTmr_a-b_OhiFuoJ9P95PdXe4I"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"cardId\":\"5eb4f56716d630f67941f391\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/deleteCard",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"deleteCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCard",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjNlMTdjMGZhZjI3NjAxZWNlNDZmZTZkM2Q1NDdmZDRmNDYwNDY1NzI0NzgyMmIzODk0MGJkNDZiZGE0NThjMmVjNjAwZTQ3MzY1MThlNWU5Njg0MmY2NGI5YjMwMWVmMjE3NWExZmI2OTdjNzdiM2Y0Y2M0NzMxOGFhOWU5OGVkZTgxYzFmMDYyYmVkN2E3NmFjMDk2ZDhjZjUzYzk1M2UxNzI2YWI3MDg0NWUyNzVjNzFhNmQ4ZjY4OTQ1YzFjMDc4NGNhMjlmOGZhYmY4MThhZTcwYzA5YWM1MzMxZTMwMzAwMTFkYmZjM2QxZTFjYiIsImVuY3J5cHRLZXkiOiJheEh5MCJ9LCJpYXQiOjE1ODkxNzU0MTZ9.8NfCtwZ7SQAO3NauK1p7V2ZBUZci4CBgsvuDJOUIf18"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"stripePaymentMethod\":\"pm_\"\t\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/addCard",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"addCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setUpIntent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjdhNWQ4NGEzNzMxNjM4MDVlMjM5OWFjN2YxYTkzYzViM2I3MTQ0YTMwOTUzMTQyYWQ5NzU5OGYzM2NhNmJmMzY2ZjY4ZmVhYzNjNjg4NTlkMjg2Mzc0Zjc0OWIwZjQ5YmU1NGQyODExMmI2YmNiY2FjYjFiMTc0MDJmNDlmOWVjMzY3YTE1NTExM2Q3NWVkMzNlOGYwM2E3ZTYxODY2YjBlZjgzYmUwMTU5NzAzM2RkMDhhNTNiMDQ0NzExYjg3NGQ2MjYxMmJiMzFhNjI5NzNjYjA2NmFmMGE1MDkyYmU0MmYzYTdiZDZjMjQ1ZTZlMCIsImVuY3J5cHRLZXkiOiJGNmFPbiJ9LCJpYXQiOjE1OTIxOTQ1MTd9.dMFIamkd9Pkv9EAJinG9pAk9YlEQLYyNPcB20x-Wuus"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/setUpIntent",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"setUpIntent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chargeWallet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImIxMjdiYWFkNWQ4ZWNmZWVjOWU5OGQ3M2Y3ZDAwZDI3MGZjYmVlYzJmYjc4NGJkNGZmYjRkNjcxODk2MTI1MDhiMmJlNmRkN2E5NzQzNDIyYzY0MjExMzU4ODAyYzI2M2VmM2MyM2I0NjAwOTdkMzY0ZDU4NGZlODdlMDM1ZDZkNWJiNmRlNjU4YWJkYzIxNTY3YWQ2YmI4OTIxYWZiNjQzZDhmZGFmNTY2MTQxYTUxOTkxMTUwMTc3NjJhNjkzZjFjNzk1OTFjMjFiNTJlOGQ5Yjg1Yzk0NjdjMzFlZjMyNGFlNTgzYWViYjEzYTIyYyIsImVuY3J5cHRLZXkiOiJ2YUNBbyJ9LCJpYXQiOjE1ODg5MzU1NTR9.AadwE6BiHnBqT6ygmr0YrI3xtw3D0dy33s6z7jbRKmY"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"cardId\":\"5eba486d13dca626d58d91fa\",\n\"amount\":100\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/chargeWallet",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"chargeWallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "servercreateBooking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImIxMjdiYWFkNWQ4ZWNmZWVjOWU5OGQ3M2Y3ZDAwZDI3MGZjYmVlYzJmYjc4NGJkNGZmYjRkNjcxODk2MTI1MDhiMmJlNmRkN2E5NzQzNDIyYzY0MjExMzU4ODAyYzI2M2VmM2MyM2I0NjAwOTdkMzY0ZDU4NGZlODdlMDM1ZDZkNWJiNmRlNjU4YWJkYzIxNTY3YWQ2YmI4OTIxYWZiNjQzZDhmZGFmNTY2MTQxYTUxOTkxMTUwMTc3NjJhNjkzZjFjNzk1OTFjMjFiNTJlOGQ5Yjg1Yzk0NjdjMzFlZjMyNGFlNTgzYWViYjEzYTIyYyIsImVuY3J5cHRLZXkiOiJ2YUNBbyJ9LCJpYXQiOjE1ODg5MzU1NTR9.AadwE6BiHnBqT6ygmr0YrI3xtw3D0dy33s6z7jbRKmY"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"dropUpAddress\": \"Kharar - Landran Rd, Sante Majra, Sector 115, Sahibzada Ajit Singh Nagar, Punjab, India\", \"passengerNo\": 2, \"timezone\": 330, \"totalDistance\": 652, \"pickUplongitude\": 76.7179, \"paymentMode\": \"CARD\", \"isSheduledBooking\": true, \"vehicleId\": \"5ea912a9f1fff4243f961639\", \"genderType\": \"MALE\", \"pickUpAddress\": \"363, Phase 4, Sector 59, Sahibzada Ajit Singh Nagar, Punjab 160059, India\", \"eta\": 6, \"cardId\": \"5eba4f8cb595612d764d2768\", \"seviceTypeId\": \"5e9d2afcdfc5524671074163\", \"isTripAllocated\": true, \"dropUplongitude\": 76.6525959, \"promoCode\": \"\", \"dropUplatitude\": 30.7212945, \"bookingDate\": \"2020-05-12T09:25:10.624Z\", \"pickUplatitude\": 30.7046, \"tripType\": \"SINGLETRIP\", \"note\": \"\"}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/createBooking",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"createBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contactUs",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"demo\",\n\t\"email\":\"kk@yopmail.com\",\n\t\"message\":\"cdfddsf\",\n\t\"subject\":\"99998899\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/user/contactUs",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"contactUs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getContactUs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/getContactUs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getContactUs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "driver",
+			"item": [
+				{
+					"name": "resgister",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "demo",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "lastName",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "bilal1@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "+1",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "gendfafadfaddd",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "file"
+								},
+								{
+									"key": "latitude",
+									"value": "30.722701",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "76.794654",
+									"type": "text"
+								},
+								{
+									"key": "carStatus",
+									"value": "True",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "driverLisence",
+									"value": "gfgdf",
+									"type": "text"
+								},
+								{
+									"key": "deviceToken",
+									"value": "dsdsdsd",
+									"type": "text"
+								},
+								{
+									"key": "deviceType",
+									"value": "Ios",
+									"type": "text"
+								},
+								{
+									"key": "isTransmissionType",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "ssn",
+									"value": "demo",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/resgister",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"resgister"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendOtp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"countryCode\":\"+91\",\n\t\"phoneNo\":\"8460339810\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/driver/sendOtp",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"sendOtp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\":\"12345678\",\n\t\"phone\":\"123456789\",\n\t\"countryCode\":\"+1\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/driver/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDocuments",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjVhY2NmNmQ3YTQ4MTEzOTFjMTU0YjNkNGJjMzg3OWVlMzFiYTlkZDJiOWNiN2Q5NGM0NDgxYjIwMmU2NjdmODM0MTE1ZjlkZmIyMzViOWVkOTIwZjNlYzY4MzNkNTFlZGE0ZjE2OTE1MmE4NTQ5M2E0MDMwM2E5NjQ2ODM1Yjc0ODhlMTUyOGU0YWEzZWMzMjMyY2M5YmU4MWQ3MzUxOWIzYmM1NmNlNDhmYWVmMzZhMTcxNmY2YTAzMTkyOTgyNDk5YmQ2MjFjYmYyMjNjOTBlYzNhMDVlZDgxZDkwMDlhNzkyZjE5NDQ5M2EzZWNmNiJ9LCJpYXQiOjE1ODY3NzU0MTh9.-bXTOKVbd8IrjwSTvTstobfHOGb2aEVPQA0NTZccPtU"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleId\":\"5e96cc520ac5e12a2cf39e6c\",\n\t\"drivingCertificate\":\"ssffsss\",\n\t\"license\":\"ddd\",\n     \"numberPlate\":\"sss\",\n     \"carLicense\":\"ddd\",\n     \"vehicalRegistration\":\"dsdsd\",\n     \"insuranceDocuments\":\"dsdsds\",\n     \"taxiPermit\":\"dsdsdsdsd\",\n     \"carFrontImage\":\"carFrontImage\",\n     \"carBackImage\":\"carBackImage\",\n     \"carLeftImage\":\"carLeftImage\",\n     \"carRightImage\":\"carRightImage\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/updateDocuments",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"updateDocuments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uploadFile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjRiYWU3ODhkZjc5YTRiMjY2YjU3NWFkY2UzZjBhNTA4ODljMzU2ZTA0ZjFkZjM2MzNjNDU1OWIzMzQ5NjcxNWY3ZThmNGE3YWVmNGQzODY3MWFlNTI3NGI0NDhmYjQ0NzZlZjBkOGNlNjdkZDVhYjVkNTQ4ZWQ3MjVlYTgyMmQyYTcwOTQ3YmYzZTViNDllY2ZhOTJhOGExNTU4OTg4NTE0NjNjZTJhZGQ2MGJjYTljZGEzNmYwYzZhYTE2OWM2ZmVlNWZmM2FhYzhlNzU2Y2I0MThhODU4NzM1NDBlMjhiYjRiNmYwNDQwMDJjZmRiNiJ9LCJpYXQiOjE1ODY5MjcwMTN9.2mm6D2edv9NyK5v6QHpb1S3RRFnrJx-_nPQqpmVGDec"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/uploadFile",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"uploadFile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addVehicle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQ1NjQ4YTM3NDBjZDYxZWYwMGNlNjBlOTZlN2ExMjU1ZTNlOGYwNWRhMDk0OGY4NDA5Y2RlMGMwYWQyYWVmMDhkOGI4NGRmNjI2NWExYjgzMDc5MjVjZWU0NzVjNTI1MGM2ZDFjNmY2OTJjYjVmOGFlNTFlMjJiZWUzMDg4YjlkMGQzNTk3YmExZjc3M2FiOGJjZWZmZjQxN2I3OGYyMmMzZDIyZmYzYWY3YWYxZGE1N2QyNjQ2NDI2ZTAwZjk3ZDQ4ZDgxYzQ3MDM0NGExYjBiZjRjNjM3OTk5NTVjZWM0ZTQyYzcwZDAxMmQ4MmZmNCJ9LCJpYXQiOjE1ODc5NjIxNzB9.gcXstmSVVBPP0Hw-nBotAmmRYi6J_nUHo5dtKuGvGT0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleName\":\"demo\",\n\t\"vehicleMake\":\"demo\",\n\t\"vehicleModel\":\"demo\",\n\t\"vehicleTypeId\":\"5e8d9dbb8c1e351adc298c40\",\n\t\"vehicleImage\":\"demo\",\n\t\"insuranceDocuments\":\"demo\",\n\t\"transmissionTypeId\":\"5e96de4526083729c0ae6c94\",\n\t\"color\":\"dddd\",\n\t\"plateNumber\":\"sdsd\",\n\t\"state\":\"dsds\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/addVehicle",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"addVehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicleType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjcxYzczYTA1ZDM2MWNlZWQ4NDEzMWEwYWFiNGNlZGFjMzFhYWY3OWNlZWIxMTA2ZDg5YWNkMGFmMDMxYTJlYWRhZGM5MDAzMDQ1OTIyYjdjYzg3Y2NkNzk3YzBlZDc3MzdhZTQzYmRjMDViZjc0NDdlYzM1ZjU3MDQxNGVmYmIwNGU3MDY1MWYwM2UzMDlkNDBiOGU1ODlmMmU5OTRkMTI1NWNiMmIyMDNkNjBlM2MwNjRhODRiNGFkM2NmNmQ3ZWIyNGFiYTNjYzI0NWVkZDdmYTllODYzZDExY2Q4OGEzYjJiZTM0YWMxYjk2ZGQ1MyJ9LCJpYXQiOjE1ODY3NzU1NzV9.q3bTawCtYjNUF0BTVAVPyNwxvAFBzJDixZSx-1WqyqY"
+							}
+						],
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/getVehicleType",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getVehicleType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendOtp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phoneNo\":\"12132323\",\n\t\"countryCode\":\"+91\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/sendOtp",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"sendOtp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyOtp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otp\":\"507951\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/driver/verifyOtp",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"verifyOtp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDriverProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImMwNWNiN2ZhM2ZjNzU3NzAzN2JlOTc3NWUzNzgyZjBiYTQzZDViZjBmNTczNTgxZjAyNGJhYzBmNTcxYWIxODE4NWQwMzI5ZjM3ZDRhMzlmZGUxNzQ5NzcxMDJlZTRhZDc1ZjdiMDViYjI4Mjc3NzUzMzQ4NGIyZWQwMzk2NjAxYTBiNzUzNzAxNTBjNzY4YWNhZjQyMWVlNGJkZGVkNmM3NWE3MzcyNzAxYTNlZTA2MzBjODQ2MzMwYTMyZTdmNDg2OGZmNzEwYmEwNWI4Njg1OWY5YzY0NmExYmYzNzNkNjM0MGFhNDg0OTQ1OTBjZiIsImVuY3J5cHRLZXkiOiJldVgwNiJ9LCJpYXQiOjE2Mjc3MjI5ODl9.-DoB2Z4PYX5doB3qAPYmAqr6TggBMJf_pRAL3feHRgQ"
+							}
+						],
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/getDriverProfile",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getDriverProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "driverOnOff",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFmN2ZiZDU5MjZkODVkZjJhNGZkNzM3ODMyMWQ4NzNkN2FkMjUxZjhjZTg3OWI1ZmM1OTNkNDU3NjI2YWFiNTgxNGQwNjcwMTA4MmY1YWU0MTgwNzZkNTdhNDAyMWM4NjcyY2Q4NzI2MTViNWFiZThmN2NlNWFiNzVhMWJmZGJlMTU1MWQwMmZiNDYwMTg3M2Y5N2YzZDcwYTFmN2VmOTU4NTk4MTdhZGI4MjdmN2NkMzljZWQxYmFmZmZjYzlhMjg4NWVmNmE5MmY0YjlhMTFjMmI1NWE5OTIzZTVkYzY2YWYxY2E1ZWJjZDNkMzIzNCIsImVuY3J5cHRLZXkiOiJIVUJMUiJ9LCJpYXQiOjE2Mjc3MDc4NTl9.R7wKfM4nMBgizVyqqJUcb3j3wlaZ4AysoAQgfs4cSy4"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"activeStatus\":true\t\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/driverOnOff",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"driverOnOff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "driverMode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjUwNDA2MWIxNzcwYTI5ZDRmOTU1NjJmOTExMGE1MTU5YWMwYjZjZTQ3ODFlZDIxNmI4YTg4ZWYwZWI2OTlhYWU3MmVmZmM0ZDFiZDdjNGJlNTIzNTcyMGU3YzQwYzUxOTlhYjJmMTU0NjY1ZmM5MDZlMmE1MzkzMjg2YTZkYjViOTBlODBhN2RjOWM0NzQ4ZWVkZGM4M2E2NDQ4ODc4YWE1OTVkM2U2ZTZhMThmNGE3ZGYyN2E1NDgwNjQ4ZTA4Yzg0MjczM2RkMmEwZjAzMTkwNmNjOWNkMmE1YjhlMThjMmJjMWM0ODI0ZGFlOWQ0MCIsImVuY3J5cHRLZXkiOiJucTlOSCJ9LCJpYXQiOjE2Mjc3MjE2NDB9.kbc4bEl5ApwCKALaMmX2h3Va0vOwn53PuXPO-ybXgvQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isCopilot\":true\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/driverMode",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"driverMode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "acceptedBookingStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFmN2ZiZDU5MjZkODVkZjJhNGZkNzM3ODMyMWQ4NzNkN2FkMjUxZjhjZTg3OWI1ZmM1OTNkNDU3NjI2YWFiNTgxNGQwNjcwMTA4MmY1YWU0MTgwNzZkNTdhNDAyMWM4NjcyY2Q4NzI2MTViNWFiZThmN2NlNWFiNzVhMWJmZGJlMTU1MWQwMmZiNDYwMTg3M2Y5N2YzZDcwYTFmN2VmOTU4NTk4MTdhZGI4MjdmN2NkMzljZWQxYmFmZmZjYzlhMjg4NWVmNmE5MmY0YjlhMTFjMmI1NWE5OTIzZTVkYzY2YWYxY2E1ZWJjZDNkMzIzNCIsImVuY3J5cHRLZXkiOiJIVUJMUiJ9LCJpYXQiOjE2Mjc3MDc4NTl9.R7wKfM4nMBgizVyqqJUcb3j3wlaZ4AysoAQgfs4cSy4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"6104d93a12b88d1700112d21\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/driver/acceptedBookingStatus",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"acceptedBookingStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ignoreBookingStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImI4ZTRhZGE2ZTI4OTYyMmQyYmQxY2YzMGE0ZmU1NzQyN2YxOGQ0MDdiOGVlZGQ2ODAzMjY1NDI1YmNjNDAyYjNmN2I5NmNkZTcxNDIwYjI5ZDBjNzBjN2M1MzhkNWQzM2E4NzdkZjE2YWM0NmY4NTM4MjUxNzUyMzc3NjRhMTI1MDdiZmViZmZiNmQ0ZDNmM2E4ZjY5MjgyNzAwOTMyMGY0ZDBiZGU2MmEzYTNlM2M5YmRhOGMwYmY4ZDJkZTQ4ZjA1MmMwMDY1NGE0ZjVkNTgwZWFmMzRkMzdjYThlNGUyMzc0ZmFiODk4ZWJhZGE5NyJ9LCJpYXQiOjE1ODcwNjYzNzZ9.FrN4IEkbcvZevbEcouLiPwKCGC-RRMiEabhc_kme5uc"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5e98d53fe3b464171409a93a\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/driver/ignoreBookingStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"ignoreBookingStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyOtpForgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otpId\": \"5e996e600631f21504bb1650\",\n\t\"otp\": \"318977\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/verifyOtpForgotPassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"verifyOtpForgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotResetPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otpId\": \"5e996e600631f21504bb1650\",\n\t\"otp\": \"318977\",\n\t\"newPassword\":\"123456\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/forgotResetPassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"forgotResetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changePassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"oldPassword\":\"123456789\",\n\t\"newPassword\":\"12345678\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/resetPassword",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"resetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changeBookingStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImI4ZTRhZGE2ZTI4OTYyMmQyYmQxY2YzMGE0ZmU1NzQyN2YxOGQ0MDdiOGVlZGQ2ODAzMjY1NDI1YmNjNDAyYjNmN2I5NmNkZTcxNDIwYjI5ZDBjNzBjN2M1MzhkNWQzM2E4NzdkZjE2YWM0NmY4NTM4MjUxNzUyMzc3NjRhMTI1MDdiZmViZmZiNmQ0ZDNmM2E4ZjY5MjgyNzAwOTMyMGY0ZDBiZGU2MmEzYTNlM2M5YmRhOGMwYmY4ZDJkZTQ4ZjA1MmMwMDY1NGE0ZjVkNTgwZWFmMzRkMzdjYThlNGUyMzc0ZmFiODk4ZWJhZGE5NyJ9LCJpYXQiOjE1ODcwNjYzNzZ9.FrN4IEkbcvZevbEcouLiPwKCGC-RRMiEabhc_kme5uc"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/jk/Downloads/image_2021_05_12T14_58_51_247Z.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/driver/changeBookingStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"changeBookingStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "#COMPLETED','ARRIVED','STARTED','ONGOING','CANCELED','ACCEPTED",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "#COMPLETED','ARRIVED','STARTED','ONGOING','CANCELED','ACCEPTED",
+							"hash": "COMPLETED','ARRIVED','STARTED','ONGOING','CANCELED','ACCEPTED"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAppVersion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/getAppVersion",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getAppVersion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findDriver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFmN2ZiZDU5MjZkODVkZjJhNGZkNzM3ODMyMWQ4NzNkN2FkMjUxZjhjZTg3OWI1ZmM1OTNkNDU3NjI2YWFiNTgxNGQwNjcwMTA4MmY1YWU0MTgwNzZkNTdhNDAyMWM4NjcyY2Q4NzI2MTViNWFiZThmN2NlNWFiNzVhMWJmZGJlMTU1MWQwMmZiNDYwMTg3M2Y5N2YzZDcwYTFmN2VmOTU4NTk4MTdhZGI4MjdmN2NkMzljZWQxYmFmZmZjYzlhMjg4NWVmNmE5MmY0YjlhMTFjMmI1NWE5OTIzZTVkYzY2YWYxY2E1ZWJjZDNkMzIzNCIsImVuY3J5cHRLZXkiOiJIVUJMUiJ9LCJpYXQiOjE2Mjc3MDc4NTl9.R7wKfM4nMBgizVyqqJUcb3j3wlaZ4AysoAQgfs4cSy4"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"latitude\":30.7223596,\n\t\"longitude\":76.7946969\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/driver/findDriver",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"findDriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uploadFileWithOutAuth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/uploadFileWithOutAuth",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"uploadFileWithOutAuth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBookingDetails",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/getBookingDetails",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getBookingDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllBooking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/getAllBooking",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getAllBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCoDriver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjUwNDA2MWIxNzcwYTI5ZDRmOTU1NjJmOTExMGE1MTU5YWMwYjZjZTQ3ODFlZDIxNmI4YTg4ZWYwZWI2OTlhYWU3MmVmZmM0ZDFiZDdjNGJlNTIzNTcyMGU3YzQwYzUxOTlhYjJmMTU0NjY1ZmM5MDZlMmE1MzkzMjg2YTZkYjViOTBlODBhN2RjOWM0NzQ4ZWVkZGM4M2E2NDQ4ODc4YWE1OTVkM2U2ZTZhMThmNGE3ZGYyN2E1NDgwNjQ4ZTA4Yzg0MjczM2RkMmEwZjAzMTkwNmNjOWNkMmE1YjhlMThjMmJjMWM0ODI0ZGFlOWQ0MCIsImVuY3J5cHRLZXkiOiJucTlOSCJ9LCJpYXQiOjE2Mjc3MjE2NDB9.kbc4bEl5ApwCKALaMmX2h3Va0vOwn53PuXPO-ybXgvQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otp\":431269,\n\t\"pairedDriverId\":\"60b0ce14533110206a456a7e\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/addCoDriver",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"addCoDriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeCoDriver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"pairedDriverId\":\"sdsd\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/removeCoDriver",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"removeCoDriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCoDriverList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFmN2ZiZDU5MjZkODVkZjJhNGZkNzM3ODMyMWQ4NzNkN2FkMjUxZjhjZTg3OWI1ZmM1OTNkNDU3NjI2YWFiNTgxNGQwNjcwMTA4MmY1YWU0MTgwNzZkNTdhNDAyMWM4NjcyY2Q4NzI2MTViNWFiZThmN2NlNWFiNzVhMWJmZGJlMTU1MWQwMmZiNDYwMTg3M2Y5N2YzZDcwYTFmN2VmOTU4NTk4MTdhZGI4MjdmN2NkMzljZWQxYmFmZmZjYzlhMjg4NWVmNmE5MmY0YjlhMTFjMmI1NWE5OTIzZTVkYzY2YWYxY2E1ZWJjZDNkMzIzNCIsImVuY3J5cHRLZXkiOiJIVUJMUiJ9LCJpYXQiOjE2Mjc3MDc4NTl9.R7wKfM4nMBgizVyqqJUcb3j3wlaZ4AysoAQgfs4cSy4"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/driver/getCoDriverList",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getCoDriverList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllBooking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImU2NTU0ZjRkNTcyYTRlYmRmYjhiM2E0YmY0MTNmNTEzZGEyNzQzNDQxOTNhMmFlZjFiM2UyNTMxMzYxMjcyYTljZDU4NGFhMDc2M2ExMGJkZTA2YjAwNjk3YWZhNWMwM2FjYjhlZDM5MTBlN2RhYTY5YjFkYWI2NGNhZWY5NzVkZWVkOTcwNjA4YjlkYWNlZWM2NTIxYzkzMzYwYzIxZjNkODViZmRiOWFjNjI1NzBlYThiYWFlZTdjNjg0NThjMzlmYzgwODU3YmZjNzRlZGViZjk3Njg3NTA5OTg2MzY1MDc1NjQxMDVjNDViYTI2MiJ9LCJpYXQiOjE1ODc1MzQyMzZ9.r35cwe7IXdUp7wPLGwRaOI_huj2aP1pwrDnsWKgXTUk"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isUpcommingbookings\":true,\n\t\"isPastbookings\":false,\n\t\"skip\":0,\n\t\"limti\":10\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/getAllBooking",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getAllBooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBookingDetails",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFmN2ZiZDU5MjZkODVkZjJhNGZkNzM3ODMyMWQ4NzNkN2FkMjUxZjhjZTg3OWI1ZmM1OTNkNDU3NjI2YWFiNTgxNGQwNjcwMTA4MmY1YWU0MTgwNzZkNTdhNDAyMWM4NjcyY2Q4NzI2MTViNWFiZThmN2NlNWFiNzVhMWJmZGJlMTU1MWQwMmZiNDYwMTg3M2Y5N2YzZDcwYTFmN2VmOTU4NTk4MTdhZGI4MjdmN2NkMzljZWQxYmFmZmZjYzlhMjg4NWVmNmE5MmY0YjlhMTFjMmI1NWE5OTIzZTVkYzY2YWYxY2E1ZWJjZDNkMzIzNCIsImVuY3J5cHRLZXkiOiJIVUJMUiJ9LCJpYXQiOjE2Mjc3MDc4NTl9.R7wKfM4nMBgizVyqqJUcb3j3wlaZ4AysoAQgfs4cSy4"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"6104d93a12b88d1700112d21\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/getBookingDetails",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getBookingDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "askForPaired",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjUwNDA2MWIxNzcwYTI5ZDRmOTU1NjJmOTExMGE1MTU5YWMwYjZjZTQ3ODFlZDIxNmI4YTg4ZWYwZWI2OTlhYWU3MmVmZmM0ZDFiZDdjNGJlNTIzNTcyMGU3YzQwYzUxOTlhYjJmMTU0NjY1ZmM5MDZlMmE1MzkzMjg2YTZkYjViOTBlODBhN2RjOWM0NzQ4ZWVkZGM4M2E2NDQ4ODc4YWE1OTVkM2U2ZTZhMThmNGE3ZGYyN2E1NDgwNjQ4ZTA4Yzg0MjczM2RkMmEwZjAzMTkwNmNjOWNkMmE1YjhlMThjMmJjMWM0ODI0ZGFlOWQ0MCIsImVuY3J5cHRLZXkiOiJucTlOSCJ9LCJpYXQiOjE2Mjc3MjE2NDB9.kbc4bEl5ApwCKALaMmX2h3Va0vOwn53PuXPO-ybXgvQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"pairedDriverId\":\"6105111b7039bd2654f1d290\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/askForPaired",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"askForPaired"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "acceptPairedAndSendOtp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImMwNWNiN2ZhM2ZjNzU3NzAzN2JlOTc3NWUzNzgyZjBiYTQzZDViZjBmNTczNTgxZjAyNGJhYzBmNTcxYWIxODE4NWQwMzI5ZjM3ZDRhMzlmZGUxNzQ5NzcxMDJlZTRhZDc1ZjdiMDViYjI4Mjc3NzUzMzQ4NGIyZWQwMzk2NjAxYTBiNzUzNzAxNTBjNzY4YWNhZjQyMWVlNGJkZGVkNmM3NWE3MzcyNzAxYTNlZTA2MzBjODQ2MzMwYTMyZTdmNDg2OGZmNzEwYmEwNWI4Njg1OWY5YzY0NmExYmYzNzNkNjM0MGFhNDg0OTQ1OTBjZiIsImVuY3J5cHRLZXkiOiJldVgwNiJ9LCJpYXQiOjE2Mjc3MjI5ODl9.-DoB2Z4PYX5doB3qAPYmAqr6TggBMJf_pRAL3feHRgQ"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phoneNo\":\"8460339810\",\n\t\"countryCode\":\"+91\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/acceptPairedAndSendOtp",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"acceptPairedAndSendOtp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllNotification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":0,\n\t\"limit\":10\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/driver/getAllNotification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getAllNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clearAllNotification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3080/api/v1/driver/clearAllNotification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"clearAllNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clearNotification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"ssddsddsdsdasdqw33\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/driver/clearNotification",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"clearNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "enableDisableNotification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isNotification\":true\n}"
+						},
+						"url": {
+							"raw": "localhost:3080/api/v1/driver/enableDisableNotification",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"enableDisableNotification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ratingAndReviewToUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImRmZTM3OWMyOWY1YWZhMWM2ZjQ0NDJhYmJhY2JjNzYzMTM5ZWQ5ZDc5ODExMWY3NWM5OTE5NmVkZmE1MWVlMzYxNTRlM2I0YjRkNDBhMDBiYWY4NDEwOTZlMDQ2MDljMjM2NzVkMDk4ZWY1YzIwNThjZmJlZmM5ZDdkYmEyNWI5ZjFkYTkzNDMwMTQwNjE4MjkyOGM4MWU3Yjg3YzdmYjQxYmI1YTNhNjJmZmZiYWJjZGRkMmE3NzdiMTk4MjdlOWE4ZWEzYTFiYzk0ZGYyOWUyMTAxYzBiMTVhYmRkZjNiYTZhZWM4MjM0MDBjYTRmYSIsImVuY3J5cHRLZXkiOiJXWXlFNyJ9LCJpYXQiOjE1ODg3NzExMTZ9.0-i_3kIc3yW6tVtovpZKzDjvhORyeN45W6WU8dKF6L0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5eb018194ff88a166041d46f\",\n\t\"customerReview\":\"sdsds\",\n\t\"customerRating\":4\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/driver/ratingAndReviewToUser",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"ratingAndReviewToUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "http://localhost:3080/api/v1/driver/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getChatMessages ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjNkMWVhY2M5MjFkNjY5N2I2NjcxZGE3YzExMjcwNWZkYWU0YzkxMDE1ZDY2NmRmZWE5ODBjMDc1MDIyYjViY2JjMDYwYmM3NGE0NjViNTNkNWQyYTcwYzI1ZjkxOThlMWIxOTE1ZDkyOTFkNDg0OTQxOWFjY2QyNGM2MjJmMzcyZWFmNTMwMWY3ZWQ3MDlkNzNjYzE5OWVhMjJhOGQ0ODI1YjQ1YWM1ODEzM2QxNmU3OThlYjJmZTI3ZDk1MGE0Y2RhNWViNmM3MmVmOTRhYTk2NTUzNmQ4MzRkMzUxNDcxMWIyYzI2NzEyNDA3NWYyYiIsImVuY3J5cHRLZXkiOiJFSzVoaCJ9LCJpYXQiOjE1ODg1ODU4NTB9.57NX-zfoL4AEmYZNkaMHd3OoW4z_OT-5S9XAFb-tzqw"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5eafe686c278ad0243a19ecb\"\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/driver/getChatMessages ",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getChatMessages "
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPayemntHistory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImU0YTEyZTVlMThjYTY5MTQwOThjMDZmNTgxNTk0MTBjOTRhMDg5YmFhMTJlZjAzNmJjY2E0OTgxN2JlNDc1M2I3ZTVmNDlhNjAwMDM5ZGExMjZkMGNiN2FhMmVkYTlkNmU0ZWUyMjk3ODhkYTk3NzkwMjk2Mzg2ZDZiMjJiNzc4OTExODZlZGZhYjYzZTNmNDQwMmE0YzYzYmZkM2U5Y2M3MDdjODUwOTNhOThkNjMzMjI3NTM2M2VlMjMxODMyMDMyZDc5OTI2YWEzMTBhNDQ1ODZlM2ZhNzNlZjg1YWFmZGEzZjhlOWU1YjQ3NWUzYSIsImVuY3J5cHRLZXkiOiJGTVdDUCJ9LCJpYXQiOjE1ODg4NDkwOTZ9.sRh4BXsidnvX6sgnnL0v02Xs7mSrzsRMXRDgaXAFx5c"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isYear\":false,\n\t\"isMonth\":false,\n\t\"isWeek\":true\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/driver/getPayemntHistory",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getPayemntHistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPayemntHistoryList",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjI4YmRhNGU0ZWYwYjQ1ZGNkMzAwNzEwMjkwODM0YmM0YTA5MTQyNWM5ZmM1YTcyNDVlYmZjYzFiZjU4ZTM1YTY1ZTRhYTU5YTFlMGRiZjEwYjVkNGQzYjk4OWU2ZGI0OGJmOTQxNmI4NTkwN2E4YjU4Y2U1ZGFmZjJlNGNjYWE5MzMwOTgzNGI1YzJkNGU1ZjZkZWQxMDM0YmViODU1NDJiZGNmYmYyYWMwOTc4YjEwMGEzMzMzNDRkOGQwMDQ2YTY1ZTJiYmIyNTUwNDg1MWUxNTk3NTY2MGFhNDFlN2ZhNWM2MjM0NzcxODQ2ZDMyOSIsImVuY3J5cHRLZXkiOiJHeFNMbiJ9LCJpYXQiOjE1ODg2NTQ5ODB9.la8eP1hlhsY7IZGvH6LjstQ_tyr3I7tnjLwUqX8aU-4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isYear\":true,\n\t\"isMonth\":true,\n\t\"isWeek\":true,\n\t\"skip\":0,\n\t\"limit\":10\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/driver/getPayemntHistoryList",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getPayemntHistoryList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRatingList",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjlkN2M0ZmJkNzdkZWU4OTRkNzAzMDE2ZWUxZTJhNjZmNmI3YmRiOGVhNzIzYjI5M2I0YWIzYzk2Y2Q0YTFiYjgwNWFlOTAzODljMjE2ZWYyYjcwYWE4ZjhjMzFkMTRiNTQzMTNmNjJlMGIxNDkzMTVlNTM5ZDFmYTg5MjgxYzFhYjAyNDU0MzMzOTFlNWU5MDA5ODMxMzUxYzc2YThhMGE1NjBkMTZhYzMyZWYxYjllODkwZGU4NWZkZGQ4OWFjMTJkMjIxNTM2MWQzOTIyMTI0ZDdmYTY4MjgwNmJmOGY3Y2Y3NTE3MWQ5M2UxYWYyZCIsImVuY3J5cHRLZXkiOiJJTlQ5VCJ9LCJpYXQiOjE1ODg3NDE3MTJ9.noP3HEvNdUhd7YWRfiyVejKydK08uHDMWveOAcILfNM"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":0,\n\t\"limit\":10\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/driver/getRatingList",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getRatingList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addFavoriteUnFavoriteDriver",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFhNWFhMTEzYjA1NmI4YzMwYjlhNzgyNTFjYmRhNThhYTIwZjU1YzFjZTJkMDQ2Yjk0ZDg3ZjVmMzUxNjU3MzVjODUyNDJlNmZhNzM1OWVmN2E2MjdmNTlkOGI5Njk1ZWZiOTc1MzNiNjViZGQ2ODlmNTY5Y2JkMTI4ZDgzMzkzZjY0ZjAyNDY1OWMwYTg0MWQ2ZjEwMzY4NDMyMTEyOTRkODE3MTI4ZDA0NjdlMjg3ZjNiN2NlZDA0ZGZhYjc2Yjg1NTAyZTBkOTQwMTY5ZmQ2NWMwNGYxN2NlOWQ5NDI2ZWYyNTUyOWJkMDEzMWI5NiIsImVuY3J5cHRLZXkiOiJPVmJSRSJ9LCJpYXQiOjE1ODg3NjM4ODh9.9JlAfcAqdY14tzZOENR7c7b3fRHMvR3PR55pCqrnIIM"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"favoriteDriverId\":\"5eaa740100ff0462bd03ab2f\",\n\t\"isFavorite\":false\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/driver/addFavoriteUnFavoriteDriver",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"addFavoriteUnFavoriteDriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFavoriteDriverList",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImRkMDQzMDBmYWI2ZDJlMjllMjQzM2QzZTdkMDI2ODA5NjY2Y2ZiN2E5ZjEyMzQzYjI0YWZkZTU2ZTE5ZmI1MWE1MmZmOTE5MWY4YmI2NjA0YTZlNGRlODBkNDk0NjdiMDUyZDJiZjlmNzk2MDQ3MmQyYjU4YzVlOTgwZGZiY2RmZWE0Njg0MWYzZDU3ODI3YjQ0ZmFkYjk2YjNlYjdhM2U5ZjYyMDM3MWJkODIyNGVmOGNjODAzMmI5ZmFiMWFmNDVmYjI0YWVkNDM1ZDczYTVhNDU2YmNjZDY2MzUxNGE3MDNmYzcyYTRlOWM1MTk4YiIsImVuY3J5cHRLZXkiOiI0TXhZRCJ9LCJpYXQiOjE1ODg5MTE5NDl9.w_LRblUcuGQlsASMNbw0_DywvLrbax4ehFxAsmtsc9A"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\n\t\"skip\":0,\n\t\"limit\":10\n}"
+						},
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/driver/getFavoriteDriverList",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"getFavoriteDriverList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "startRideWithOtp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFmN2ZiZDU5MjZkODVkZjJhNGZkNzM3ODMyMWQ4NzNkN2FkMjUxZjhjZTg3OWI1ZmM1OTNkNDU3NjI2YWFiNTgxNGQwNjcwMTA4MmY1YWU0MTgwNzZkNTdhNDAyMWM4NjcyY2Q4NzI2MTViNWFiZThmN2NlNWFiNzVhMWJmZGJlMTU1MWQwMmZiNDYwMTg3M2Y5N2YzZDcwYTFmN2VmOTU4NTk4MTdhZGI4MjdmN2NkMzljZWQxYmFmZmZjYzlhMjg4NWVmNmE5MmY0YjlhMTFjMmI1NWE5OTIzZTVkYzY2YWYxY2E1ZWJjZDNkMzIzNCIsImVuY3J5cHRLZXkiOiJIVUJMUiJ9LCJpYXQiOjE2Mjc3MDc4NTl9.R7wKfM4nMBgizVyqqJUcb3j3wlaZ4AysoAQgfs4cSy4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"otp\":\"654208\",//otp\r\n    \"phoneNo\": \"8460339810\",//customer phone number\r\n    \"_id\":\"6104d93a12b88d1700112d21\"//booking id\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/driver/startRideWithOtp",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"driver",
+								"startRideWithOtp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://appgrowthcompany.com:3080/api/v1/user/createBooking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjlkNTliY2FhYzYwZmI4ODMzZWM2NjllYTg2YzkxNmI2ZjI1ZWU3MjRlMjExNGY1N2MxNTI2NzZjZjQ4MzcxYTZhMzA0MjYxZTY2ODIwOGM2ZjJiNmEyM2M3OTg4ZWU1YmFlYzE2ODIyMTAwZjVhMDc5MTFjYTE1ODQ3ZTllMWY5ZDdhMjQ0YTA1YjBjMzUxMzMxNjE1NmM4ZDc1N2M0ODdhNTNkODUxYTgyNjhlNTY0NDljY2I1MWEwMmY1Y2M2ZTEwNTI5NDNiNzc2NjdjNTc3NWE2YWExZTU5ZDdlNGNhNDE3OWFiNWJiMzIzY2NlNiIsImVuY3J5cHRLZXkiOiJYUXJXeCJ9LCJpYXQiOjE1OTE4NjgwMDR9.7gNrzS7kDfo5OsIEeg9POLZVCE7mEWDBqU8I5BqwN7E"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"vehicleId\":\"5ea915e9f530cc24f1d37650\",\"seviceTypeId\":\"5e9d98f5eb817647b68a914d\",\"genderType\":\"MALE\",\"passengerNo\":0,\"pickUplatitude\":30.7128896,\"pickUplongitude\":76.7093008,\"dropUplatitude\":30.7128896,\"dropUplongitude\":76.7093008,\"pickUpAddress\":\"C127, Phase, 8, Phase 8, Industrial Area, Sector 73, Sahibzada Ajit Singh Nagar, Punjab 160071, India\",\"dropUpAddress\":\"C127, Phase, 8, Phase 8, Industrial Area, Sector 73, Sahibzada Ajit Singh Nagar, Punjab 160071, India\",\"bookingDate\":\"2020-06-11T09:34:21.141Z\",\"tripType\":\"SINGLETRIP\",\"timezone\":330,\"eta\":0,\"totalDistance\":0,\"paymentMode\":\"CASH\",\"dropUplatitudeFirst\":0,\"dropUplongitudeFirst\":0,\"dropUplatitudeSecond\":0,\"dropUplongitudeSecond\":0,\"dropUplatitudeThird\":0,\"dropUplongitudeThird\":0,\"dropUplatitudeFour\":0,\"dropUplongitudeFour\":0,\"isTripAllocated\":true,\"isSheduledBooking\":false,\"note\":\"\"}"
+				},
+				"url": {
+					"raw": "http://appgrowthcompany.com:3080/api/v1/user/createBooking",
+					"protocol": "http",
+					"host": [
+						"appgrowthcompany",
+						"com"
+					],
+					"port": "3080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"createBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://verificationapi-v1.sinch.com/verification/v1/verifications",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "application 0d5464e9-be86-430a-83dc-13da49ae23c4:4zZEtjjZ7BSXkkJOcCtCDSYmSV3Wkk0bZ2XaimR+Kjs="
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"identity\": {\r\n    \"type\": \"number\",\r\n    \"endpoint\": \"+917088145401\"\r\n  },\r\n  \"custom\": \"917088145401\",\r\n  \"method\": \"sms\",\r\n  \"metadata\": {\r\n    \"os\": \"rest\",\r\n    \"platform\": \"N/A\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://verificationapi-v1.sinch.com/verification/v1/verifications",
+					"protocol": "https",
+					"host": [
+						"verificationapi-v1",
+						"sinch",
+						"com"
+					],
+					"path": [
+						"verification",
+						"v1",
+						"verifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "?curl --user 0d5464e9-be86-430a-83dc-13da49ae23c4=mAGKg/AeKUakWQ++HtWrOg== https://verificationapi-v1.sinch.com/verification/v1/verifications -H \"Content-Type: application/json\" --data '{\"identity\":{\"type\":\"number\",\"endpoint\":\"+917088145401\",\"message\":\"dd",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "?curl --user 0d5464e9-be86-430a-83dc-13da49ae23c4=mAGKg/AeKUakWQ++HtWrOg== https://verificationapi-v1.sinch.com/verification/v1/verifications -H \"Content-Type: application/json\" --data '{\"identity\":{\"type\":\"number\",\"endpoint\":\"+917088145401\",\"message\":\"ddddd\"},\"method\":\"sms\"}'",
+					"query": [
+						{
+							"key": "curl --user 0d5464e9-be86-430a-83dc-13da49ae23c4",
+							"value": "mAGKg/AeKUakWQ++HtWrOg== https://verificationapi-v1.sinch.com/verification/v1/verifications -H \"Content-Type: application/json\" --data '{\"identity\":{\"type\":\"number\",\"endpoint\":\"+917088145401\",\"message\":\"ddddd\"},\"method\":\"sms\"}'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addDbUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImNmNjM3ZDE0N2Y2MDA2Y2UyZmFlNTk2OTIxYzk5MDdiOGY5YmNlMzc0YWMzNGI3NmY3NTc0OTIzMDBlODliZGU3MDk0NTIyNDcxMTE4YjRkYTRjZWIxM2FmZmY4ZGM4MWY3YTgwNDJhYzA1NWUwYzQ5NzhiYzcyZjg1Yjg2OTdlZGRjNzJmMWI3Mjc5OTNhMTI4ZTcwYTQ0MzBlNmVlOWM4ZDI0NzUyMjAwNjllYTdkYTQ2ODFlM2JjODcwZGFlNWUyNjBhZjE1ODE4OTAwNmI4MjVmMTNiMWEwYjQyZjYwMjlmZjZjMTUwMWIxNmRlNCJ9LCJpYXQiOjE1ODc1NzQwMzV9.UhUJSXAaa9S-yyWM0iXU987qV5sxvuLhNbRMxC2hkvY"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "Admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3080/api/v1/admin/signUpDbUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3080",
+					"path": [
+						"api",
+						"v1",
+						"admin",
+						"signUpDbUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

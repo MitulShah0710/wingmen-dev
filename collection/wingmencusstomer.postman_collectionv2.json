@@ -1,0 +1,4781 @@
+{
+	"variables": [],
+	"info": {
+		"name": "wingmencusstomer",
+		"_postman_id": "48713e75-d5bd-eed7-070c-15ea4504cadd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"description": "",
+			"item": [
+				{
+					"name": "admin signUp",
+					"request": {
+						"url": "localhost:3080/api/v1/admin/signUp",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"jason@mywngmn.com\",\n\t\"name\": \"jason\",\n\t\"password\": \"146Carmans\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "signIn",
+					"request": {
+						"url": " https://mywngmn.com:3080/api/v1/admin/signIn",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"jason@mywngmn.com\",\n\t\"password\": \"146Carmans\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addVehicleType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/addVehicleType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImE0OTM0MjQ0NmFlODY4ZjIxZmRiYTllZWE2YjQ4MjQyNDllYmFlMzZhYzgwZGQxYzY4MjBkMzMxODA4ZGYzZWQ4ZmFlMDlhYjdiZDI5OTFmMDA1MDZjMjZiZGQ4YWEwZTU3NTdmMTVhZWI4NzQ1YTU4ODMyNjg4Y2JjYTExMDg1YzBiNzQ5ZWZhYzc0ZGMyNDNjYTc0YTU2NjA5MDA1NTc2YTFmYzEzMWVlYjJhNzNhMTU2ODU3OThiY2Q4MTU1NjVmODcyY2IzY2MwMWIwNTVmOWJkYmIyNzRlY2NlMDMyZWYyMTJlMmE3NzdmZWU5MyJ9LCJpYXQiOjE1ODYzMzc4NTQsImV4cCI6MTU4NjQyNDI1NH0.kt9EStJ1BF8U9u-4Nw4PjOKpmH7sqzAaz8Zzahq_Yvk",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleTypeName\":\"demo\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editVehicleType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE4MTM3ZGIwZGQ3OGMzZWY3NDYyYTVmYmMxNzczYzE4MjJjZjZmZjA3M2M2NTk3YzY1MDE1MGY5ZWVmM2E1ODc1YzU5YWYxNmM1MzkyYzc4ZWM4NWMzOTBlMmFhMzMxZDYzNjQ4YTkyNjAwYWFiNzhiYTM2ZGMzMWEzZDgxY2UyYWVhNWVlMzM0NjczM2IwOGUyY2E4MjdjNzJjMjAxYWY5N2NhOTg5NWFmNDQ4YzhlMjlmNzhmY2U3OTk3MmUxNTIxM2VjMTZkNmU5YzZkYmVlMjllMGFjYjI0MjE2OTVjOTg3NzU0MjUzMmRiMDdlMCJ9LCJpYXQiOjE1ODcxMTgyNDJ9.8stAhZv-zXxVDOjf6cfx_XY01kxtqa0zVSLN_yNXgj0",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleTypeName\":\"demo2\",\n\t\"_id\":\"5e8d9c13fe64dd28f84e8f9b\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addServiceType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/addServiceType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVkYjY3NWU3ZjUxNjc2OGRiMzczNjZkYzRiNzcxNzZmOTNkMzcxZTFmODFlMjA2ZTc3NjM3M2EwYTRiZTc5ZmNjYzg5YmI4NmIyYWZjNDcyN2VjZGRhYWEwMzVlMjE3MTUwYWY4YjIxNTRjMmFlNzcwYmM0MDk1NGNmYjU5MTY1ZDYxODUyN2U0ZDM4Y2M2YjUwMjY2ODU3ZTA2ODYyYzNkYThiYjAyODg2NjU1ZjhkYmMzYWM0NjcyZTc1NTc2NWU0NzBmM2JjZTE0ODcxMjg1MTQ5NzBhNTAyOTBmOTg0YzEyNTAwNDU5MDg2MjdkNSJ9LCJpYXQiOjE1ODc3MTU3NzR9.eiHgtV-UJ1Cx8XvxVMl9UkJ1UFqMmzouyjA4-8TmPo8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "serviceName",
+									"value": "fffq",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"description": "",
+									"type": "file",
+									"src": "default-avatar.jpg"
+								},
+								{
+									"key": "note",
+									"value": "fda",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "isNoteShow",
+									"value": "true",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "isEventService",
+									"value": "true",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "isSingleTrip",
+									"value": "false",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "isRoundTrip",
+									"value": "true",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editServiceType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editServiceType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVkYjY3NWU3ZjUxNjc2OGRiMzczNjZkYzRiNzcxNzZmOTNkMzcxZTFmODFlMjA2ZTc3NjM3M2EwYTRiZTc5ZmNjYzg5YmI4NmIyYWZjNDcyN2VjZGRhYWEwMzVlMjE3MTUwYWY4YjIxNTRjMmFlNzcwYmM0MDk1NGNmYjU5MTY1ZDYxODUyN2U0ZDM4Y2M2YjUwMjY2ODU3ZTA2ODYyYzNkYThiYjAyODg2NjU1ZjhkYmMzYWM0NjcyZTc1NTc2NWU0NzBmM2JjZTE0ODcxMjg1MTQ5NzBhNTAyOTBmOTg0YzEyNTAwNDU5MDg2MjdkNSJ9LCJpYXQiOjE1ODc3MTU3NzR9.eiHgtV-UJ1Cx8XvxVMl9UkJ1UFqMmzouyjA4-8TmPo8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "serviceName",
+									"value": "sssw",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"description": "",
+									"type": "file"
+								},
+								{
+									"key": "_id",
+									"value": "5ea29f2ade039b2364c4dbe3",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "sdsdsd",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "isNoteShow",
+									"value": "false",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "isEventService",
+									"value": "false",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "isSingleTrip",
+									"value": "false",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "isRoundTrip",
+									"value": "false",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicleType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getVehicleType",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE4MTM3ZGIwZGQ3OGMzZWY3NDYyYTVmYmMxNzczYzE4MjJjZjZmZjA3M2M2NTk3YzY1MDE1MGY5ZWVmM2E1ODc1YzU5YWYxNmM1MzkyYzc4ZWM4NWMzOTBlMmFhMzMxZDYzNjQ4YTkyNjAwYWFiNzhiYTM2ZGMzMWEzZDgxY2UyYWVhNWVlMzM0NjczM2IwOGUyY2E4MjdjNzJjMjAxYWY5N2NhOTg5NWFmNDQ4YzhlMjlmNzhmY2U3OTk3MmUxNTIxM2VjMTZkNmU5YzZkYmVlMjllMGFjYjI0MjE2OTVjOTg3NzU0MjUzMmRiMDdlMCJ9LCJpYXQiOjE1ODcxMTgyNDJ9.8stAhZv-zXxVDOjf6cfx_XY01kxtqa0zVSLN_yNXgj0",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editVehicleType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e95684538379f2c6805e1f6\",\n\t\"vehicleTypeName\":\"den1\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editVehicleType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"\",\n\t\"vehicleTypeName\":\"den\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editVehicleType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e95684538379f2c6805e1f6\",\n\t\"vehicleTypeName\":\"den1\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editVehicleType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e95684538379f2c6805e1f6\",\n\t\"vehicleTypeName\":\"den1\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicleType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editVehicleType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e95684538379f2c6805e1f6\",\n\t\"vehicleTypeName\":\"den1\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getServiceType",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getServiceType?_id=5e9980cfa60b98170ce17bb1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getServiceType"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5e9980cfa60b98170ce17bb1",
+									"equals": true
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE4MTM3ZGIwZGQ3OGMzZWY3NDYyYTVmYmMxNzczYzE4MjJjZjZmZjA3M2M2NTk3YzY1MDE1MGY5ZWVmM2E1ODc1YzU5YWYxNmM1MzkyYzc4ZWM4NWMzOTBlMmFhMzMxZDYzNjQ4YTkyNjAwYWFiNzhiYTM2ZGMzMWEzZDgxY2UyYWVhNWVlMzM0NjczM2IwOGUyY2E4MjdjNzJjMjAxYWY5N2NhOTg5NWFmNDQ4YzhlMjlmNzhmY2U3OTk3MmUxNTIxM2VjMTZkNmU5YzZkYmVlMjllMGFjYjI0MjE2OTVjOTg3NzU0MjUzMmRiMDdlMCJ9LCJpYXQiOjE1ODcxMTgyNDJ9.8stAhZv-zXxVDOjf6cfx_XY01kxtqa0zVSLN_yNXgj0",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicleType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getVehicleType",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllVehicleUser",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getAllVehicleUser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVmZjViYWNlZWVkNTY2MWNkMjkxODU5MWJiYmRjNzVlODJkMWNiNzMwMzUzMTk2MTdhNTQ4M2FhYjRhMmIwYmUzOTdlMWIyYjI2ZTcyZGQzYTQzYzhlMWEyY2E4YjU0YzgyMzVhMzAzYjEyNWU4MjAyMjkyZjRlODU2ZTY4MzgyMDAwY2Q4ZDU1NTdhMThiZWYyYzJhODg3YWY0MTkxMjIzMzlkN2VlNzJhMTE1ZmUxMDI3MjM3ZTRjNDZkMDcwYjU1MmIwNjNhZjA0NjI5OTZkMWY3OTM1YWMwM2NhNjdlMGU5MDRiMGYzYjE4ZWMxYiJ9LCJpYXQiOjE1ODY4NDk4MDF9.ApcjNZre05IWTCPNM_3ZdRdzJYj3gQ2541zMgCNnS2Y",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\":\"5e8ed81c21a38921e8b9e33a\",\n\t\"skip\":1,\n\t\"limit\":2\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllVehicleDriver",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getAllVehicleDriver",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImE2ODA3YWJjZmQ2MzdhZjM4YWFkNjhlZTQ1YzE0NzM4Y2Y4ZGUxODAwM2Q4NGEzNWU2MDFkMDgwNzMwNDAyOTkyNGIzMjA5Y2Q1MWMyMWY4YTJlZmY4NzllNWZmZjQ5ZDI2NDQyNWY1MzUyOGQ3ZmNmZDliMDEyZmNhNDI3MDQ1MzVjZDIyNmI5OTYyYThiNTk2MDYzMmM2YTE5MDk1NTBiYTk3MmI0YjQ4Nzk0N2UxNzBjZTcyMzFhMGU2YTk4MDA3M2RhZjJhMjRjZjI0MWZmYzNlNDIyMmZmZTRhYjUzMTk4N2E3ZTA2Nzg1M2ZiZSJ9LCJpYXQiOjE1ODcwOTQyODN9.XjR8h0SH_ct9FsV3zAZKPRtWdTl5MinHSSAQnKs_H5g",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"driverId\":\"5e9445799f56c61ef015c86a\",\n\t\"skip\":1,\n\t\"limit\":10\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "verifyBlockUnBlockDeltedDriver",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/verifyBlockUnBlockDeltedDriver",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImE1ZmNiMDdlNDMzNWU3MjFlYTFlYWE0ZTk2ZjNkZmI0NzYzMzFlMGI3ZjAwNzY5NzdiYTRhM2QxNTMwMWIwOGNmODk5MDhiODU3MjA2ZDkzMzdhNzgwNTU0NDcxODQ2ZjIxYjhmNzEwYzJlNGFmYjMwNjNmZTRlNTk0ZmUyM2Q1NTRjN2JmNDdmMzc1ODFiN2Y1MDQyZTU4NmIzMTliNmFjZGY3M2NkMTJjMmY0MDNjNjY1MjNkMzMzOTI0NjAxNDYwZTRlNmQwYTRlOGZjYzNkMzc4NzE1MmFiYTcyODQ4NTRmNWY0YTBmZDc2ZDRjZiJ9LCJpYXQiOjE1ODY5MzU3NDd9.vU4mGmP97b14h6qY1h6LPrvqsMGD8FOR8eIP6luF4xE",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9445799f56c61ef015c86a\",\n\"isApproved\":true,\n\"isBlocked\":false,\n\"isDeleted\":false\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addTransmissionType",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/admin/addTransmissionType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImI3MzIyZDUzODQ4NWM4OTJkYTY2ODNkMjc5YWIzNTg1ZjM2YzYxYjUzYzFkZDU2Nzk0NGQyMTQwMjFhNTYzYmI3ZjUzMTBhZDc2YjhhNGUxMTU2NTMyNGE5ZjZhYTQ4ZGVlNGI3Yjk5MzllOGMwZGM0YjAwZDQ2Njk5NjEzNzQzNjA3NzFlNmJiNTY2ZGYzOTA2OGM1YjUwMTg5ZDZhOGJmMzU2OGM4MGU0MzExYmI1MjNkYzI5Mzg1YzllZDA1MTZhMzY4YjdhYjcxMTkxM2I5OTIxZmFmNDNiODg2ZWRmNWRkNWY2OTc0MGU3MWM0NyJ9LCJpYXQiOjE1ODY5NDg1MDZ9.awVRrNpfAoVHnLgixm2Bsr6C6Og97EoiCRG_5Ol_zJQ",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"transmissionTypeName\":\"demo3\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editTransmissionType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editTransmissionType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImMzYTZiZWQ5MDFjNjYxYzA0OTliZmVmZDAzMTZjNTIyYjhiMzU1ZWFiMTMwMDgyZTdiZGZjOGE1MGMyYzgyYjExYmE2YzliOWY3ZDRmNzhhZDYwYTJhODI1YjY4YmYyMDcxNDI0ZmU4YTQxZDhjZWIxMjIwMTk4MDQ3ODc3YmJhMWM3ZWJhYTg4NWRjYTVmN2Q1MTdmZDNiNDYwOGRmODUwZDNjZTRkMTY3NGM4NTNjNzliNTcyN2U2ZWU4NDBjZTMzMDA3M2RlNWMzYjk4NjhlZTE1NzE1ZmY3Y2RkY2Q3YTFhNGQ0ZDU1MmQyZDg0NyJ9LCJpYXQiOjE1ODY5NDU1Nzd9.7WL3LPZANKDplOWGEpItKIxcdZ71JfP4s43ohecbSYU",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e96de4526083729c0ae6c94\",\n\t\"transmissionTypeName\":\"den1s\"\n\t}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getTransmissionType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getTransmissionType",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImMzYTZiZWQ5MDFjNjYxYzA0OTliZmVmZDAzMTZjNTIyYjhiMzU1ZWFiMTMwMDgyZTdiZGZjOGE1MGMyYzgyYjExYmE2YzliOWY3ZDRmNzhhZDYwYTJhODI1YjY4YmYyMDcxNDI0ZmU4YTQxZDhjZWIxMjIwMTk4MDQ3ODc3YmJhMWM3ZWJhYTg4NWRjYTVmN2Q1MTdmZDNiNDYwOGRmODUwZDNjZTRkMTY3NGM4NTNjNzliNTcyN2U2ZWU4NDBjZTMzMDA3M2RlNWMzYjk4NjhlZTE1NzE1ZmY3Y2RkY2Q3YTFhNGQ0ZDU1MmQyZDg0NyJ9LCJpYXQiOjE1ODY5NDU1Nzd9.7WL3LPZANKDplOWGEpItKIxcdZ71JfP4s43ohecbSYU",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteTransmissionType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/blockUnblockDeleteTransmissionType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImMzYTZiZWQ5MDFjNjYxYzA0OTliZmVmZDAzMTZjNTIyYjhiMzU1ZWFiMTMwMDgyZTdiZGZjOGE1MGMyYzgyYjExYmE2YzliOWY3ZDRmNzhhZDYwYTJhODI1YjY4YmYyMDcxNDI0ZmU4YTQxZDhjZWIxMjIwMTk4MDQ3ODc3YmJhMWM3ZWJhYTg4NWRjYTVmN2Q1MTdmZDNiNDYwOGRmODUwZDNjZTRkMTY3NGM4NTNjNzliNTcyN2U2ZWU4NDBjZTMzMDA3M2RlNWMzYjk4NjhlZTE1NzE1ZmY3Y2RkY2Q3YTFhNGQ0ZDU1MmQyZDg0NyJ9LCJpYXQiOjE1ODY5NDU1Nzd9.7WL3LPZANKDplOWGEpItKIxcdZ71JfP4s43ohecbSYU",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isBlocked\": true,\n            \"isDeleted\": false,\n            \"_id\": \"5e96de4526083729c0ae6c94\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllVehicle",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getAllVehicle",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjA3OWVkYTRhZmNmZDkyMzQ4NjM2Y2RhNDUzZGY0MzFhZGI1MmQ5ZjdmNmEwZTBiMWE4NmZkOGI1NmEzN2M2ZWRkNjgwYTVjMzg3NmJkZmQyZTk2YmRiNTYzNzBkYzUyZTI4ZTFkZWM5ODYxZjVjZWM3YzU3YmU2YjEwMTQ0OGJhYjg3YjkzNDA2OTNjMWEwNTA0YzFlNDg2N2YwNmY5ZWQyODYxNWY5MmZiYTJhYmJjNTQ4YzJkZjI0MzlkN2I2NGIyOTY1NjZlOGRlZmVmMTJhZTcyNTU5OGFlZWExZDJmZTdjYzkxZThhNjUxMjg2YSJ9LCJpYXQiOjE1ODY5NTQ3MzB9.7kVz3upII3W_uph1x-ORnPFlvuNCS7uKgFJ9RBf19L8",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":1,\n\t\"limit\":10\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUsers",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getAllUsers",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImE2ODA3YWJjZmQ2MzdhZjM4YWFkNjhlZTQ1YzE0NzM4Y2Y4ZGUxODAwM2Q4NGEzNWU2MDFkMDgwNzMwNDAyOTkyNGIzMjA5Y2Q1MWMyMWY4YTJlZmY4NzllNWZmZjQ5ZDI2NDQyNWY1MzUyOGQ3ZmNmZDliMDEyZmNhNDI3MDQ1MzVjZDIyNmI5OTYyYThiNTk2MDYzMmM2YTE5MDk1NTBiYTk3MmI0YjQ4Nzk0N2UxNzBjZTcyMzFhMGU2YTk4MDA3M2RhZjJhMjRjZjI0MWZmYzNlNDIyMmZmZTRhYjUzMTk4N2E3ZTA2Nzg1M2ZiZSJ9LCJpYXQiOjE1ODcwOTQyODN9.XjR8h0SH_ct9FsV3zAZKPRtWdTl5MinHSSAQnKs_H5g",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":0,\n\t\"limit\":10,\n\t\"_id\":\"5ea075c27f5afe33a82cc2d7\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllDrivers",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/admin/getAllDrivers",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImZkYTgwZDQxMzhmMjYwM2UxYTRhNDg0ZDcxYWNkYjQ4OWRkOWRmY2IyODIwNmJlNmQzZGQ3NzdjNzBhMmM3MmUzZWNhNzI4OTJkZTJlODcwZTQ3OWUxZGE2MGM5ZTViNDgxZjY2ZjA5MjZjNmQ5M2RmZjZmNDRlOGQ3ZDkwOGZhYzhhMzEwODQxZTg0MGYzZDMwNzdlZTY3Y2I3YWRiZjIwZGFmMTM0NWY1ZTlmZGJjNjU0NzcxYjliZjI1Y2EwMjIzYTkyMjBkOWVlODBiZTliZjQxNTUyZmY1OTNjNjlmYTRmMDA3NGM1ZjU0ZWQwZSIsImVuY3J5cHRLZXkiOiJpTkxvZCJ9LCJpYXQiOjE1OTA0OTY4MjV9.4vikJrGj_jeLzmByRjUrBwSMIAlMiqaBrTwy8OTC_bs",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":0,\n\t\"limit\":10,\n\t\"isPilot\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteServiceType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/blockUnblockDeleteServiceType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9445799f56c61ef015c86a\",\n\"isApproved\":true,\n\"isBlocked\":false,\n\"isDeleted\":false\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "setAppVersion",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/setAppVersion",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFlMTlkZjg4OWEwMjFlYmFkNjVmYWMwZGZjY2MzZDA2YTg4NTk4MmZkOTEyYTNkZWJiMGUxNTFkZmRkNWQyNjZlMGE1Y2ZhN2Y4NmNjMmZkMzc0MWQ3OGMwODQ1MTBjZmY1ZDM2MGY3YmZjNzc1ZGE3ZDA1ZWRjOTlmODEzZDJkNjk4MWE0YTdjN2U1MGYzN2Y4ZWIxMjg3ODk2YTkzYjk3MmMwOGFhZjM2YjZkZDY0MDlkMWUwZTk3Mjc5YTJjMDcxMDJmNjIyYzkzY2JmNzc3Mjk0ZTQ5NGZlODA5OGMzOTEzNWIyMjIzMWU4NWFkMCJ9LCJpYXQiOjE1ODcxMzAwNTV9.jpNAZJ9yDrUUY1xQb9hQE41wTbzt99t7fu6j1xAkzPc",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"latestIOSVersion\": 3,\n  \"latestAndroidVersion\": 3,\n  \"criticalAndroidVersion\":2,\n  \"criticalIOSVersion\": 2,\n  \"latestWebID\": 2,\n  \"criticalWebID\": 1,\n  \"updateMessageAtPopup\": \"dsds\",\n  \"updateTitleAtPopup\": \"sdsdsd\",\n  \"latestDriverIOSVersion\":3,\n  \"latestDriverAndroidVersion\":3,\n  \"criticalDriverAndroidVersion\":3,\n  \"criticalDriverIOSVersion\":3,\n  \"driverUpdateMessageAtPopup\":\"dsds\",\n  \"driverUpdateTitleAtPopup\":\"dsds\",\n  \"aboutUs\":\"https://www.google.com\",\n  \"contactUs\":\"https://www.google.com\",\n  \"termsAndCondition\":\"https://www.google.com\",\n  \"driverAboutUs\":\"https://www.google.com\",\n  \"driverContactUs\":\"https://www.google.com\",\n  \"driverTermsAndCondition\":\"https://www.google.com\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAppVersion",
+					"request": {
+						"url": "https://mywngmn.com:3080/api/v1/admin/getAppVersion",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteVehicleType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/blockUnblockDeleteVehicleType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFlMTlkZjg4OWEwMjFlYmFkNjVmYWMwZGZjY2MzZDA2YTg4NTk4MmZkOTEyYTNkZWJiMGUxNTFkZmRkNWQyNjZlMGE1Y2ZhN2Y4NmNjMmZkMzc0MWQ3OGMwODQ1MTBjZmY1ZDM2MGY3YmZjNzc1ZGE3ZDA1ZWRjOTlmODEzZDJkNjk4MWE0YTdjN2U1MGYzN2Y4ZWIxMjg3ODk2YTkzYjk3MmMwOGFhZjM2YjZkZDY0MDlkMWUwZTk3Mjc5YTJjMDcxMDJmNjIyYzkzY2JmNzc3Mjk0ZTQ5NGZlODA5OGMzOTEzNWIyMjIzMWU4NWFkMCJ9LCJpYXQiOjE1ODcxMzAwNTV9.jpNAZJ9yDrUUY1xQb9hQE41wTbzt99t7fu6j1xAkzPc",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9568b338379f2c6805e1f7\",\n\"isBlocked\":false,\n\"isDeleted\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "verifyBlockUnBlockDeltedUser",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/verifyBlockUnBlockDeltedUser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9445799f56c61ef015c86a\",\n\"isBlocked\":false,\n\"isDeleted\":false,\n\"isApproved\":false\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addTeam",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/addTeam",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"teamName\":\"demo\",\n\t\"teamMembers\":0\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editTeam",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editTeam",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e9d55f1423f2326709a939d\",\n\t\"teamName\":\"demo2\",\n\t\"teamMembers\":2\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteTeam",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/blockUnblockDeleteTeam",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9d55f1423f2326709a939d\",\n\"isBlocked\":false,\n\"isDeleted\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getTeam",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getTeam",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addEventType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/addEventType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"eventName\":\"demo\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editEventType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editEventType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e9d701a6b6c3c17ec11c6cf\",\n\t\"eventName\":\"demo2\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteEventType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/blockUnblockDeleteEventType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9d701a6b6c3c17ec11c6cf\",\n\"isBlocked\":false,\n\"isDeleted\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getEventType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getEventType",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjAyZmZlM2E2NzRlNjYzN2M4MmJiM2ViMzAzZGVmMjgwY2ZjNmI4Mjc2ZjAxZDFmNTZkYzdlMmViOWM0MzFlOTI0ZTkyNDc3MjljZmMwOTBlNWUzYmQ3YzUxOTljODE0MjVmM2JmNjcxYTA2OWM5ZmNjYjQxZjI0ZjZkOTRmYjQ4ZWMzMjNhNWY0YWRkYjQxZTU1NDNjMmY3OGY4ZTA0OTVhOTQ5YWNiYTg1NjQ3YWViMzFmODI1ZDRiYjEyZGZkOTdkNzlmOTI5OGNhN2M1Y2VjZmMwZjRlMTM2MjliYmY0M2E1MzhmY2MxNDM4Nzk3MiJ9LCJpYXQiOjE1ODczNjkxMjZ9.aL_20eAd1oip8LmG0NsAopAnQ3Gx1ldN1MY109HaQdU",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "forgotPassword",
+					"request": {
+						"url": "localhost:3080/api/v1/admin/forgotPassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"admin@mail.com\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "forgotChangePassword",
+					"request": {
+						"url": "localhost:3080/api/v1/admin/forgotChangePassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"password\":\"12345678\",\n\"passwordResetToken\":\"TkWBJ3gJZX\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBlockPromoCode",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/deleteBlockPromoCode",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQwYTVlMmI0ZDAwNTIyMzBlOTgxMzUxY2RkZmIxMTdlOGNmNzE2YTJmNDgzNTZjOTg2MDI4NmFiOGZkNGQ2M2UwN2Y1MTYyZTAyZTkxMWFjN2U4MWI5M2M2NjY1NDZkNTIyMmZkZTIyYzIxOTQzNDUwYzUxY2UxYzhmYjIxODYwZjkwY2JkM2E1YWYzYWZkMjU1ZmVlZjAzNWU5NWRmOTlmYzBmOWE3ODk2ODAzNGZiMmEwM2I0YWUzYjIxY2RkODA1MDc1MDdhYTYzYWQ0ZDI3ZGZlYTNkOTdmYTA3MzQyOTc4NGQyNWUzYWU3Y2MyMiJ9LCJpYXQiOjE1ODc1NDkwMjR9.uL9XzWJdFhCeyjiP1Fnaq9K1xVLieUh5CqYK95mcAZc",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5ea029ed2f2f571f08d8ae35\",\n\t\"isBlocked\":true,\n\t\"isDeleted\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPromoCode",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getAllPromoCode?_id=5ea029ed2f2f571f08d8ae35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getAllPromoCode"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5ea029ed2f2f571f08d8ae35",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQwYTVlMmI0ZDAwNTIyMzBlOTgxMzUxY2RkZmIxMTdlOGNmNzE2YTJmNDgzNTZjOTg2MDI4NmFiOGZkNGQ2M2UwN2Y1MTYyZTAyZTkxMWFjN2U4MWI5M2M2NjY1NDZkNTIyMmZkZTIyYzIxOTQzNDUwYzUxY2UxYzhmYjIxODYwZjkwY2JkM2E1YWYzYWZkMjU1ZmVlZjAzNWU5NWRmOTlmYzBmOWE3ODk2ODAzNGZiMmEwM2I0YWUzYjIxY2RkODA1MDc1MDdhYTYzYWQ0ZDI3ZGZlYTNkOTdmYTA3MzQyOTc4NGQyNWUzYWU3Y2MyMiJ9LCJpYXQiOjE1ODc1NDkwMjR9.uL9XzWJdFhCeyjiP1Fnaq9K1xVLieUh5CqYK95mcAZc",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addPromoCode",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/addPromoCode",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQwYTVlMmI0ZDAwNTIyMzBlOTgxMzUxY2RkZmIxMTdlOGNmNzE2YTJmNDgzNTZjOTg2MDI4NmFiOGZkNGQ2M2UwN2Y1MTYyZTAyZTkxMWFjN2U4MWI5M2M2NjY1NDZkNTIyMmZkZTIyYzIxOTQzNDUwYzUxY2UxYzhmYjIxODYwZjkwY2JkM2E1YWYzYWZkMjU1ZmVlZjAzNWU5NWRmOTlmYzBmOWE3ODk2ODAzNGZiMmEwM2I0YWUzYjIxY2RkODA1MDc1MDdhYTYzYWQ0ZDI3ZGZlYTNkOTdmYTA3MzQyOTc4NGQyNWUzYWU3Y2MyMiJ9LCJpYXQiOjE1ODc1NDkwMjR9.uL9XzWJdFhCeyjiP1Fnaq9K1xVLieUh5CqYK95mcAZc",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"cashback\":0,\n\t\"percentage\":1,\n\t\"promoCode\":\"demo\",\n\t\"individualUserPromoAttempt\":1,\n\t\"noOfPromoUsers\":1,\n\t\"isExpireDateAdded\":true,\n\t\"expireDate\":\"2020-04-22T19:49:14\",\n\t\"isCash\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editPromoCode",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editPromoCode",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQwYTVlMmI0ZDAwNTIyMzBlOTgxMzUxY2RkZmIxMTdlOGNmNzE2YTJmNDgzNTZjOTg2MDI4NmFiOGZkNGQ2M2UwN2Y1MTYyZTAyZTkxMWFjN2U4MWI5M2M2NjY1NDZkNTIyMmZkZTIyYzIxOTQzNDUwYzUxY2UxYzhmYjIxODYwZjkwY2JkM2E1YWYzYWZkMjU1ZmVlZjAzNWU5NWRmOTlmYzBmOWE3ODk2ODAzNGZiMmEwM2I0YWUzYjIxY2RkODA1MDc1MDdhYTYzYWQ0ZDI3ZGZlYTNkOTdmYTA3MzQyOTc4NGQyNWUzYWU3Y2MyMiJ9LCJpYXQiOjE1ODc1NDkwMjR9.uL9XzWJdFhCeyjiP1Fnaq9K1xVLieUh5CqYK95mcAZc",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5ea029ed2f2f571f08d8ae35\",\n\t\"cashback\":0,\n\t\"percentage\":1,\n\t\"promoCode\":\"dem22o\",\n\t\"individualUserPromoAttempt\":1,\n\t\"noOfPromoUsers\":1,\n\t\"isExpireDateAdded\":true,\n\t\"expireDate\":\"2020-05-20T09:49:14\",\n\t\"isCash\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllBooking",
+					"request": {
+						"url": "localhost:3080/api/v1/admin/getAllBooking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjIxMGNhMGM2OTBmMjkxYmZiOTVlMjY0Y2ViMThjNjA5Y2QwM2RhMGRmMzQ5M2YxZDM0YTNlMTJmOWM3YTZiYTFiYmIwYmY1M2Y1Y2Y0NmEyYzI0ZDI0NWVlYzcwNDZjZDY0YWQ5NGExZGFkMjNlYTAyZmE1NDA4NDMyNjk1NWQ0ZWU4NDE3M2YxZGFhZjJiNjQ3YWY2YjY1NzI0NGNkYWE4MmQyOTFlM2NhZTA4NjJjOTBkNjNiMmJjMTdiN2I1ZmM5Y2ViNTNhYWJmNGQwNzY1MGNhMWIxZTJmNjAwMDU2OTQ1YzhkOTU2NjJmODVkMiIsImVuY3J5cHRLZXkiOiIwVVAyTSJ9LCJpYXQiOjE1OTA0MTQ0NDB9.XUlyvyotME06ExTUdZU2uCINBCCPaHd2v7uiJQrTDzE",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isUpcommingbookings\":false,\n\"isPastbookings\":false,\n\"userId\":\"dasdsadasdasdasdas\",\n\"driverId\":\"sdasdasdasdasdasdasdas\",\n\"skip\":0,\n\"limit\":10,\n\"isEventBooking\":false\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getBookingDetails",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/getBookingDetails",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImZlZGNmN2Q5MTM1YjMzNjEzY2ZmYzYzMDBjNDBhZTViNTczM2VjYzQ4ODBlNTJkODRiZTY2YWU3NWQ2MzM2OGIxNjg5NWU4NzcxZTNlYmYwZjE2MDVkMzYzYjVjNTMwOGM4ODYzNTIwZjczZDc5OTRiNGQzYTgxY2ZlN2ZkMWE0OTIzZDQ4YjgyNjU1OTEyMWJiM2RmZGU2N2U1NDE2NTdjNDhlMDFiOTM3ZTkwMDMxZjQ5OGM3NmI2MGYwN2E4MzQ0Mjg3Nzc1MGYwNDk5ODZlNTU3N2Y4OGNkNDAwZWEwMGYxNmEyNzhmOWNkOTIyZCJ9LCJpYXQiOjE1ODc1NTU2NDh9.8_HwEM9hrvnSqtaBmgdLQF95yNNZV-DGTv62S-ofC-c",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e9d710fad930b6cd1a7259f\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/registerUser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImNmNjM3ZDE0N2Y2MDA2Y2UyZmFlNTk2OTIxYzk5MDdiOGY5YmNlMzc0YWMzNGI3NmY3NTc0OTIzMDBlODliZGU3MDk0NTIyNDcxMTE4YjRkYTRjZWIxM2FmZmY4ZGM4MWY3YTgwNDJhYzA1NWUwYzQ5NzhiYzcyZjg1Yjg2OTdlZGRjNzJmMWI3Mjc5OTNhMTI4ZTcwYTQ0MzBlNmVlOWM4ZDI0NzUyMjAwNjllYTdkYTQ2ODFlM2JjODcwZGFlNWUyNjBhZjE1ODE4OTAwNmI4MjVmMTNiMWEwYjQyZjYwMjlmZjZjMTUwMWIxNmRlNCJ9LCJpYXQiOjE1ODc1NzQwMzV9.UhUJSXAaa9S-yyWM0iXU987qV5sxvuLhNbRMxC2hkvY",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "mukesh",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "lastName",
+									"value": "thakur",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "bilal2@yopmail.com",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "phone",
+									"value": "12345647882",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "countryCode",
+									"value": "+91",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "address",
+									"value": "test stest c",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "latitude",
+									"value": "50.23",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "longitude",
+									"value": "24.23",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/updateUser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImNmNjM3ZDE0N2Y2MDA2Y2UyZmFlNTk2OTIxYzk5MDdiOGY5YmNlMzc0YWMzNGI3NmY3NTc0OTIzMDBlODliZGU3MDk0NTIyNDcxMTE4YjRkYTRjZWIxM2FmZmY4ZGM4MWY3YTgwNDJhYzA1NWUwYzQ5NzhiYzcyZjg1Yjg2OTdlZGRjNzJmMWI3Mjc5OTNhMTI4ZTcwYTQ0MzBlNmVlOWM4ZDI0NzUyMjAwNjllYTdkYTQ2ODFlM2JjODcwZGFlNWUyNjBhZjE1ODE4OTAwNmI4MjVmMTNiMWEwYjQyZjYwMjlmZjZjMTUwMWIxNmRlNCJ9LCJpYXQiOjE1ODc1NzQwMzV9.UhUJSXAaa9S-yyWM0iXU987qV5sxvuLhNbRMxC2hkvY",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "12345678901",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "firstName",
+									"value": "gagan",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "lastName",
+									"value": "kumar",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "qwejgkfdsdaasdasgklfrty@gmail.com",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "countruyCode",
+									"value": "+91",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "address",
+									"value": "testg",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "1234567890",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "_id",
+									"value": "5ea075c27f5afe33a82cc2d7",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "latitude",
+									"value": "30.1234",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "longitude",
+									"value": "23.567",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "driverRegister",
+					"request": {
+						"url": "localhost:3080/api/v1/admin/driverRegister",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImNmNjM3ZDE0N2Y2MDA2Y2UyZmFlNTk2OTIxYzk5MDdiOGY5YmNlMzc0YWMzNGI3NmY3NTc0OTIzMDBlODliZGU3MDk0NTIyNDcxMTE4YjRkYTRjZWIxM2FmZmY4ZGM4MWY3YTgwNDJhYzA1NWUwYzQ5NzhiYzcyZjg1Yjg2OTdlZGRjNzJmMWI3Mjc5OTNhMTI4ZTcwYTQ0MzBlNmVlOWM4ZDI0NzUyMjAwNjllYTdkYTQ2ODFlM2JjODcwZGFlNWUyNjBhZjE1ODE4OTAwNmI4MjVmMTNiMWEwYjQyZjYwMjlmZjZjMTUwMWIxNmRlNCJ9LCJpYXQiOjE1ODc1NzQwMzV9.UhUJSXAaa9S-yyWM0iXU987qV5sxvuLhNbRMxC2hkvY",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "demo",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "lastName",
+									"value": "lastName",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "bilal12@yopmail.com",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "countryCode",
+									"value": "+1",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "phone",
+									"value": "1212122121",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "address",
+									"value": "gendfafadfaddd",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "latitude",
+									"value": "30.722701",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "longitude",
+									"value": "76.794654",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "carStatus",
+									"value": "True",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "driverLisence",
+									"value": "gfgdf",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "isTransmissionType",
+									"value": "true",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "ssn",
+									"value": "demo",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "updateDriverProfile",
+					"request": {
+						"url": "localhost:3080/api/v1/admin/updateDriverProfile",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6Ijk3NDM4N2EyYTY0OTE4YjQxMDk4ODQ5YjQ3ZWUzZjhlNDQ0ZjZkY2FkY2RhYjFjMTU5Nzc0M2RiYTk5MDRlM2JjYTdmZTkxMTdiYTRhODQzYWE1NTA2MGI3YzA1OTBlNWZjMmM3OTNiMTVlOGEyOTE2MDYzYjFjZjIwNjNjNzhlY2U1OGZkYTUxNThhYTAyNTlhZDk4ZWQ1ZTBjM2VlZGVjOGU0YzhhNDFkYzczM2U1Y2Y5Zjk3NjYzNmU4ZGVkNzVjZGM0MDZmY2MxMWRlYTYzN2E1Y2U3MWU0MWY4NjZjZjJmZTYyMTUyODA2MjI0OCIsImVuY3J5cHRLZXkiOiJvd2VlZyJ9LCJpYXQiOjE1OTAxMjU1MzF9.UKDnLt89QmxkSpAYxORLxMeICRZAV6YO8qq6AnK6Hj4",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "demo253",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "lastName",
+									"value": "lastName",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "bilal13s@yopmail.com",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "countryCode",
+									"value": "+1",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "phone",
+									"value": "12121221222",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "address",
+									"value": "gendfafadfaddd",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "latitude",
+									"value": "-99.133208",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "longitude",
+									"value": "19.4326077",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "carStatus",
+									"value": "True",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "driverLisence",
+									"value": "gfgdf",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "isTransmissionType",
+									"value": "true",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "ssn",
+									"value": "demo",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "_id",
+									"value": "5ea662e4a11704209c5284a2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllNotification",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getAllNotification",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "clearAllNotification",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/clearAllNotification",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "clearNotification",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/clearNotification",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"ssddsddsdsdasdqw33\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addState",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/admin/addState",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjI2MjQ0NTliMWMwZWFlYTFmNjI5OWZjOWI5ZDcyYTI0ODQyYWFjZWNlMDE4YWZjYTc5ZGNkMjg1MGExYzQwNzhmODE5YzY1MzgxNjNhNzM0OTQ5MzFiMTRlOTRjY2FjZjE4Y2U0YmFjNDUxMGE4Nzk1Y2YzOTIzMDExOWE0ZjdlNzM2YzI5YWEzYmU3NWRjM2M0NmNkODBjZWUyY2NiNjUzZjE3YWNiMGEzNzE2NmFjNjc0MDYwNjkxNGExMjkxZjdkMzZiNGEwOGEwOGYxY2ZhNzNhNzgyY2QxZjFhOGJlNGVmMDRmNzlhNzNhNmNiYiJ9LCJpYXQiOjE1ODc3MDI5MjR9.ioeU2G-ttSiQEjUqxbpqeVDmkRZGDO74s3JSPIKCW04",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"stateName\":\"chandigarh\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editState",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/editState",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e9d701a6b6c3c17ec11c6cf\",\n\t\"stateName\":\"demo2\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "blockUnblockDeleteState",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/blockUnblockDeleteState",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"5e9d701a6b6c3c17ec11c6cf\",\n\"isBlocked\":false,\n\"isDeleted\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getState",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3080/api/v1/admin/getState?_id=fafdfdfdfjdjfdkjlkjldk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"getState"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "fafdfdfdfjdjfdkjlkjldk",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "updateAdminProfile",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/updateAdminProfile",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImU1OWY0M2JlOWM5NGQ5ZTc3NTI4N2JkMDY0YTlhNGVjODFiZWRkYjIzOThmNzMyZmQyMTY0ZDg0NzQyMDkyMmZhZmM3MjIyMzU5MWNlNGVjY2I0NGYwZGYzYmE3N2YwNDMxYjgzZmRlYzEyODA1OWFmMmIxOTI3YTA2Njc2ZTAyZTJjMmFiY2VhYzE0MGZkZTNmZmNkMjA4YjM4NWQ4ODhhNjU4OGY4NDY1ODlhYzJkMjkyNWExMjIyMTk0MTk4ZjU1MzhkMDhhZTNlZjVhNTVhOGRhNTE3ZWNmYjdiYmIwMjAwZTYzNDNiZDFmYjYwYiJ9LCJpYXQiOjE1ODc5NjEyMDF9.S6NcXc0oMXF5dQFr_sbBmIGvwsqyGuC0BFQzXSSpDPY",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"driverPerKmCharge\":1,\n\"timeToScheduled\":30,\n\"sharePercentage\":40,\n\"coDriverPerKmCharge\":1,\n\"driverSharePercentage\":2,\n\"coDriverSharePercentage\":3,\n\"baseFare\":1,\n\"area\":1000,\n\"name\":\"demmm\",\n\"cancelAmountInPercentage\":0,\n\"taxInPercentage\":2\n}\n\n//timeToScheduled in second"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "acceptedBookingStatus",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/admin/acceptedBookingStatus",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImY0MDkzYjYyYmQ5NTA0NjA3OTQzY2I3YzczYTk4NDg5ZGMzZmZhMjNlMTMxNmE3MjJhMmVhZjBiNjA0OGY1NDdlZTJiZDYyYmZkYjlmYzg0MGQ2OWY4MjdiZjVkOTc5OTE3NDFjM2JkMDEzZmU4NWMxMTExYWU4MjRkY2I1ZjE0YzJmYWU1MDhmOTMyZjI1ODFjMjg5YzE1NzA1Y2RmY2YwNDgwYTczOTYzNGMwZGEyYTE4Nzg0Yjc4ZmQyMjVmM2U3Y2U0NGE3Nzg1ZDkyNzJlMDYwNWRhYmY4YzMwM2Q0NTNiOTQ5NmJlNjY4MzM1MSJ9LCJpYXQiOjE1ODgzMDcwMzJ9.w4f21vzQqINglXQZTOglH_0Ui7wmOmvv2uYq_jhuXXk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5eabaa3b61c2e805782d6415\",\n\t\"driverId\":\"5ea9151cf530cc24f1d3764c\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllAvailableDriver",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/admin/getAllAvailableDriver",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImY0MDkzYjYyYmQ5NTA0NjA3OTQzY2I3YzczYTk4NDg5ZGMzZmZhMjNlMTMxNmE3MjJhMmVhZjBiNjA0OGY1NDdlZTJiZDYyYmZkYjlmYzg0MGQ2OWY4MjdiZjVkOTc5OTE3NDFjM2JkMDEzZmU4NWMxMTExYWU4MjRkY2I1ZjE0YzJmYWU1MDhmOTMyZjI1ODFjMjg5YzE1NzA1Y2RmY2YwNDgwYTczOTYzNGMwZGEyYTE4Nzg0Yjc4ZmQyMjVmM2U3Y2U0NGE3Nzg1ZDkyNzJlMDYwNWRhYmY4YzMwM2Q0NTNiOTQ5NmJlNjY4MzM1MSJ9LCJpYXQiOjE1ODgzMDcwMzJ9.w4f21vzQqINglXQZTOglH_0Ui7wmOmvv2uYq_jhuXXk",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5eaba4ba341e137c00601047\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "acceptedCancelCompleteEventBookingStatus",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/admin/acceptedCancelCompleteEventBookingStatus",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImY0MDkzYjYyYmQ5NTA0NjA3OTQzY2I3YzczYTk4NDg5ZGMzZmZhMjNlMTMxNmE3MjJhMmVhZjBiNjA0OGY1NDdlZTJiZDYyYmZkYjlmYzg0MGQ2OWY4MjdiZjVkOTc5OTE3NDFjM2JkMDEzZmU4NWMxMTExYWU4MjRkY2I1ZjE0YzJmYWU1MDhmOTMyZjI1ODFjMjg5YzE1NzA1Y2RmY2YwNDgwYTczOTYzNGMwZGEyYTE4Nzg0Yjc4ZmQyMjVmM2U3Y2U0NGE3Nzg1ZDkyNzJlMDYwNWRhYmY4YzMwM2Q0NTNiOTQ5NmJlNjY4MzM1MSJ9LCJpYXQiOjE1ODgzMDcwMzJ9.w4f21vzQqINglXQZTOglH_0Ui7wmOmvv2uYq_jhuXXk",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5eaba4ba341e137c00601047\",\n\t\"bookingStatus\":\"ACCEPTED\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getProfile",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getProfile",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImVkYjY3NWU3ZjUxNjc2OGRiMzczNjZkYzRiNzcxNzZmOTNkMzcxZTFmODFlMjA2ZTc3NjM3M2EwYTRiZTc5ZmNjYzg5YmI4NmIyYWZjNDcyN2VjZGRhYWEwMzVlMjE3MTUwYWY4YjIxNTRjMmFlNzcwYmM0MDk1NGNmYjU5MTY1ZDYxODUyN2U0ZDM4Y2M2YjUwMjY2ODU3ZTA2ODYyYzNkYThiYjAyODg2NjU1ZjhkYmMzYWM0NjcyZTc1NTc2NWU0NzBmM2JjZTE0ODcxMjg1MTQ5NzBhNTAyOTBmOTg0YzEyNTAwNDU5MDg2MjdkNSJ9LCJpYXQiOjE1ODc3MTU3NzR9.eiHgtV-UJ1Cx8XvxVMl9UkJ1UFqMmzouyjA4-8TmPo8",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "uploadFile",
+					"request": {
+						"url": "localhost:3080/api/v1/admin/uploadFile",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQ3MzVhNDliN2Y3MzNiMWFhODNjZTdiNTQ5NzMzZDhiMDJlMjM2ZmVlYzQ3ODE0NGI4N2Y3YjFmY2MyOWMxODc3NGRhYzQyM2MxMTFlOWRiZDAxMGY5YjE0MGU5NDQ3Yjk0ZDYzNzhmNGE5OGYzYzU2MjJlMjI4ZTAzYWE3ZGM5ZDVhMDliNjZjNjFhZDE0Mzc1MjQxYjFmNzhlNTBlNmY2NzcwMDJhYWUxNDFjZjc2MTFmZGMxMDkwMjIyODRjYmQ4OTRhZjYxMmEzZTYyODlmY2I4NTI0ODI1MDFmMzgzNmY4MDI2MWIwYjgwN2EzZCJ9LCJpYXQiOjE1ODc5NzQ1Njh9.xZJzYd_aocemF-zLWXYZhVKOq7pie-lAANroDxIUa9g",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"description": "",
+									"type": "file"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "uploadFile copy",
+					"request": {
+						"url": "localhost:3080/api/v1/admin/uploadFile",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQ3MzVhNDliN2Y3MzNiMWFhODNjZTdiNTQ5NzMzZDhiMDJlMjM2ZmVlYzQ3ODE0NGI4N2Y3YjFmY2MyOWMxODc3NGRhYzQyM2MxMTFlOWRiZDAxMGY5YjE0MGU5NDQ3Yjk0ZDYzNzhmNGE5OGYzYzU2MjJlMjI4ZTAzYWE3ZGM5ZDVhMDliNjZjNjFhZDE0Mzc1MjQxYjFmNzhlNTBlNmY2NzcwMDJhYWUxNDFjZjc2MTFmZGMxMDkwMjIyODRjYmQ4OTRhZjYxMmEzZTYyODlmY2I4NTI0ODI1MDFmMzgzNmY4MDI2MWIwYjgwN2EzZCJ9LCJpYXQiOjE1ODc5NzQ1Njh9.xZJzYd_aocemF-zLWXYZhVKOq7pie-lAANroDxIUa9g",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"description": "",
+									"type": "file",
+									"src": "kub.png"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getDashboardCount",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/getDashboardCount",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE2ZjBiYjFhYzJhNTY5YjgyZjM3MTdiNWIzNjIwNTQyZTg5MzY1MTIzMzY4NzBhZmU3MmM4NjViMGRlYzY4ZWY4NGNkMjhiYzVkNzUwODFjNThkMTA3ODMxNzk3ZTI0ZDJlZmFmZGJmYjJkNDc1ODNkMmYzYjVjMzY1NGFkM2Q2OTc5ZDc1ZGFhYTAwNmRkY2IxYjk3ZmUzMjRiMDk5ZGVjZWU4YmJiYWM4YmQ0NzdjYTYwNjM0NDRjMjQ2YjI3M2QxMTFlZWMxMWI2ZWM2Y2E2MzlkYWY5NTkzYmViY2QxMDc1MDgyMWNlNGQ4MzdjNSIsImVuY3J5cHRLZXkiOiJNbkpObyJ9LCJpYXQiOjE1ODgzMjk0NTR9.iU6dQb6-Cq2P3DeXiUTZsYvN5ne9MKK2YWgHAcJe4pw",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/logout",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getRevenue",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/admin/getRevenue",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImU2ZmYyMDJiMmIyYzYwNDM2ODg5MGZiZDA4NGJiNWIyNTFlNmVkNDVmMTNkMTFiZDEyMGFmOTA3OTkxNTlmMzMxYWVkZDFiY2FkZmFjY2RkYTk0YjViYTA4MWJkZmY5MjFiNTBiN2Y4MjkyOGQyNjhkZWZlMmFkNmE5YmY2OTAxMjRiYjViNTNjMTEwMmU1MWY5NWExZjg3ZGE5YjNlNjE2NDJlZjQxMDYwYmE2MjBmNjM3YzA5NTMwYzA2NjQxYTdiYjU0MDc0OTg4OThmMzY2MzFkZGY0ZDI1YWU0NzQ3ZmUzZGFlOTRjNzUyOWRlMyIsImVuY3J5cHRLZXkiOiJGSHkwUiJ9LCJpYXQiOjE1ODg4MzgyMDZ9.AMecozYjNQyF_52mFPL9cymQKKMY5b-IlQj_NzW_uUM",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"startDate\":\"2020-01-01\",\n\t\"endDate\":\"2020-12-30\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "updateDocuments",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/updateDocuments",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImE0OTM0MjQ0NmFlODY4ZjIxZmRiYTllZWE2YjQ4MjQyNDllYmFlMzZhYzgwZGQxYzY4MjBkMzMxODA4ZGYzZWQ4ZmFlMDlhYjdiZDI5OTFmMDA1MDZjMjZiZGQ4YWEwZTU3NTdmMTVhZWI4NzQ1YTU4ODMyNjg4Y2JjYTExMDg1YzBiNzQ5ZWZhYzc0ZGMyNDNjYTc0YTU2NjA5MDA1NTc2YTFmYzEzMWVlYjJhNzNhMTU2ODU3OThiY2Q4MTU1NjVmODcyY2IzY2MwMWIwNTVmOWJkYmIyNzRlY2NlMDMyZWYyMTJlMmE3NzdmZWU5MyJ9LCJpYXQiOjE1ODYzMzc4NTQsImV4cCI6MTU4NjQyNDI1NH0.kt9EStJ1BF8U9u-4Nw4PjOKpmH7sqzAaz8Zzahq_Yvk",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleId\":\"5e96cc520ac5e12a2cf39e6c\",\n\t\"drivingCertificate\":\"ssffsss\",\n\t\"license\":\"ddd\",\n     \"numberPlate\":\"sss\",\n     \"carLicense\":\"ddd\",\n     \"vehicalRegistration\":\"dsdsd\",\n     \"insuranceDocuments\":\"dsdsds\",\n     \"taxiPermit\":\"dsdsdsdsd\",\n     \"carFrontImage\":\"carFrontImage\",\n     \"carBackImage\":\"carBackImage\",\n     \"carLeftImage\":\"carLeftImage\",\n     \"carRightImage\":\"carRightImage\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getContactUs",
+					"request": {
+						"url": "localhost:3080/api/v1/admin/getContactUs",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjM2YTlhMzdlNGRlZTg4OWU1YmZhMzJlYjUzODgxMWFiNGYxYWU5ZGM0NTM5MGU4MjFiZjQyMTg1NWZlZDZlNjBjY2RjNjBhN2RkOGNmYWQyMDMyNDUzMjZiNTNjODA4NWQ2MWE2MzE2N2NjYzc3MTJhZTFkODRhMTNhYWM1OWFhMzQ1NWQ0Y2U3OTVhZDgxNDI4MGJjOWNkNjMwNDU0NjI2ZTMwMTM2YWNlOTIxNmM5ZGU0ZTdhYTZjYTc1MTlkZjRhYjMwM2RhYTUzNzE3OTg3ZjFmODYwODk3NTRjZWI0Y2JiYjlhNjg4OGY0YWRjYiIsImVuY3J5cHRLZXkiOiJNTTFRRiJ9LCJpYXQiOjE1OTI0NTY4MDR9.FNBN6_iop-sIS9iy64Y9L4fy-iSCb_2NAM1Duutl9cQ",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"limit\":10,\n\t\"skip\":0,\n\t\"search\":\"kk\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "sendBulkNotification",
+					"request": {
+						"url": "http://localhost:3080/api/v1/admin/sendBulkNotification",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjBkNmE3Yzc2MzBkMGVjYmVkMWQ1NTRhNmUyMGM5NzZjZTIyMmEzN2JiMGI5YmNlMDQ1NTdjODY2YzNiZjlmMGY5NmZkYzMwNTdkN2Y5NTk1MWEzYTE2NWYxN2UxZTQzYWRiMzQwNTU1ZmUyZjlhZDc3NWQ4M2E1NWYwZTk2NzUyYzUyZGJmZGZiZmYzZjA2NGEwMjVjYWRmYmJlMzdjZmVlODc0MjU3ZGQ1Njc3MDc5OWI5NDllN2MwNThkYzUzOTc3MTdjNjk1M2ViNWFjZDZkZGQ2OTRmYzY0ZTBlZDZlOWJjYThjZjM1OWZiZDZkNyIsImVuY3J5cHRLZXkiOiJnczRTeCJ9LCJpYXQiOjE1OTM0MzUwOTh9._x5v-TpEVUDlL5BMt5nKDbfA7LH8_GKCU82zSI5oB0c",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"message\":\"hhh\",\n\t\"title\":\"ggg\",\n\t\"messageType\":\"PUSH\",\n\t\"userIds\":[\"5ea65e78a11704209c52849c\"]\n}\n"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"description": "",
+			"item": [
+				{
+					"name": "signUp",
+					"request": {
+						"url": " https://mywngmn.com:3080/api/v1/user/signUp",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"countryCode\": \"+91\",\n\t\"phone\": \"9988750616\",\n\t\"type\": \"mobile\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getUserProfile",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/getUserProfile",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImRhNjQ2MzQ4MmU3NTFmZDA5MDI5MTE0OGI5ZTdhOWRjZTAyMTI5MzFiNGEzZjhmOGQ2ODRhZGExMmM2YjI1MGE5NTA0OGNlNTJmZTkzNzFkOTZlM2NhMTQzZTJiY2Q0MDdjMmQwN2E2NDk3NDc5Y2M2YjViNDgzOTA1ZjU3YmQxYjgzYzQ3MGI3N2Y0YTk1N2M5YTY3OWZmOTI2NTMzYmU0MWQ0MWQ3OWNhOGZkZDBkYjU3YjdmODU3MDMxZDllNzBlYWRiM2NkYzBjOTNmN2VlNzg5NzUzNjQzNDA1OTdlZDZkMGZkYmI3Mzg5ZjNmOSIsImVuY3J5cHRLZXkiOiJHRWZ1QyJ9LCJpYXQiOjE1ODg5MTczNDR9.SkUASq69UzqHFV-1RXTmr_a-b_OhiFuoJ9P95PdXe4I",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "verifyOtp",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/verifyOtp",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otpId\": \"5e8c19d179a6e21f887ed102\",\n\t\"otp\": \"734529\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "complete signup",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/complete",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "mukesh",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "thakur",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "bilal@yopmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12345678",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "+91",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "test stest c",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "50.23",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "24.23",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"description": "",
+									"type": "file"
+								},
+								{
+									"key": "deviceToken",
+									"value": "sdf46sd5f65sd4f45d5g5f4dgdf4g65df6589",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "deviceType",
+									"value": "ios",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "isPhoneVerified",
+									"value": "false",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "singUpType",
+									"value": "MOBILE",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "signIn",
+					"request": {
+						"url": "https://mywngmn.com:3080/api/v1/user/signIn",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phone\": \"7088145401\",\n\t\"password\": \"12345678\",\n\t\"countryCode\":\"+91\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "socialLogin",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/socialLogin",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjoicXdlamdrZmRzZGFhc2Rhc2drbGZydHlAZ21haWwuY29tIiwiaWF0IjoxNTg1NTY5NDk1LCJleHAiOjE1ODU2NTU4OTV9.09Tm3x87MXodwmVmz7bqzKR-B7CS2Ta63lcy5xfUmSw",
+								"description": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "7854653211",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "firstName",
+									"value": "gagan",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "kumar",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "avnindersidhu1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "+91",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "testg",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "1234567890",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "deviceToken",
+									"value": "sdf46sd5f65sd4f45d5g5f4dgdf4g65df65g4",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "deviceType",
+									"value": "ios",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "30.1234",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "longitude",
+									"value": "23.567",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "file",
+									"disabled": true
+								},
+								{
+									"key": "providerId",
+									"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjZmY2Y0MTMyMjQ3NjUxNTZiNDg3NjhhNDJmYWMwNjQ5NmEzMGZmNWEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI4MzUzMjU5NDIwNzMtaHAwaTM4aGp2b29rcDc3bDBiZjMxM2xoaGVtbm5rMW0uYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI4MzUzMjU5NDIwNzMtaHAwaTM4aGp2b29rcDc3bDBiZjMxM2xoaGVtbm5rMW0uYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDk2OTgxMzIxMDA1NTQzNTYwNzciLCJlbWFpbCI6ImF2bmluZGVyc2lkaHUxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiWVcxODNBUmgyRUxMV01SVHZYYW1rQSIsIm5vbmNlIjoid1RXY2toN1VGNEM5M01iSGJ1Ykx0bUdIUndibUVLZFVkSVd0RHlIdV9OMCIsIm5hbWUiOiJBdm5pbmRlciBTaW5naCIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaS1WWDJxd2I0dkpZcHV4bEpqeXE5QmNoYnpZQmtWU3N0RW9aMzQ9czk2LWMiLCJnaXZlbl9uYW1lIjoiQXZuaW5kZXIiLCJmYW1pbHlfbmFtZSI6IlNpbmdoIiwibG9jYWxlIjoiZW4iLCJpYXQiOjE1ODY3NTgzMjEsImV4cCI6MTU4Njc2MTkyMX0.xBL3lQ0U7guG_SnFdiJvXa3jjoJa8T0-lLznensJQBt-DFgWmpdaqbGMlyN15KBvJdLOd_syeYYMVgmjA45Pg9CUD7RFD17ChOcRN-6-xfsN-7oZyu5hNKwTn3C5qd-r-z2MhfuS2vHptzInN_vPKWVPcnBUnnXV_5l4ZWJ6w4k4hllG7dlGNkfvPchWfoXOEbyWfdHeoQ441KRAjq9Nb2Zbs35FiQl6LeXfBZ5piFeBT6VXeO7VN8DNNlQ2Ev46fl71LuQThemACByjz-7saayvo_VWMrkM2tAcCNxRHciek8Zn4wS50TkwjY-siZ4wC1SJppwh2zOtsCOqZclVSg",
+									"type": "text"
+								},
+								{
+									"key": "provider",
+									"value": "google",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"description": "",
+									"type": "file",
+									"disabled": true
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/updateUser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjA4N2NiYWFhZDdhZDYwNzRkNDUzZDVjNTk0OWM5OTI1MzAxYTUwODk1M2NhZjQ0MzgyZWU1NDM1OTJkZWVkNTU5MzVlZGVmMjBjZjAzMjQxMjQxYzhlZjg3NmM3MmUyMTg0MGRjMWQyYjdlMzRhMzE3OTk3ZmNiM2YwNTgwNTMyZDM2MzE1ZTg3NmQ1NTU3ZjEwY2Q4ZDUwNzEzNWVlYmMwZTYxNjUxMzk2NmQ5MWU4YThhM2Y1MzU3NjNjYTY2ZjUxNDdkOGU4NjUyZGFhMDQ0ODczNzBkNWFjYzQ1MzUxMjRlZDA2OGVlMjg4ZWJkMSJ9LCJpYXQiOjE1ODY5MjYxOTd9.fJ212575HBwiXlXy1P2WkrhCsAaJZ19Mx6MGQB_k8e8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "12345678901",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "number",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "firstName",
+									"value": "gagan",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "kumar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "qwejgkfdsdaasdasgklfrty@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "+91",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "testg",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567890",
+									"type": "text"
+								},
+								{
+									"key": "deviceToken",
+									"value": "sdf46sd5f65sd4f45d5g5f4dgdf4g65df65g4",
+									"type": "text"
+								},
+								{
+									"key": "deviceType",
+									"value": "ios",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "5e81b72b906a742e23a11f47",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "30.1234",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "23.567",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "file"
+								},
+								{
+									"key": "single",
+									"value": "",
+									"type": "file",
+									"disabled": true
+								},
+								{
+									"key": "newPassword",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "uploadFile",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/uploadFile",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjlmODE0YjM2YjFmZDNmMzZiZWJmYmI3OGE3Y2FiYTdjZjlkODU4NmYyZjUxMzczNmI0ODcxMTJlMWI5NmQ3NmYwMzc1OWJhYmNlNjY0ODJlNTI1OGQyYzI0OGZhNjE5YzlmZTkzZTYyYzU0NTUzMzgwYzJlMGFjMmM2YjBhNmYxMjc4NzAyZTg2MGRlZWZlNTk2YWJmMTRjN2YyNjQ0NzU0MzRjNWY3OTBiZjMxZjc5NjE5ODgzNzJhNzNjOGE4ODEyYzEwZjYxMDFiNDg2NmIyN2JlNjFiYWFhNDA4MjhjZTg3ZDVhODhkODRlNDAxMyIsImVuY3J5cHRLZXkiOiJsWEZqTiJ9LCJpYXQiOjE1ODk1MjQyMDF9.i_rTsa8zmQQLMHxTddrAqrcy4_Bl0H_4WCeAThawt8c",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"description": "",
+									"type": "file",
+									"src": "Screenshot (6).png"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addVehicle",
+					"request": {
+						"url": "localhost:3080/api/v1/user/addVehicle",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjIxOTQ4NDg0ODQyMjMyZjhkMDBmMjYzNzliOWIyZWJiNWUxNWJhYjM4YWQzNTAyMTI0MGRlNWM2YzZmNWJjNDUxODQxOTcwNzkxYmUyZmRhZmY5OGFmZGZjZmY4OGNlZDZkOTQ2MDEyZTA0MDIyNmM4NzBkNGJlMWE0NmQxNjUxMTAxYWUxMWExMWY1MTQ0ODdlMzI3YzMwMGIzNDZhZTA4NjZkNmI5NzgyNDg4ZTVkYzlhNTk4YWQ4MGM5MWJjM2I1ZDVmYzU0YTJjMWQ4YTU2MGNmMzk5NDJjYzQ4Zjc2NTU4NDE5NDVkYTg1ZjYyNiJ9LCJpYXQiOjE1ODY4NjQyMDN9.W-AJXFMzKm36Oy8WDFeM3D3fqqD9cfwfTvB6Oxp0axU",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleName\":\"demo\",\n\t\"vehicleMake\":\"demo\",\n\t\"vehicleModel\":\"demo\",\n\t\"vehicleTypeId\":\"5e8d9a8dbe642b1fb07bd077\",\n\t\"vehicleImage\":\"demo\",\n\t\"vehicleInsuranceDocument\":\"demo3\",\n\t\"transmissionTypeId\":\"\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "createBooking",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/createBooking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImU0NGNlMWRkZjI0YzhlZDI4MTRhYWYyODY3NTQ3Y2RiMDI4ODg3YjA1Y2MzY2MyMGE5NzY4NTZjMzI5MjBkM2EyYTM1YWUzYjMyM2M4ODFmOWEzY2RmY2RhN2UwMjE3ZGUwOWM0MWI4NjI1N2EzYzM1MDFhYmVjNjc4ZDcxMTE5YTliOGIwYzg0NTc4NTBlM2Y2MjA4Yjc0MTZjZGIzODZkMmI2NzVlNjRmNzhlMGY2NjhhOTE5NmQxZWEzMGU4NTg5MjI0ZDJhYmI2YWU2NGEzYzZiMWZjZjhjZTRmM2U3MmUzNDFkYjQxODViN2M5YiIsImVuY3J5cHRLZXkiOiI5ZXlsYyJ9LCJpYXQiOjE1ODgzMzgwNjJ9.WBmnrC099qjzTmPr-ob1r5eTkR84gNSJXVbmj2nMNNA",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"vehicleId\":\"5ea660f4a11704209c52849e\",\n\"seviceTypeId\":\"5e8d9dbb8c1e351adc298c40\",\n\"genderType\":\"MALE\",\n\"passengerNo\":0,\n\"pickUplatitude\":10, \n\"pickUplongitude\":10,\n\"dropUplatitude\":10,\n\"dropUplongitude\":10,\n\"pickUpAddress\":\"hgh\", \n\"dropUpAddress\":\"ghh\",\n\"bookingDate\":\"2020-05-01T14:03:11.667Z\",\n\"tripType\":\"ROUNDTRIP\", \n\"timezone\":330, \n\"eta\":2,\n\"totalDistance\":3,\n\"paymentMode\":\"CASH\",\n\"dropUplatitudeFirst\":10,\n\"dropUplongitudeFirst\":10,\n\"dropUpAddressFirst\":\"dassd\",\n\"dropUplatitudeSecond\":10,\n\"dropUplongitudeSecond\":10,\n\"dropUpAddressSecond\":\"sdsdsdsd\",\n\"dropUplatitudeThird\":10,\n\"dropUplongitudeThird\":10,\n\"dropUpAddressThird\":\"ssds\",\n\"dropUplatitudeFour\":10,\n\"dropUplongitudeFour\":10,\n\"dropUpAddressFour\":\"sdsd\",\n\"isTripAllocated\":false,\n\"isSheduledBooking\":true,\n\"cardId\":\"use if payment mode CARD \"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "signIn",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/signIn",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phone\": \"fxx@gmail.com\",\n\t\"password\": \"123456789\",\n\t\"deviceToken\": \"sdsdsfdsfergrefd897df1g56fd456g4fdg231fdg65df\",\n\t\"deviceType\": \"IOS\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicleType",
+					"request": {
+						"url": "localhost:3080/api/v1/admin/getVehicleType",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEA eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFlMTlkZjg4OWEwMjFlYmFkNjVmYWMwZGZjY2MzZDA2YTg4NTk4MmZkOTEyYTNkZWJiMGUxNTFkZmRkNWQyNjZlMGE1Y2ZhN2Y4NmNjMmZkMzc0MWQ3OGMwODQ1MTBjZmY1ZDM2MGY3YmZjNzc1ZGE3ZDA1ZWRjOTlmODEzZDJkNjk4MWE0YTdjN2U1MGYzN2Y4ZWIxMjg3ODk2YTkzYjk3MmMwOGFhZjM2YjZkZDY0MDlkMWUwZTk3Mjc5YTJjMDcxMDJmNjIyYzkzY2JmNzc3Mjk0ZTQ5NGZlODA5OGMzOTEzNWIyMjIzMWU4NWFkMCJ9LCJpYXQiOjE1ODcxMzAwNTV9.jpNAZJ9yDrUUY1xQb9hQE41wTbzt99t7fu6j1xAkzPc",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicles",
+					"request": {
+						"url": {
+							"raw": "http://appgrowthcompany.com:3080/api/v1/user/getVehicles?_id=5e9d6016ad930b6cd1a72599",
+							"protocol": "http",
+							"host": [
+								"appgrowthcompany",
+								"com"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getVehicles"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5e9d6016ad930b6cd1a72599",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjgyZDUzNGQ3OWIxZTg3YjA5MmI4MGFhNjBjOGI2YTE1ZjA0Mzc5ZDM1YzJiMGMyY2Q1Yzc3YWUzZDkzZjlkNGU2NjMzMjE2ZjVjNjFkNDY4YzU1ZDliMDdkNzk2ZjE0Y2I1NjI4ODQ0ZWFkZGM0ODQzZWY3OWJlOWI3MGM5ZWU5YTk2MjkwNzkwYmUwOTBlYjAxYWU4MzU1NTNmODY4ZDc0YTE4YTRkYTQ5YjdjZTQxNWI4YWUwN2MyOWI5NGM2Zjk5NTk0N2RmNjlkNjU1MzViZGQ4NzMyYjVhZjQ3YzYzNGQxZjI1YzAxM2Q4NzVlYSJ9LCJpYXQiOjE1ODczNzc1ODd9.-5hkJaFLLptZ4bONAg_A6PQvZGW_NzNsyu_44QfcBTU",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addVehicle",
+					"request": {
+						"url": "localhost:3080/api/v1/user/addVehicle",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImRhNzlmNzhjNjU3Y2U3ZmUxNzJjODFlZWY1NjViMGQzZjFjODMwMmRkMmRiMDFjNGY4NTg2MzZkNmMxOWQzYWI2ZDdiYTI3NzkyNzJlNzUwYzQ4ZTRjYmQ0YzRhNTdlNGU5MmZjZWQ0MDc2ZDhmNzhhOWNhMzY0YWQxMWI3OTE0MTc4YTAyZWY1MTgwYmI0NjMzYjM1OGFhMDg4YjY0NmI3MzU3YWRhMjBjOGQ5NzljNTU0NjdiYThmOTRkZDQ4YjQ5NWI5OGFjODUzYjA0MGFhYTY5ZWZhOTZjZGIyZDEzMmY3NDdhZDQxYTVlMWE1NyJ9LCJpYXQiOjE1ODc5NjE0NjV9.4YOpaPVm7i2qM6NTJh7INgvMIky3FmaMj3rrjLJTi0Q",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleName\":\"demo\",\n\t\"vehicleMake\":\"demo\",\n\t\"vehicleModel\":\"demo\",\n\t\"vehicleTypeId\":\"5e8d9a8dbe642b1fb07bd077\",\n\t\"vehicleImage\":\"demo\",\n\t\"insuranceDocuments\":\"demo\",\n\t\"transmissionTypeId\":\"5e96de4526083729c0ae6c94\",\n\t\"color\":\"dddd\",\n\t\"plateNumber\":\"sdsd\",\n\t\"state\":\"dsds\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editVehicle",
+					"request": {
+						"url": "localhost:3080/api/v1/user/editVehicle",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjNjMjRlOTVkNmIyYjAwYzYwNGI3ODQ3OGQ5NTYzMmI3MTg3ZDY0MTI1MTM4MTE4NjNmN2ZlNDg0MjYzZjVjMmI5MjA3Y2QzM2YwNTM4ODU4MDJkY2FmNDdmNGQwYWRlOTYwYTkzYWZjNjViMWFjOTJjNWNhNGJjNDc1M2U0ZTM1NDU1NDI1NmIxMDMxOWI5ODZiZjYzNDJjNzA5Y2UzZmEzY2RhZmY1MzhiYmI5MzU4ZmUzZjc1MTg2Njg4NWM5Yjc4OTNhNjRmYzMzNjY2ZjA2YzgwMjI0MTg5OGY0ODVhOTRlNGFlMDZjMzMwNTIwMSJ9LCJpYXQiOjE1ODY4NDA3NDB9.ej7bO_Rzhlir7rVg_4kW0Q0Gd151ZeaAeaYVh9Ch_I8",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e955e9f69b34523dcddf815\",\n\t\"vehicleName\":\"demwwwwo\",\n\t\"vehicleMake\":\"demo\",\n\t\"vehicleModel\":\"demo\",\n\t\"vehicleTypeId\":\"5e8d9c13fe64dd28f84e8f9b\",\n\t\"vehicleImage\":\"demo\",\n\t\"insuranceDocuments\":\"demo\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "deleteVehicle",
+					"request": {
+						"url": "localhost:3080/api/v1/user/deleteVehicle",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjNjMjRlOTVkNmIyYjAwYzYwNGI3ODQ3OGQ5NTYzMmI3MTg3ZDY0MTI1MTM4MTE4NjNmN2ZlNDg0MjYzZjVjMmI5MjA3Y2QzM2YwNTM4ODU4MDJkY2FmNDdmNGQwYWRlOTYwYTkzYWZjNjViMWFjOTJjNWNhNGJjNDc1M2U0ZTM1NDU1NDI1NmIxMDMxOWI5ODZiZjYzNDJjNzA5Y2UzZmEzY2RhZmY1MzhiYmI5MzU4ZmUzZjc1MTg2Njg4NWM5Yjc4OTNhNjRmYzMzNjY2ZjA2YzgwMjI0MTg5OGY0ODVhOTRlNGFlMDZjMzMwNTIwMSJ9LCJpYXQiOjE1ODY4NDA3NDB9.ej7bO_Rzhlir7rVg_4kW0Q0Gd151ZeaAeaYVh9Ch_I8",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e955e9f69b34523dcddf815\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "changePassword",
+					"request": {
+						"url": "localhost:3080/api/v1/user/changePassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjNjMjRlOTVkNmIyYjAwYzYwNGI3ODQ3OGQ5NTYzMmI3MTg3ZDY0MTI1MTM4MTE4NjNmN2ZlNDg0MjYzZjVjMmI5MjA3Y2QzM2YwNTM4ODU4MDJkY2FmNDdmNGQwYWRlOTYwYTkzYWZjNjViMWFjOTJjNWNhNGJjNDc1M2U0ZTM1NDU1NDI1NmIxMDMxOWI5ODZiZjYzNDJjNzA5Y2UzZmEzY2RhZmY1MzhiYmI5MzU4ZmUzZjc1MTg2Njg4NWM5Yjc4OTNhNjRmYzMzNjY2ZjA2YzgwMjI0MTg5OGY0ODVhOTRlNGFlMDZjMzMwNTIwMSJ9LCJpYXQiOjE1ODY4NDA3NDB9.ej7bO_Rzhlir7rVg_4kW0Q0Gd151ZeaAeaYVh9Ch_I8",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"oldPassword\":\"123456789\",\n\t\"newPassword\":\"12345678\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "verifyOtpForgotPassword",
+					"request": {
+						"url": "localhost:3080/api/v1/user/verifyOtpForgotPassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otpId\": \"5e969f6283b1011d98b1387c\",\n\t\"otp\": \"587082\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "forgotPassword",
+					"request": {
+						"url": "localhost:3080/api/v1/user/forgotPassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otpId\": \"5e969f6283b1011d98b1387c\",\n\t\"otp\": \"587082\",\n\t\"newPassword\":\"123456\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "signUpForgotPassword",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/signUpForgotPassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"countryCode\": \"+91\",\n\t\"phone\": \"test@gmail.com\",\n\t\"type\": \"email\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAppVersion",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/getAppVersion",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicleType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/getVehicleType",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getTeam",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3080/api/v1/user/getTeam?limit=10&skip=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getTeam"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "skip",
+									"value": "0",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getEventType",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/getEventType",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "forgotPasswordWeb",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/forgotPasswordWeb",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"a@yopmail.com\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "forgotChangePasswordWeb",
+					"request": {
+						"url": "localhost:3080/api/v1/user/forgotChangePasswordWeb",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"password\":\"12345678\",\n\"passwordResetToken\":\"TkWBJ3gJZX\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getServiceType",
+					"request": {
+						"url": "localhost:3080/api/v1/user/getServiceType",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQ5ZGE0ZmFkOTk1ZDE3NDFjMWU0MTQyZGMxMTJlZmJjMzE3YWRhN2EwNGM1MjVlNDY5M2NjMjIyZTllNmIxN2NmMTI5ZGIxNTZjMGI3ZTYzM2FlZDlmMzNiOTc2ODYzNGZiMzk2ZDliMjNjYjRjNjNiNWFiYjc1YzdmYzBhMTk5NGVlZjQzZWE4NzAxMGM4OWM4NmExZjUxZjgwYWMwMTkxNzI4YjlmZjcxNThmMTFlNTk3ZmMwZDQwZTI4NTg3MWRjYjg5ZThmMGJhNTE2MDU1N2Q1Y2Q0NzU5NGVjZGI4YWFlOTAzYTljMjFiZjQyZCJ9LCJpYXQiOjE1ODc0NzIxOTZ9.9kiP4xGf9ZOcWR9q2RTM4ViH95n-8FNOyJr74p8EtT8",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "createEventBooking",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/createEventBooking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjVlYWMzYzMwY2U5ZGU0NDAxZmU4OTFkMjZjNDBlODkwZTY4NjNlZTdhODYxNTcwYjQ3YWUxM2FiYmVlMzc2MDI3ZWJkN2VmMzQ2MzlhMmNlNzZiNWE5NTkwYjk4OTdmNDUxMzFmYzVmNjRjMmQ0MzdjOWM3MTVlNTlhMzljM2E1MjI5NmFiNWU4Nzk4YzdmYmEyYzk3NDZiYTMyMmU1Nzc5MzZkOWUxNTQ2NmZiMzg0OWEyOWQ1MjdlMWQ0MzUwMTg5ZjI3Zjg3ODkwMzdlNTlmZmI3ZjdjYWNkM2UxNTczYmYyZjI3YTA2YTcwODRhNiIsImVuY3J5cHRLZXkiOiI5akZudiJ9LCJpYXQiOjE1ODgzMjcxMDF9.mKPIgE9Qiitloj6SQsPTquiPjznifhCN1MTBnUIlERY",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"eventName\":\"demo\",\n\"eventTypeId\":\"5e9d701a6b6c3c17ec11c6cf\",\n\"eventDescription\":\"sdsd\",\n\"block\":\"sdsd\",\n\"bookingDate\":\"2020-04-20T09:49:14\",\n\"eventLocaltionLatitude\":1,\n\"eventLocaltionLongitude\":10,\n\"eventAddress\":\"chandigarh\",\n\"teamId\":\"5e9d55f1423f2326709a939d\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getBookingDetails",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/getBookingDetails",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImUxMjM1ODQ2MDhiNjBkNGVhMTFlNDk5MThjZTVkMGI2Y2Y0MzkwMmM2NWZmNjcyNjYxYTRhYzI2NDhhNDliY2Y0ZDNiNDQyYTVkMGU3ZWJkNTc2YjY0ZDQ0OTAxZGU5OTA4MjE1NTUwY2ZhNTUzMWI0ZmFhMzUzMzZiZGE3YWQ2N2Q1NDM0ZTMyNzVjZTQwMzQ0NjhiYTViMGIxMmQzMjRkZjAyOGNjZWZjNTg0ZjRlNTIxZjBiZDQ3YWExZjU1NGZkOWUxNGVlMGI5YmYyNTJjMjhkMjdiMTUyYzE3YWZlOTYwYWJjZmMwODU3OTVmMyJ9LCJpYXQiOjE1ODgyMjYzMjV9.SEyvWxR-tpEC_8ooFXbhzb_MOkQvMdA6K1FwwQYvGiw",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5eaaa8569afe4c6a310dc343\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllBooking",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/getAllBooking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImUxMjM1ODQ2MDhiNjBkNGVhMTFlNDk5MThjZTVkMGI2Y2Y0MzkwMmM2NWZmNjcyNjYxYTRhYzI2NDhhNDliY2Y0ZDNiNDQyYTVkMGU3ZWJkNTc2YjY0ZDQ0OTAxZGU5OTA4MjE1NTUwY2ZhNTUzMWI0ZmFhMzUzMzZiZGE3YWQ2N2Q1NDM0ZTMyNzVjZTQwMzQ0NjhiYTViMGIxMmQzMjRkZjAyOGNjZWZjNTg0ZjRlNTIxZjBiZDQ3YWExZjU1NGZkOWUxNGVlMGI5YmYyNTJjMjhkMjdiMTUyYzE3YWZlOTYwYWJjZmMwODU3OTVmMyJ9LCJpYXQiOjE1ODgyMjYzMjV9.SEyvWxR-tpEC_8ooFXbhzb_MOkQvMdA6K1FwwQYvGiw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"isUpcommingbookings\":false,\r\n\t\"isPastbookings\":true,\r\n\t\"isEventBooking\":false,\r\n\t\"skip\":0,\r\n\t\"limti\":10\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllNotification",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/getAllNotification",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "clearAllNotification",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/clearAllNotification",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "clearNotification",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/clearNotification",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"ssddsddsdsdasdqw33\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ratingAndReviewToDriver",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/ratingAndReviewToDriver",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjI0NWE1MWIxZmI3MWMyYThlZDlkM2JjZGM1Y2Y2MGUxY2IzNjlmODRkMTg0YjQ4NmUzMjEyZWQ2N2IwNjg0ZDM4NWFmNjgzY2E0ZGFmMDg4NGMxNmFkYTdkMGVmNTUyOTlkNDExZjBjZTdkZjE4YmM3NjRmMDA0MjVmZGI5NmI5OWVhYWIzN2EyMjU2ZGI3NjE1M2JhNWYzODQ1OTRmZmQ3YjBiYTAyYjQ1MDI5NDA5ZDJkNzhiODViOGIwN2M4MGNlZjM5YTVlNjMyZWRkNDMzNTU1ZDBjOTFjYjI5MDE0MjI2MWVjNzYwYTMwOTk1YSIsImVuY3J5cHRLZXkiOiIzSmJoYiJ9LCJpYXQiOjE1ODg1OTg5NTF9.LRztFh8YIQXbs2iA7V26KIllf4tD2x3EWST9VXkgTcY",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5eb018194ff88a166041d46f\",\n\t\"driverReview\":\"sdsds\",\n\t\"driverRating\":3\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "createBookingPaymentCheck",
+					"request": {
+						"url": "localhost:3080/api/v1/user/createBookingPaymentCheck",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjhkNjhjYzc0NzdmYzJlNjZkZDU4YzBmYjFkYzEzYTYxOTJhYjMzZjQ0ZmE1ZTQxZTlhMTM1NGIyYmUzMzY0ZmNmZDBiY2JmNzkwOTI5ODhhZDYyNWQ3MzljMGM3M2Y3MzM0MWQyMjc5ZGY5ZTNhYWNiNTVjZjViY2EzNmZiODlhNDllNjM3OTZmN2YzZmM0ZDU4N2FhNDI4M2Q2NjQ4YmMzOWExMTM2ZWM5OWQ5MWYyMTFlNDJmZWUwOTgxMzRkOTFmYTE4MDk5NjZjNWM0MzUzNzNmZDJhMWRhMTk0NGQyYWU1MzNlODYwZDA4MTZjYiJ9LCJpYXQiOjE1ODc3MTA5ODB9.6UXtA4k_Fb-_yW4FyzriRap2lgyaVS6XqRnyIFN0fEI",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"vehicleId\":\"5ea02033ac9a547279d6b3a2\",\n\"seviceTypeId\":\"5e8d9dbb8c1e351adc298c40\",\n\"genderType\":\"MALE\",\n\"passengerNo\":0,\n\"pickUplatitude\":10, \n\"pickUplongitude\":10,\n\"dropUplatitude\":10,\n\"dropUplongitude\":10,\n\"pickUpAddress\":\"hgh\", \n\"dropUpAddress\":\"ghh\",\n\"bookingDate\":\"2020-05-15T05:51:39.654Z\",\n\"tripType\":\"ROUNDTRIP\", \n\"timezone\":330, \n\"eta\":2,\n\"totalDistance\":3,\n\"dropUplatitudeFirst\":10,\n\"dropUplongitudeFirst\":10,\n\"dropUpAddressFirst\":\"dassd\",\n\"dropUplatitudeSecond\":10,\n\"dropUplongitudeSecond\":10,\n\"dropUpAddressSecond\":\"sdsdsdsd\",\n\"dropUplatitudeThird\":10,\n\"dropUplongitudeThird\":10,\n\"dropUpAddressThird\":\"ssds\",\n\"dropUplatitudeFour\":10,\n\"dropUplongitudeFour\":10,\n\"dropUpAddressFour\":\"sdsd\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "cancelBooking",
+					"request": {
+						"url": "localhost:3080/api/v1/user/cancelBooking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"dsdsd\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "createBookingdemoserver",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/createBooking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjhhNTY4MmIwMzUyNTEyMTI0NzRiZmRjYTVmYjliOTMzNzRhZDEwNDg5ZDI4MGE5M2VjODEwNmI0YmExNmIzZTk5Nzg4Njg4YWFkMGM3M2YwNTdkMDlkMGU5NTcxY2ZmNWZkZDA1MGEzNzIyNDIzZmU1ZGM0YTcxMzc2MzQxOTgxNjU2ZDdiMmExMzVkNjZkYTMyNzU5N2VjMWM3M2MzYTg5MjVjZGFhYjczYmU2ZDZmYTczMWEwZWFjYWNhZTcxMGYyYTlkMjFkNTZkNGZkMjFmMWRkMThmMDAxOTkwOWZmZTdlNDZjMWI1MWQzMTI3MiIsImVuY3J5cHRLZXkiOiJtRmVNdCJ9LCJpYXQiOjE1OTM3NTYzNTJ9.hWg6kcgIyQqX_s2j3zxS2IlVKZ18GVz9EOOBy7cisEc",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vehicleId\": \"5efc13d3fa40555882ff570b\",\r\n  \"seviceTypeId\": \"5e99b778dfc55246710740cf\",\r\n  \"genderType\": \"NO_PREFRENCE\",\r\n  \"passengerNo\": 0,\r\n  \"pickUplatitude\":  12.782018,\r\n  \"pickUplongitude\":101.6472326,\r\n  \"dropUplatitude\": 12.782018,\r\n  \"dropUplongitude\": 101.6472326,\r\n  \"pickUpAddress\": \"Sukhumvit Rd, Thailand\",\r\n  \"dropUpAddress\": \"Sukhumvit Rd, Thailand\",\r\n  \"bookingDate\": \"2020-07-03T06:06:20.796Z\",\r\n  \"tripType\": \"SINGLETRIP\",\r\n  \"timezone\": 330,\r\n  \"eta\": 0,\r\n  \"totalDistance\": 0,\r\n  \"paymentMode\": \"WALLET\",\r\n  \"dropUplatitudeFirst\": 0,\r\n  \"dropUplongitudeFirst\": 0,\r\n  \"dropUplatitudeSecond\": 0,\r\n  \"dropUplongitudeSecond\": 0,\r\n  \"dropUplatitudeThird\": 0,\r\n  \"dropUplongitudeThird\": 0,\r\n  \"dropUplatitudeFour\": 0,\r\n  \"dropUplongitudeFour\": 0,\r\n  \"isTripAllocated\": true,\r\n  \"isSheduledBooking\": false,\r\n  \"note\": \"\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getCurrentBookingStatus",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/getCurrentBookingStatus",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ratingAndReviewToDriver",
+					"request": {
+						"url": "localhost:3080/api/v1/user/ratingAndReviewToDriver",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"_id\":\"bookingid\",//bookingid\n\"driverReview\":\"sddasd\",//optional\n\"driverRating\":4//optional\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "editEventBooking",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/editEventBooking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE2MWVhYzM4YTE1NzUyNGYzZGY1ZjkxZTNiZTI4OTg0ZGY4ODAwNzUxNmE1NWI1YWQ2MDg3YjU1NDE3OGVkMGE4ZDU5YTg3OWVhOGM0ZTg4YzlkYzg2OTU3NDRhMDk3Zjg4Y2M3YmFlNmQ4ZjM2Y2RjNTFhZTNjMzg1ZTY2M2NhYmVlZTJkYTIwOWRiZTFjYmQwN2U0NDk1ZTNjZDBkYzM4ZGE2YzY2NDQxOWZmYzdmNDFiY2VmNTYwZGZiMmZmMDUxOTIzZjgzYTU1ZDQ4ZWQ1YzJmNzQyZjdmOTkwZTgyOGQ2MWM1ZTU2ZjdiMDQyZSIsImVuY3J5cHRLZXkiOiJqeTMxViJ9LCJpYXQiOjE1ODgzMjcyNzd9.WoGwP4EonmTO9aQVkWsfQIzchH-kmcRSC027zNWWd28",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"bookingId\":\"5eabf352d7bb4717dc534182\",\n\"eventName\":\"demo22222\",\n\"eventTypeId\":\"5e9d701a6b6c3c17ec11c6cf\",\n\"eventDescription\":\"sdsd\",\n\"block\":\"sdsd\",\n\"bookingDate\":\"2020-04-20T09:49:14\",\n\"eventLocaltionLatitude\":1,\n\"eventLocaltionLongitude\":10,\n\"eventAddress\":\"chandigarh\",\n\"teamId\":\"5e9d55f1423f2326709a939d\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "cancelEventBooking",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/cancelEventBooking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjQ3Y2IzNWY5MmY0Y2VmZDNhNWVhNGE3NjBkZjk3YWZlYTA0MTQ4ZjgwZTExZWM1ZWE4ZWU3MDgwYTQ5MTg3N2EzMDk0ZTNmNzkxYzgxODhlZmZiOGY3N2UyM2QyZjY4ZDc5ZmQ2NmFhYWVlYTFhMTdjZDE1NTU2ZTE4YTliNmNmYjg4YzgxNDlmNzFiMGIyNzQ5OGFiMTUwMGM4ODJkOWRlMDNiOTI3YWI5MGE2MjAyZjA5NzRjN2E1NTdlODkxOWRlOWFhZGYyYTBjZWExYmU0MzBlY2E2NGJkNDRlNzVmYjhjYjc1OGZmYzEzMzFiMiJ9LCJpYXQiOjE1ODgzMjQ4ODV9.mq8xdkKBgCnemVat8EpSuxTrAOILXJNnHnzfm_ZHq-w",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"bookingId\":\"5eabea94926e2720945e8fe0\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/logout",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getChatMessages ",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/getChatMessages ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5eafe686c278ad0243a19ecb\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "enableDisableNotification",
+					"request": {
+						"url": "localhost:3080/api/v1/user/enableDisableNotification",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isNotification\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCard",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/getAllCard",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjVkNzg3NTA1OGIyNDVhNWM5ZDdiNWJjMWRiMjVlOGMxZDQxNjYzMWFhMGNhNWU3MjE2NzYwNGM5YWFkYjMwYjQ5M2YwZDI5MDVlMmJlMGEyZmQ2NDYxOGRmNDU3NmI3N2E0MmJlMmRjOGFmNDNiOThhZTEwMGVjNjA5Y2QxYzVhMjA2ZTA0OWU0NmY5MGZlZGEzZDcxMGM0OWQwZTU0OWE4MDFjOGJjYWE3ZjgyOWY5YTBmODYyMDJlMjJkYzRlZjc2NjZlYTc5M2E3ZGQ1MmRkMTFiZjhmZDI2NzczMTkwYWQ2NDU5NmQ0ZDE0ZDJhMyIsImVuY3J5cHRLZXkiOiIyNWl2RiJ9LCJpYXQiOjE1OTIzMDE3MTV9.9gwiOgJLk6qdArSLjFPN7CzkkK2HvjAeaCd35CoKqyU",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":0,\n\t\"limit\":10\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "updateDefaultCard",
+					"request": {
+						"url": "localhost:3080/api/v1/user/updateDefaultCard",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImRhNjQ2MzQ4MmU3NTFmZDA5MDI5MTE0OGI5ZTdhOWRjZTAyMTI5MzFiNGEzZjhmOGQ2ODRhZGExMmM2YjI1MGE5NTA0OGNlNTJmZTkzNzFkOTZlM2NhMTQzZTJiY2Q0MDdjMmQwN2E2NDk3NDc5Y2M2YjViNDgzOTA1ZjU3YmQxYjgzYzQ3MGI3N2Y0YTk1N2M5YTY3OWZmOTI2NTMzYmU0MWQ0MWQ3OWNhOGZkZDBkYjU3YjdmODU3MDMxZDllNzBlYWRiM2NkYzBjOTNmN2VlNzg5NzUzNjQzNDA1OTdlZDZkMGZkYmI3Mzg5ZjNmOSIsImVuY3J5cHRLZXkiOiJHRWZ1QyJ9LCJpYXQiOjE1ODg5MTczNDR9.SkUASq69UzqHFV-1RXTmr_a-b_OhiFuoJ9P95PdXe4I",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"cardId\":\"5eb4f56716d630f67941f391\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCard",
+					"request": {
+						"url": "localhost:3080/api/v1/user/deleteCard",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImRhNjQ2MzQ4MmU3NTFmZDA5MDI5MTE0OGI5ZTdhOWRjZTAyMTI5MzFiNGEzZjhmOGQ2ODRhZGExMmM2YjI1MGE5NTA0OGNlNTJmZTkzNzFkOTZlM2NhMTQzZTJiY2Q0MDdjMmQwN2E2NDk3NDc5Y2M2YjViNDgzOTA1ZjU3YmQxYjgzYzQ3MGI3N2Y0YTk1N2M5YTY3OWZmOTI2NTMzYmU0MWQ0MWQ3OWNhOGZkZDBkYjU3YjdmODU3MDMxZDllNzBlYWRiM2NkYzBjOTNmN2VlNzg5NzUzNjQzNDA1OTdlZDZkMGZkYmI3Mzg5ZjNmOSIsImVuY3J5cHRLZXkiOiJHRWZ1QyJ9LCJpYXQiOjE1ODg5MTczNDR9.SkUASq69UzqHFV-1RXTmr_a-b_OhiFuoJ9P95PdXe4I",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"cardId\":\"5eb4f56716d630f67941f391\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addCard",
+					"request": {
+						"url": "localhost:3080/api/v1/user/addCard",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjNlMTdjMGZhZjI3NjAxZWNlNDZmZTZkM2Q1NDdmZDRmNDYwNDY1NzI0NzgyMmIzODk0MGJkNDZiZGE0NThjMmVjNjAwZTQ3MzY1MThlNWU5Njg0MmY2NGI5YjMwMWVmMjE3NWExZmI2OTdjNzdiM2Y0Y2M0NzMxOGFhOWU5OGVkZTgxYzFmMDYyYmVkN2E3NmFjMDk2ZDhjZjUzYzk1M2UxNzI2YWI3MDg0NWUyNzVjNzFhNmQ4ZjY4OTQ1YzFjMDc4NGNhMjlmOGZhYmY4MThhZTcwYzA5YWM1MzMxZTMwMzAwMTFkYmZjM2QxZTFjYiIsImVuY3J5cHRLZXkiOiJheEh5MCJ9LCJpYXQiOjE1ODkxNzU0MTZ9.8NfCtwZ7SQAO3NauK1p7V2ZBUZci4CBgsvuDJOUIf18",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"stripePaymentMethod\":\"pm_\"\t\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "setUpIntent",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/setUpIntent",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjdhNWQ4NGEzNzMxNjM4MDVlMjM5OWFjN2YxYTkzYzViM2I3MTQ0YTMwOTUzMTQyYWQ5NzU5OGYzM2NhNmJmMzY2ZjY4ZmVhYzNjNjg4NTlkMjg2Mzc0Zjc0OWIwZjQ5YmU1NGQyODExMmI2YmNiY2FjYjFiMTc0MDJmNDlmOWVjMzY3YTE1NTExM2Q3NWVkMzNlOGYwM2E3ZTYxODY2YjBlZjgzYmUwMTU5NzAzM2RkMDhhNTNiMDQ0NzExYjg3NGQ2MjYxMmJiMzFhNjI5NzNjYjA2NmFmMGE1MDkyYmU0MmYzYTdiZDZjMjQ1ZTZlMCIsImVuY3J5cHRLZXkiOiJGNmFPbiJ9LCJpYXQiOjE1OTIxOTQ1MTd9.dMFIamkd9Pkv9EAJinG9pAk9YlEQLYyNPcB20x-Wuus",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "chargeWallet",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/user/chargeWallet",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImIxMjdiYWFkNWQ4ZWNmZWVjOWU5OGQ3M2Y3ZDAwZDI3MGZjYmVlYzJmYjc4NGJkNGZmYjRkNjcxODk2MTI1MDhiMmJlNmRkN2E5NzQzNDIyYzY0MjExMzU4ODAyYzI2M2VmM2MyM2I0NjAwOTdkMzY0ZDU4NGZlODdlMDM1ZDZkNWJiNmRlNjU4YWJkYzIxNTY3YWQ2YmI4OTIxYWZiNjQzZDhmZGFmNTY2MTQxYTUxOTkxMTUwMTc3NjJhNjkzZjFjNzk1OTFjMjFiNTJlOGQ5Yjg1Yzk0NjdjMzFlZjMyNGFlNTgzYWViYjEzYTIyYyIsImVuY3J5cHRLZXkiOiJ2YUNBbyJ9LCJpYXQiOjE1ODg5MzU1NTR9.AadwE6BiHnBqT6ygmr0YrI3xtw3D0dy33s6z7jbRKmY",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"cardId\":\"5eba486d13dca626d58d91fa\",\n\"amount\":100\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "servercreateBooking",
+					"request": {
+						"url": " http://appgrowthcompany.com:3080/api/v1/user/createBooking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "authorization",
+								"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImIxMjdiYWFkNWQ4ZWNmZWVjOWU5OGQ3M2Y3ZDAwZDI3MGZjYmVlYzJmYjc4NGJkNGZmYjRkNjcxODk2MTI1MDhiMmJlNmRkN2E5NzQzNDIyYzY0MjExMzU4ODAyYzI2M2VmM2MyM2I0NjAwOTdkMzY0ZDU4NGZlODdlMDM1ZDZkNWJiNmRlNjU4YWJkYzIxNTY3YWQ2YmI4OTIxYWZiNjQzZDhmZGFmNTY2MTQxYTUxOTkxMTUwMTc3NjJhNjkzZjFjNzk1OTFjMjFiNTJlOGQ5Yjg1Yzk0NjdjMzFlZjMyNGFlNTgzYWViYjEzYTIyYyIsImVuY3J5cHRLZXkiOiJ2YUNBbyJ9LCJpYXQiOjE1ODg5MzU1NTR9.AadwE6BiHnBqT6ygmr0YrI3xtw3D0dy33s6z7jbRKmY",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"dropUpAddress\": \"Kharar - Landran Rd, Sante Majra, Sector 115, Sahibzada Ajit Singh Nagar, Punjab, India\", \"passengerNo\": 2, \"timezone\": 330, \"totalDistance\": 652, \"pickUplongitude\": 76.7179, \"paymentMode\": \"CARD\", \"isSheduledBooking\": true, \"vehicleId\": \"5ea912a9f1fff4243f961639\", \"genderType\": \"MALE\", \"pickUpAddress\": \"363, Phase 4, Sector 59, Sahibzada Ajit Singh Nagar, Punjab 160059, India\", \"eta\": 6, \"cardId\": \"5eba4f8cb595612d764d2768\", \"seviceTypeId\": \"5e9d2afcdfc5524671074163\", \"isTripAllocated\": true, \"dropUplongitude\": 76.6525959, \"promoCode\": \"\", \"dropUplatitude\": 30.7212945, \"bookingDate\": \"2020-05-12T09:25:10.624Z\", \"pickUplatitude\": 30.7046, \"tripType\": \"SINGLETRIP\", \"note\": \"\"}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "contactUs",
+					"request": {
+						"url": "localhost:3080/api/v1/user/contactUs",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"demo\",\n\t\"email\":\"kk@yopmail.com\",\n\t\"message\":\"cdfddsf\",\n\t\"subject\":\"99998899\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getContactUs",
+					"request": {
+						"url": "http://localhost:3080/api/v1/user/getContactUs",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "driver",
+			"description": "",
+			"item": [
+				{
+					"name": "resgister",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/resgister",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "demo",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "lastName",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "bilal1@yopmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "countryCode",
+									"value": "+1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123456789",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "gendfafadfaddd",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "MALE",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"description": "",
+									"type": "file"
+								},
+								{
+									"key": "latitude",
+									"value": "30.722701",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "76.794654",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "carStatus",
+									"value": "True",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "driverLisence",
+									"value": "gfgdf",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "deviceToken",
+									"value": "dsdsdsd",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "deviceType",
+									"value": "Ios",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "isTransmissionType",
+									"value": "true",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "ssn",
+									"value": "demo",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "'MALE','FEMALE','NO_PREFRENCE'",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "genderType",
+									"value": "MALE",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "sendOtp",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/driver/sendOtp",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"countryCode\":\"+1\",\n\t\"phoneNo\":\"7088145401\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/driver/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\":\"12345678\",\n\t\"phone\":\"7088145402\",\n\t\"countryCode\":\"+1\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "updateDocuments",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/updateDocuments",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjVhY2NmNmQ3YTQ4MTEzOTFjMTU0YjNkNGJjMzg3OWVlMzFiYTlkZDJiOWNiN2Q5NGM0NDgxYjIwMmU2NjdmODM0MTE1ZjlkZmIyMzViOWVkOTIwZjNlYzY4MzNkNTFlZGE0ZjE2OTE1MmE4NTQ5M2E0MDMwM2E5NjQ2ODM1Yjc0ODhlMTUyOGU0YWEzZWMzMjMyY2M5YmU4MWQ3MzUxOWIzYmM1NmNlNDhmYWVmMzZhMTcxNmY2YTAzMTkyOTgyNDk5YmQ2MjFjYmYyMjNjOTBlYzNhMDVlZDgxZDkwMDlhNzkyZjE5NDQ5M2EzZWNmNiJ9LCJpYXQiOjE1ODY3NzU0MTh9.-bXTOKVbd8IrjwSTvTstobfHOGb2aEVPQA0NTZccPtU",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleId\":\"5e96cc520ac5e12a2cf39e6c\",\n\t\"drivingCertificate\":\"ssffsss\",\n\t\"license\":\"ddd\",\n     \"numberPlate\":\"sss\",\n     \"carLicense\":\"ddd\",\n     \"vehicalRegistration\":\"dsdsd\",\n     \"insuranceDocuments\":\"dsdsds\",\n     \"taxiPermit\":\"dsdsdsdsd\",\n     \"carFrontImage\":\"carFrontImage\",\n     \"carBackImage\":\"carBackImage\",\n     \"carLeftImage\":\"carLeftImage\",\n     \"carRightImage\":\"carRightImage\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "uploadFile",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/uploadFile",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjRiYWU3ODhkZjc5YTRiMjY2YjU3NWFkY2UzZjBhNTA4ODljMzU2ZTA0ZjFkZjM2MzNjNDU1OWIzMzQ5NjcxNWY3ZThmNGE3YWVmNGQzODY3MWFlNTI3NGI0NDhmYjQ0NzZlZjBkOGNlNjdkZDVhYjVkNTQ4ZWQ3MjVlYTgyMmQyYTcwOTQ3YmYzZTViNDllY2ZhOTJhOGExNTU4OTg4NTE0NjNjZTJhZGQ2MGJjYTljZGEzNmYwYzZhYTE2OWM2ZmVlNWZmM2FhYzhlNzU2Y2I0MThhODU4NzM1NDBlMjhiYjRiNmYwNDQwMDJjZmRiNiJ9LCJpYXQiOjE1ODY5MjcwMTN9.2mm6D2edv9NyK5v6QHpb1S3RRFnrJx-_nPQqpmVGDec",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"description": "",
+									"type": "file"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addVehicle",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/addVehicle",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImQ1NjQ4YTM3NDBjZDYxZWYwMGNlNjBlOTZlN2ExMjU1ZTNlOGYwNWRhMDk0OGY4NDA5Y2RlMGMwYWQyYWVmMDhkOGI4NGRmNjI2NWExYjgzMDc5MjVjZWU0NzVjNTI1MGM2ZDFjNmY2OTJjYjVmOGFlNTFlMjJiZWUzMDg4YjlkMGQzNTk3YmExZjc3M2FiOGJjZWZmZjQxN2I3OGYyMmMzZDIyZmYzYWY3YWYxZGE1N2QyNjQ2NDI2ZTAwZjk3ZDQ4ZDgxYzQ3MDM0NGExYjBiZjRjNjM3OTk5NTVjZWM0ZTQyYzcwZDAxMmQ4MmZmNCJ9LCJpYXQiOjE1ODc5NjIxNzB9.gcXstmSVVBPP0Hw-nBotAmmRYi6J_nUHo5dtKuGvGT0",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleName\":\"demo\",\n\t\"vehicleMake\":\"demo\",\n\t\"vehicleModel\":\"demo\",\n\t\"vehicleTypeId\":\"5e8d9dbb8c1e351adc298c40\",\n\t\"vehicleImage\":\"demo\",\n\t\"insuranceDocuments\":\"demo\",\n\t\"transmissionTypeId\":\"5e96de4526083729c0ae6c94\",\n\t\"color\":\"dddd\",\n\t\"plateNumber\":\"sdsd\",\n\t\"state\":\"dsds\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicleType",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/getVehicleType",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjcxYzczYTA1ZDM2MWNlZWQ4NDEzMWEwYWFiNGNlZGFjMzFhYWY3OWNlZWIxMTA2ZDg5YWNkMGFmMDMxYTJlYWRhZGM5MDAzMDQ1OTIyYjdjYzg3Y2NkNzk3YzBlZDc3MzdhZTQzYmRjMDViZjc0NDdlYzM1ZjU3MDQxNGVmYmIwNGU3MDY1MWYwM2UzMDlkNDBiOGU1ODlmMmU5OTRkMTI1NWNiMmIyMDNkNjBlM2MwNjRhODRiNGFkM2NmNmQ3ZWIyNGFiYTNjYzI0NWVkZDdmYTllODYzZDExY2Q4OGEzYjJiZTM0YWMxYjk2ZGQ1MyJ9LCJpYXQiOjE1ODY3NzU1NzV9.q3bTawCtYjNUF0BTVAVPyNwxvAFBzJDixZSx-1WqyqY",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "sendOtp",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/sendOtp",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phoneNo\":\"12132323\",\n\t\"countryCode\":\"+91\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "verifyOtp",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/verifyOtp",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otp\":\"806306\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getDriverProfile",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/getDriverProfile",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImExMWUzNzJiOTZmMzg1NDk2MjMwODIwZjg3YzMxMTZhMmMyYWUxZjg0NmE2MzYxYjhiNzhmNTc1ZDExYjVkOTA1Yjg0YWEwYmY0OGU5NmQzYzY3MzFkZjY4NzVjYjE2YzU0MjlmMTYzODMxMWJkMDYxZTdkYWY5NTA1OWU0MDVkNjBlZGFlZGI0OTZmMDU4OTI4MTkxZDNhNzVlMmY0YmU4OWRhMTUzZDhmNGYxNTY4NjY3MGU2ZTJlOTQ3NmZhODc4YWU4NWYwMzhmMzQyMzQ0NDNmYjU1YTZlYTM3Y2JiN2M4YWY1ZDU0NmRhMWI3ZCJ9LCJpYXQiOjE1ODc0NzI2NzZ9.vQNIqDrpDt3V6xR7t7VzJ0MYtvJnH4JDoyFifjNlKjw",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "driverOnOff",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/driverOnOff",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE4YjNmYWMyZjJkNjM3NTgyOTBlMmJmZDVkZDMzNDBiODNiNjZlZTA3ZjVkYTZhN2E5OTM0MzZmZWYxODNlZjcyNzRhNjRiYTRhOTA5NzdlYTAzYWZjNDRjOWFlNWNkOGE4NDA0OWVkZWM0NjYwNjZkZTNjMjI4ZGYzNzc4OTdkMTMyMDdkZjc3NzE0MTVhMDY3ZTQ4YjgyMzM0NmJhZjVjOGI0ODQ3YmYyOTNjOGY3NzY2ZjZjN2I3ZTY1ZDFkZjRhNDJmN2MyMDRhZGM1M2Q0NTM3N2UyYTVhMGY3YTlkYjNiZDJlNDdkOGIxZmNhYSJ9LCJpYXQiOjE1ODc5NjI1OTd9.v78OcfQK8VmfsmuAm8cnEZq1HXmgjDt09ln0zIl-WUE",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"activeStatus\":true\t\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "driverMode",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/driverMode",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE4YjNmYWMyZjJkNjM3NTgyOTBlMmJmZDVkZDMzNDBiODNiNjZlZTA3ZjVkYTZhN2E5OTM0MzZmZWYxODNlZjcyNzRhNjRiYTRhOTA5NzdlYTAzYWZjNDRjOWFlNWNkOGE4NDA0OWVkZWM0NjYwNjZkZTNjMjI4ZGYzNzc4OTdkMTMyMDdkZjc3NzE0MTVhMDY3ZTQ4YjgyMzM0NmJhZjVjOGI0ODQ3YmYyOTNjOGY3NzY2ZjZjN2I3ZTY1ZDFkZjRhNDJmN2MyMDRhZGM1M2Q0NTM3N2UyYTVhMGY3YTlkYjNiZDJlNDdkOGIxZmNhYSJ9LCJpYXQiOjE1ODc5NjI1OTd9.v78OcfQK8VmfsmuAm8cnEZq1HXmgjDt09ln0zIl-WUE",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isCopilot\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "acceptedBookingStatus",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/driver/acceptedBookingStatus",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImZjNTE5ODExNTE5MzAxY2NhOGMwZmEyMTQzYjQzOTM1ZDU2ODM5ZjhkYjc2NmM0OGRlYzFkODY1MTgzODIzZjAxNzUxMTc3YzJmN2VmNDM3MzQwYmY4ZWY4YzFlYzVhMWY3MDdiZjBiMWZmMmU4YzFjMTQ0OTg3NTk2OTRkZDJkN2FhNDQ3YTEyZTJlOWNkNWQ4YjVkNDU3NjA4NTM2ZGI2NTU0ZTg5OTUzOGZiOWI2YjM3ODcyZjk4M2U0NDgzZWJiNDhkNmI2NmNjZTE3NTFlMjNkYzkwZjBiYTgwODRiM2ZmNGQxMmY4MzFkYzljZCJ9LCJpYXQiOjE1ODgxNTYwMjN9.PR0KGHgjs6cNaUo8XGnIP9mzyQkBoncEm6GogjRz2cs",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5ea95ad1622cae3230ce55a8\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ignoreBookingStatus",
+					"request": {
+						"url": "http://localhost:3080/api/v1/driver/ignoreBookingStatus",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImI4ZTRhZGE2ZTI4OTYyMmQyYmQxY2YzMGE0ZmU1NzQyN2YxOGQ0MDdiOGVlZGQ2ODAzMjY1NDI1YmNjNDAyYjNmN2I5NmNkZTcxNDIwYjI5ZDBjNzBjN2M1MzhkNWQzM2E4NzdkZjE2YWM0NmY4NTM4MjUxNzUyMzc3NjRhMTI1MDdiZmViZmZiNmQ0ZDNmM2E4ZjY5MjgyNzAwOTMyMGY0ZDBiZGU2MmEzYTNlM2M5YmRhOGMwYmY4ZDJkZTQ4ZjA1MmMwMDY1NGE0ZjVkNTgwZWFmMzRkMzdjYThlNGUyMzc0ZmFiODk4ZWJhZGE5NyJ9LCJpYXQiOjE1ODcwNjYzNzZ9.FrN4IEkbcvZevbEcouLiPwKCGC-RRMiEabhc_kme5uc",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5e98d53fe3b464171409a93a\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "verifyOtpForgotPassword",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/verifyOtpForgotPassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otpId\": \"5e996e600631f21504bb1650\",\n\t\"otp\": \"318977\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "forgotResetPassword",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/forgotResetPassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otpId\": \"5e996e600631f21504bb1650\",\n\t\"otp\": \"318977\",\n\t\"newPassword\":\"123456\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "changePassword",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/resetPassword",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"oldPassword\":\"123456789\",\n\t\"newPassword\":\"12345678\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "changeBookingStatus",
+					"request": {
+						"url": "http://localhost:3080/api/v1/driver/changeBookingStatus",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImI4ZTRhZGE2ZTI4OTYyMmQyYmQxY2YzMGE0ZmU1NzQyN2YxOGQ0MDdiOGVlZGQ2ODAzMjY1NDI1YmNjNDAyYjNmN2I5NmNkZTcxNDIwYjI5ZDBjNzBjN2M1MzhkNWQzM2E4NzdkZjE2YWM0NmY4NTM4MjUxNzUyMzc3NjRhMTI1MDdiZmViZmZiNmQ0ZDNmM2E4ZjY5MjgyNzAwOTMyMGY0ZDBiZGU2MmEzYTNlM2M5YmRhOGMwYmY4ZDJkZTQ4ZjA1MmMwMDY1NGE0ZjVkNTgwZWFmMzRkMzdjYThlNGUyMzc0ZmFiODk4ZWJhZGE5NyJ9LCJpYXQiOjE1ODcwNjYzNzZ9.FrN4IEkbcvZevbEcouLiPwKCGC-RRMiEabhc_kme5uc",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5e98d53fe3b464171409a93a\",\n\t\"bookingStatus\":\"ARRIVED\"\n}\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "#COMPLETED','ARRIVED','STARTED','ONGOING','CANCELED','ACCEPTED",
+					"request": {
+						"url": "#COMPLETED','ARRIVED','STARTED','ONGOING','CANCELED','ACCEPTED",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAppVersion",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/getAppVersion",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "findDriver",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/findDriver",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE4YjNmYWMyZjJkNjM3NTgyOTBlMmJmZDVkZDMzNDBiODNiNjZlZTA3ZjVkYTZhN2E5OTM0MzZmZWYxODNlZjcyNzRhNjRiYTRhOTA5NzdlYTAzYWZjNDRjOWFlNWNkOGE4NDA0OWVkZWM0NjYwNjZkZTNjMjI4ZGYzNzc4OTdkMTMyMDdkZjc3NzE0MTVhMDY3ZTQ4YjgyMzM0NmJhZjVjOGI0ODQ3YmYyOTNjOGY3NzY2ZjZjN2I3ZTY1ZDFkZjRhNDJmN2MyMDRhZGM1M2Q0NTM3N2UyYTVhMGY3YTlkYjNiZDJlNDdkOGIxZmNhYSJ9LCJpYXQiOjE1ODc5NjI1OTd9.v78OcfQK8VmfsmuAm8cnEZq1HXmgjDt09ln0zIl-WUE",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"latitude\":30.7223596,\n\t\"longitude\":76.7946969\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "uploadFileWithOutAuth",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/uploadFileWithOutAuth",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "",
+									"description": "",
+									"type": "file"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getBookingDetails",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/getBookingDetails",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllBooking",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/getAllBooking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addCoDriver",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/addCoDriver",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE4YjNmYWMyZjJkNjM3NTgyOTBlMmJmZDVkZDMzNDBiODNiNjZlZTA3ZjVkYTZhN2E5OTM0MzZmZWYxODNlZjcyNzRhNjRiYTRhOTA5NzdlYTAzYWZjNDRjOWFlNWNkOGE4NDA0OWVkZWM0NjYwNjZkZTNjMjI4ZGYzNzc4OTdkMTMyMDdkZjc3NzE0MTVhMDY3ZTQ4YjgyMzM0NmJhZjVjOGI0ODQ3YmYyOTNjOGY3NzY2ZjZjN2I3ZTY1ZDFkZjRhNDJmN2MyMDRhZGM1M2Q0NTM3N2UyYTVhMGY3YTlkYjNiZDJlNDdkOGIxZmNhYSJ9LCJpYXQiOjE1ODc5NjI1OTd9.v78OcfQK8VmfsmuAm8cnEZq1HXmgjDt09ln0zIl-WUE",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"otp\":1234,\n\t\"pairedDriverId\":\"5ea66139a11704209c52849f\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "removeCoDriver",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/removeCoDriver",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"pairedDriverId\":\"sdsd\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getCoDriverList",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/driver/getCoDriverList",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjQzYzJkNWU3OWVkNDZjYzU4MjUxOTI4NzE5MzBhYjRjYzYxYzI0Mjc3MTQyNzllNjM5NWE4NDA1YmJmZTdkOGU0ZjdkN2IyYjdkYzU3NzdlMjIzY2EyOGE2MWVjNTkwZmJhNzI3YzQzNGQzNTIzZmE3ZDAzYTVhMTY5M2ViMWFmZDVhNTUwNWZiMjgzYmRlZDE4MjE1Y2NjYjg4OTdiYjVmYjY1ZjIyZDJhMzQ0YWE3NDYyMzY5YmJiYjJiZWUxNjM3Yzg4OWI2MWRjMTlmZDgyOGY3MDlhYWVkNTJiMzc0YzBlOGQyNzc0MWY1ZDM1OCIsImVuY3J5cHRLZXkiOiJrV0JnOCJ9LCJpYXQiOjE1ODg5NDA4MjZ9.u0bU7eDJsRPXo7N8-uEM4C0xHuvs-5nPvktm9tXrNN4",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllBooking",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/getAllBooking",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImU2NTU0ZjRkNTcyYTRlYmRmYjhiM2E0YmY0MTNmNTEzZGEyNzQzNDQxOTNhMmFlZjFiM2UyNTMxMzYxMjcyYTljZDU4NGFhMDc2M2ExMGJkZTA2YjAwNjk3YWZhNWMwM2FjYjhlZDM5MTBlN2RhYTY5YjFkYWI2NGNhZWY5NzVkZWVkOTcwNjA4YjlkYWNlZWM2NTIxYzkzMzYwYzIxZjNkODViZmRiOWFjNjI1NzBlYThiYWFlZTdjNjg0NThjMzlmYzgwODU3YmZjNzRlZGViZjk3Njg3NTA5OTg2MzY1MDc1NjQxMDVjNDViYTI2MiJ9LCJpYXQiOjE1ODc1MzQyMzZ9.r35cwe7IXdUp7wPLGwRaOI_huj2aP1pwrDnsWKgXTUk",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isUpcommingbookings\":true,\n\t\"isPastbookings\":false,\n\t\"skip\":0,\n\t\"limti\":10\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getBookingDetails",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/getBookingDetails",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImU2NTU0ZjRkNTcyYTRlYmRmYjhiM2E0YmY0MTNmNTEzZGEyNzQzNDQxOTNhMmFlZjFiM2UyNTMxMzYxMjcyYTljZDU4NGFhMDc2M2ExMGJkZTA2YjAwNjk3YWZhNWMwM2FjYjhlZDM5MTBlN2RhYTY5YjFkYWI2NGNhZWY5NzVkZWVkOTcwNjA4YjlkYWNlZWM2NTIxYzkzMzYwYzIxZjNkODViZmRiOWFjNjI1NzBlYThiYWFlZTdjNjg0NThjMzlmYzgwODU3YmZjNzRlZGViZjk3Njg3NTA5OTg2MzY1MDc1NjQxMDVjNDViYTI2MiJ9LCJpYXQiOjE1ODc1MzQyMzZ9.r35cwe7IXdUp7wPLGwRaOI_huj2aP1pwrDnsWKgXTUk",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e9d710fad930b6cd1a7259f\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "askForPaired",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/askForPaired",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjE4YjNmYWMyZjJkNjM3NTgyOTBlMmJmZDVkZDMzNDBiODNiNjZlZTA3ZjVkYTZhN2E5OTM0MzZmZWYxODNlZjcyNzRhNjRiYTRhOTA5NzdlYTAzYWZjNDRjOWFlNWNkOGE4NDA0OWVkZWM0NjYwNjZkZTNjMjI4ZGYzNzc4OTdkMTMyMDdkZjc3NzE0MTVhMDY3ZTQ4YjgyMzM0NmJhZjVjOGI0ODQ3YmYyOTNjOGY3NzY2ZjZjN2I3ZTY1ZDFkZjRhNDJmN2MyMDRhZGM1M2Q0NTM3N2UyYTVhMGY3YTlkYjNiZDJlNDdkOGIxZmNhYSJ9LCJpYXQiOjE1ODc5NjI1OTd9.v78OcfQK8VmfsmuAm8cnEZq1HXmgjDt09ln0zIl-WUE",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"pairedDriverId\":\"5ea66139a11704209c52849f\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "acceptPairedAndSendOtp",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/acceptPairedAndSendOtp",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImY0NzUzZDYxNzY1YzYwMGNkMTUzM2M1NTA2YmVhZTVhOTQxMTI0MmQ3YjFkM2U0YjcwMGRiYmY2YjAxYjZmZTJjNTViZjUxYTYzMWRjMzZkMWM3ZDM2ODg0YTIxODEzMzliMmFmNTg5NWQxYTUyNGVjMWQxZTgwY2IxMWRkNDVhOWE5MDQzM2I5MzU1ODE4N2VlMzRkYmFkOWQ3ZmQ3ZDQyOGU1Njc4NzI5ZWEzMWYwZDc2NWI5ZDU1ZTY1MmJiMmM4MmIwZGRjYzA3NzEwYjM0MzY4M2IyYTYzYzZhYjMzYjZmYzU4M2VkMmVjNTE0NiJ9LCJpYXQiOjE1ODc1Mzc5MzN9.epWyu_0ac8uSRi6Yca4DP5jLRbJk9h1mAj-Brkw0QuQ",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phoneNo\":\"\",\n\t\"countryCode\":\"\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllNotification",
+					"request": {
+						"url": "http://localhost:3080/api/v1/driver/getAllNotification",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":0,\n\t\"limit\":10\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "clearAllNotification",
+					"request": {
+						"url": "http://localhost:3080/api/v1/driver/clearAllNotification",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "clearNotification",
+					"request": {
+						"url": "http://localhost:3080/api/v1/driver/clearNotification",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"ssddsddsdsdasdqw33\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "enableDisableNotification",
+					"request": {
+						"url": "localhost:3080/api/v1/driver/enableDisableNotification",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isNotification\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "ratingAndReviewToUser",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/driver/ratingAndReviewToUser",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImRmZTM3OWMyOWY1YWZhMWM2ZjQ0NDJhYmJhY2JjNzYzMTM5ZWQ5ZDc5ODExMWY3NWM5OTE5NmVkZmE1MWVlMzYxNTRlM2I0YjRkNDBhMDBiYWY4NDEwOTZlMDQ2MDljMjM2NzVkMDk4ZWY1YzIwNThjZmJlZmM5ZDdkYmEyNWI5ZjFkYTkzNDMwMTQwNjE4MjkyOGM4MWU3Yjg3YzdmYjQxYmI1YTNhNjJmZmZiYWJjZGRkMmE3NzdiMTk4MjdlOWE4ZWEzYTFiYzk0ZGYyOWUyMTAxYzBiMTVhYmRkZjNiYTZhZWM4MjM0MDBjYTRmYSIsImVuY3J5cHRLZXkiOiJXWXlFNyJ9LCJpYXQiOjE1ODg3NzExMTZ9.0-i_3kIc3yW6tVtovpZKzDjvhORyeN45W6WU8dKF6L0",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5eb018194ff88a166041d46f\",\n\t\"customerReview\":\"sdsds\",\n\t\"customerRating\":4\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"url": "http://localhost:3080/api/v1/driver/logout",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getChatMessages ",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/driver/getChatMessages ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjNkMWVhY2M5MjFkNjY5N2I2NjcxZGE3YzExMjcwNWZkYWU0YzkxMDE1ZDY2NmRmZWE5ODBjMDc1MDIyYjViY2JjMDYwYmM3NGE0NjViNTNkNWQyYTcwYzI1ZjkxOThlMWIxOTE1ZDkyOTFkNDg0OTQxOWFjY2QyNGM2MjJmMzcyZWFmNTMwMWY3ZWQ3MDlkNzNjYzE5OWVhMjJhOGQ0ODI1YjQ1YWM1ODEzM2QxNmU3OThlYjJmZTI3ZDk1MGE0Y2RhNWViNmM3MmVmOTRhYTk2NTUzNmQ4MzRkMzUxNDcxMWIyYzI2NzEyNDA3NWYyYiIsImVuY3J5cHRLZXkiOiJFSzVoaCJ9LCJpYXQiOjE1ODg1ODU4NTB9.57NX-zfoL4AEmYZNkaMHd3OoW4z_OT-5S9XAFb-tzqw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bookingId\":\"5eafe686c278ad0243a19ecb\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getPayemntHistory",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/driver/getPayemntHistory",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImU0YTEyZTVlMThjYTY5MTQwOThjMDZmNTgxNTk0MTBjOTRhMDg5YmFhMTJlZjAzNmJjY2E0OTgxN2JlNDc1M2I3ZTVmNDlhNjAwMDM5ZGExMjZkMGNiN2FhMmVkYTlkNmU0ZWUyMjk3ODhkYTk3NzkwMjk2Mzg2ZDZiMjJiNzc4OTExODZlZGZhYjYzZTNmNDQwMmE0YzYzYmZkM2U5Y2M3MDdjODUwOTNhOThkNjMzMjI3NTM2M2VlMjMxODMyMDMyZDc5OTI2YWEzMTBhNDQ1ODZlM2ZhNzNlZjg1YWFmZGEzZjhlOWU1YjQ3NWUzYSIsImVuY3J5cHRLZXkiOiJGTVdDUCJ9LCJpYXQiOjE1ODg4NDkwOTZ9.sRh4BXsidnvX6sgnnL0v02Xs7mSrzsRMXRDgaXAFx5c",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isYear\":false,\n\t\"isMonth\":false,\n\t\"isWeek\":true\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getPayemntHistoryList",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/driver/getPayemntHistoryList",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjI4YmRhNGU0ZWYwYjQ1ZGNkMzAwNzEwMjkwODM0YmM0YTA5MTQyNWM5ZmM1YTcyNDVlYmZjYzFiZjU4ZTM1YTY1ZTRhYTU5YTFlMGRiZjEwYjVkNGQzYjk4OWU2ZGI0OGJmOTQxNmI4NTkwN2E4YjU4Y2U1ZGFmZjJlNGNjYWE5MzMwOTgzNGI1YzJkNGU1ZjZkZWQxMDM0YmViODU1NDJiZGNmYmYyYWMwOTc4YjEwMGEzMzMzNDRkOGQwMDQ2YTY1ZTJiYmIyNTUwNDg1MWUxNTk3NTY2MGFhNDFlN2ZhNWM2MjM0NzcxODQ2ZDMyOSIsImVuY3J5cHRLZXkiOiJHeFNMbiJ9LCJpYXQiOjE1ODg2NTQ5ODB9.la8eP1hlhsY7IZGvH6LjstQ_tyr3I7tnjLwUqX8aU-4",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isYear\":true,\n\t\"isMonth\":true,\n\t\"isWeek\":true,\n\t\"skip\":0,\n\t\"limit\":10\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getRatingList",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/driver/getRatingList",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjlkN2M0ZmJkNzdkZWU4OTRkNzAzMDE2ZWUxZTJhNjZmNmI3YmRiOGVhNzIzYjI5M2I0YWIzYzk2Y2Q0YTFiYjgwNWFlOTAzODljMjE2ZWYyYjcwYWE4ZjhjMzFkMTRiNTQzMTNmNjJlMGIxNDkzMTVlNTM5ZDFmYTg5MjgxYzFhYjAyNDU0MzMzOTFlNWU5MDA5ODMxMzUxYzc2YThhMGE1NjBkMTZhYzMyZWYxYjllODkwZGU4NWZkZGQ4OWFjMTJkMjIxNTM2MWQzOTIyMTI0ZDdmYTY4MjgwNmJmOGY3Y2Y3NTE3MWQ5M2UxYWYyZCIsImVuY3J5cHRLZXkiOiJJTlQ5VCJ9LCJpYXQiOjE1ODg3NDE3MTJ9.noP3HEvNdUhd7YWRfiyVejKydK08uHDMWveOAcILfNM",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"skip\":0,\n\t\"limit\":10\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "addFavoriteUnFavoriteDriver",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/driver/addFavoriteUnFavoriteDriver",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImFhNWFhMTEzYjA1NmI4YzMwYjlhNzgyNTFjYmRhNThhYTIwZjU1YzFjZTJkMDQ2Yjk0ZDg3ZjVmMzUxNjU3MzVjODUyNDJlNmZhNzM1OWVmN2E2MjdmNTlkOGI5Njk1ZWZiOTc1MzNiNjViZGQ2ODlmNTY5Y2JkMTI4ZDgzMzkzZjY0ZjAyNDY1OWMwYTg0MWQ2ZjEwMzY4NDMyMTEyOTRkODE3MTI4ZDA0NjdlMjg3ZjNiN2NlZDA0ZGZhYjc2Yjg1NTAyZTBkOTQwMTY5ZmQ2NWMwNGYxN2NlOWQ5NDI2ZWYyNTUyOWJkMDEzMWI5NiIsImVuY3J5cHRLZXkiOiJPVmJSRSJ9LCJpYXQiOjE1ODg3NjM4ODh9.9JlAfcAqdY14tzZOENR7c7b3fRHMvR3PR55pCqrnIIM",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"favoriteDriverId\":\"5eaa740100ff0462bd03ab2f\",\n\t\"isFavorite\":false\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getFavoriteDriverList",
+					"request": {
+						"url": "http://appgrowthcompany.com:3080/api/v1/driver/getFavoriteDriverList",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "SED eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6ImRkMDQzMDBmYWI2ZDJlMjllMjQzM2QzZTdkMDI2ODA5NjY2Y2ZiN2E5ZjEyMzQzYjI0YWZkZTU2ZTE5ZmI1MWE1MmZmOTE5MWY4YmI2NjA0YTZlNGRlODBkNDk0NjdiMDUyZDJiZjlmNzk2MDQ3MmQyYjU4YzVlOTgwZGZiY2RmZWE0Njg0MWYzZDU3ODI3YjQ0ZmFkYjk2YjNlYjdhM2U5ZjYyMDM3MWJkODIyNGVmOGNjODAzMmI5ZmFiMWFmNDVmYjI0YWVkNDM1ZDczYTVhNDU2YmNjZDY2MzUxNGE3MDNmYzcyYTRlOWM1MTk4YiIsImVuY3J5cHRLZXkiOiI0TXhZRCJ9LCJpYXQiOjE1ODg5MTE5NDl9.w_LRblUcuGQlsASMNbw0_DywvLrbax4ehFxAsmtsc9A",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\n\t\"skip\":0,\n\t\"limit\":10\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://appgrowthcompany.com:3080/api/v1/user/createBooking",
+			"request": {
+				"url": "http://appgrowthcompany.com:3080/api/v1/user/createBooking",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "SEC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7Il9pZCI6IjlkNTliY2FhYzYwZmI4ODMzZWM2NjllYTg2YzkxNmI2ZjI1ZWU3MjRlMjExNGY1N2MxNTI2NzZjZjQ4MzcxYTZhMzA0MjYxZTY2ODIwOGM2ZjJiNmEyM2M3OTg4ZWU1YmFlYzE2ODIyMTAwZjVhMDc5MTFjYTE1ODQ3ZTllMWY5ZDdhMjQ0YTA1YjBjMzUxMzMxNjE1NmM4ZDc1N2M0ODdhNTNkODUxYTgyNjhlNTY0NDljY2I1MWEwMmY1Y2M2ZTEwNTI5NDNiNzc2NjdjNTc3NWE2YWExZTU5ZDdlNGNhNDE3OWFiNWJiMzIzY2NlNiIsImVuY3J5cHRLZXkiOiJYUXJXeCJ9LCJpYXQiOjE1OTE4NjgwMDR9.7gNrzS7kDfo5OsIEeg9POLZVCE7mEWDBqU8I5BqwN7E",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"vehicleId\":\"5ea915e9f530cc24f1d37650\",\"seviceTypeId\":\"5e9d98f5eb817647b68a914d\",\"genderType\":\"MALE\",\"passengerNo\":0,\"pickUplatitude\":30.7128896,\"pickUplongitude\":76.7093008,\"dropUplatitude\":30.7128896,\"dropUplongitude\":76.7093008,\"pickUpAddress\":\"C127, Phase, 8, Phase 8, Industrial Area, Sector 73, Sahibzada Ajit Singh Nagar, Punjab 160071, India\",\"dropUpAddress\":\"C127, Phase, 8, Phase 8, Industrial Area, Sector 73, Sahibzada Ajit Singh Nagar, Punjab 160071, India\",\"bookingDate\":\"2020-06-11T09:34:21.141Z\",\"tripType\":\"SINGLETRIP\",\"timezone\":330,\"eta\":0,\"totalDistance\":0,\"paymentMode\":\"CASH\",\"dropUplatitudeFirst\":0,\"dropUplongitudeFirst\":0,\"dropUplatitudeSecond\":0,\"dropUplongitudeSecond\":0,\"dropUplatitudeThird\":0,\"dropUplongitudeThird\":0,\"dropUplatitudeFour\":0,\"dropUplongitudeFour\":0,\"isTripAllocated\":true,\"isSheduledBooking\":false,\"note\":\"\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "https://verificationapi-v1.sinch.com/verification/v1/verifications",
+			"request": {
+				"url": "https://verificationapi-v1.sinch.com/verification/v1/verifications",
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "application 0d5464e9-be86-430a-83dc-13da49ae23c4:4zZEtjjZ7BSXkkJOcCtCDSYmSV3Wkk0bZ2XaimR+Kjs=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"identity\": {\r\n    \"type\": \"number\",\r\n    \"endpoint\": \"+917088145401\"\r\n  },\r\n  \"custom\": \"917088145401\",\r\n  \"method\": \"sms\",\r\n  \"metadata\": {\r\n    \"os\": \"rest\",\r\n    \"platform\": \"N/A\"\r\n  }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "?curl --user 0d5464e9-be86-430a-83dc-13da49ae23c4=mAGKg/AeKUakWQ++HtWrOg== https://verificationapi-v1.sinch.com/verification/v1/verifications -H \"Content-Type: application/json\" --data '{\"identity\":{\"type\":\"number\",\"endpoint\":\"+917088145401\",\"message\":\"ddddd\"},\"method\":\"sms\"}'",
+			"request": {
+				"url": {
+					"raw": "?curl --user 0d5464e9-be86-430a-83dc-13da49ae23c4=mAGKg/AeKUakWQ++HtWrOg== https://verificationapi-v1.sinch.com/verification/v1/verifications -H \"Content-Type: application/json\" --data '{\"identity\":{\"type\":\"number\",\"endpoint\":\"+917088145401\",\"message\":\"ddddd\"},\"method\":\"sms\"}'",
+					"protocol": "?curl --user 0d5464e9-be86-430a-83dc-13da49ae23c4=mAGKg/AeKUakWQ++HtWrOg== https",
+					"host": [
+						"verificationapi-v1",
+						"sinch",
+						"com"
+					],
+					"path": [
+						"verification",
+						"v1",
+						"verifications -H \"Content-Type: application",
+						"json\" --data '{\"identity\":{\"type\":\"number\",\"endpoint\":\"+917088145401\",\"message\":\"ddddd\"},\"method\":\"sms\"}'"
+					],
+					"query": [
+						{
+							"key": "curl --user 0d5464e9-be86-430a-83dc-13da49ae23c4",
+							"value": "mAGKg/AeKUakWQ++HtWrOg== https://verificationapi-v1.sinch.com/verification/v1/verifications -H \"Content-Type: application/json\" --data '{\"identity\":{\"type\":\"number\",\"endpoint\":\"+917088145401\",\"message\":\"ddddd\"},\"method\":\"sms\"}'",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

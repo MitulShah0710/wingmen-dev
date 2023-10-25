@@ -1,0 +1,13 @@
+/node_modules
+/http-server
+/node
+/.idea
+/server/public
+/.env
+/prem.zip
+/dump
+/server/uploads
+
+# build
+build
+
